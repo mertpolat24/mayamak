@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makine Parkı | Mayamak</title>
+  <meta name="description" content="Mayamak makine parkı – CNC tezgahlar, presler, kaynak makineleri ve daha fazlası.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="machines" data-page-title="meta.title.machines">
+
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-contact">
+        <a href="#" data-contact="whatsapp" data-contact-text>+90 541 939 34 69</a>
+        <a href="#" data-contact="email" data-contact-text>info@mayamak.com</a>
+      </div>
+      <div class="top-bar-right">
+        <div class="top-bar-social" id="top-bar-social"></div>
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo/logo.png" alt="Mayamak">
+        <span class="logo-brand">
+          <strong class="logo-name">MAYAMAK</strong>
+        </span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <ul class="main-nav" id="main-nav">
+        <li><a href="index.html" data-nav="home" data-i18n="nav.home">Anasayfa</a></li>
+        <li class="nav-dropdown">
+          <button class="nav-dropdown-trigger" data-i18n="nav.corporate">Kurumsal ▾</button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
+            <li><a href="makine-parki.html" data-i18n="nav.machines">Makine Parkı</a></li>
+            <li><a href="sertifikalar.html" data-i18n="nav.certificates">Sertifikalar</a></li>
+          </ul>
+        </li>
+        <li><a href="urunler.html" data-nav="products" data-i18n="nav.products">Ürünler</a></li>
+        <li><a href="makine-doluluk.html" data-nav="occupancy" data-i18n="nav.occupancy">Makine Doluluk Oranları</a></li>
+        <li><a href="referanslar.html" data-nav="references" data-i18n="nav.references">Referanslar</a></li>
+        <li><a href="iletisim.html" data-nav="contact" data-i18n="nav.contact">İletişim</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="machines.title">Makine Parkımız</h1>
+      <p data-i18n="machines.subtitle">Modern tezgah filomuzla geniş üretim kapasitesi.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="filter-bar" id="machine-filters">
+        <button class="filter-btn active" data-filter="all" data-i18n="machines.filter.all">Tümü</button>
+        <button class="filter-btn" data-filter="cnc">CNC</button>
+        <button class="filter-btn" data-filter="kaynak">Kaynak</button>
+        <button class="filter-btn" data-filter="pres">Pres</button>
+        <button class="filter-btn" data-filter="surucu">Sürücü</button>
+        <button class="filter-btn" data-filter="universal">Universal</button>
+      </div>
+      <div class="machines-grid" id="machines-grid"></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo/logo.png" alt="Mayamak">
+          <p data-i18n="footer.tagline">Ciddiyetle Üretir.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.quick">Hızlı Bağlantılar</h4>
+          <ul>
+            <li><a href="makine-doluluk.html" data-i18n="nav.occupancy">Makine Doluluk Oranları</a></li>
+            <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
+            <li><a href="iletisim.html" data-i18n="nav.contact">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer.contact">Bize Ulaşın</h4>
+          <ul>
+            <li><a href="#" data-contact="whatsapp" data-contact-text>+90 541 939 34 69</a></li>
+            <li><a href="#" data-contact="email" data-contact-text>info@mayamak.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 mayamak.com — <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/occupancy.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
