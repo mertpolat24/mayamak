@@ -43,7 +43,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: clip;
+  overflow-x: hidden;
 }
 
 body {
@@ -52,7 +52,7 @@ body {
   line-height: 1.65;
   color: var(--text);
   background: var(--navy);
-  overflow-x: clip;
+  overflow-x: hidden;
   max-width: 100%;
   -webkit-font-smoothing: antialiased;
 }
@@ -78,7 +78,7 @@ body.nav-open .site-header {
 img { max-width: 100%; height: auto; display: block; }
 
 main {
-  overflow-x: clip;
+  overflow-x: hidden;
   max-width: 100%;
 }
 a { color: var(--blue); text-decoration: none; transition: color var(--transition); }
@@ -1122,16 +1122,24 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 /* ─── REFERENCES ─── */
 .home-references-section {
   padding-bottom: 48px;
-  overflow-x: clip;
+  overflow: visible;
 }
 
 .references-marquee {
   overflow: hidden;
   margin-top: 24px;
-  padding: 16px 0;
+  padding: 12px 0;
   width: 100%;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+  min-height: 88px;
+  position: relative;
+  isolation: isolate;
+}
+
+@media (min-width: 769px) {
+  .references-marquee {
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent);
+  }
 }
 
 .references-marquee-track {
@@ -1140,19 +1148,27 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   align-items: stretch;
   gap: 0;
   width: max-content;
+  min-width: 100%;
   will-change: transform;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   animation: references-marquee 40s linear infinite;
+  -webkit-animation: references-marquee 40s linear infinite;
 }
 
 .references-marquee-set {
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
+  flex: 0 0 auto;
   flex-shrink: 0;
 }
 
 .references-marquee .ref-item {
   flex: 0 0 190px;
+  width: 190px;
+  min-width: 190px;
+  max-width: 190px;
   background: #ffffff;
   border-radius: 0;
   box-shadow: none;
@@ -1164,6 +1180,7 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 
 .references-marquee .ref-item-img {
   aspect-ratio: 16 / 10;
+  min-height: 72px;
   background: #ffffff;
 }
 
@@ -1172,17 +1189,58 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 }
 
 .references-marquee .ref-item img {
+  width: 100%;
+  height: 100%;
+  max-width: none;
   object-fit: contain;
-  padding: 14px 18px;
+  padding: 12px 14px;
 }
 
 @keyframes references-marquee {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-50%, 0, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+    -webkit-transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .references-marquee {
+    min-height: 76px;
+    padding: 10px 0;
+    -webkit-mask-image: none !important;
+    mask-image: none !important;
+  }
+
+  .references-marquee-track {
+    animation-duration: 32s;
+    -webkit-animation-duration: 32s;
+  }
+
+  .references-marquee .ref-item {
+    flex: 0 0 148px;
+    width: 148px;
+    min-width: 148px;
+    max-width: 148px;
+  }
+
+  .references-marquee .ref-item-img {
+    min-height: 56px;
+  }
+
+  .references-marquee .ref-item img {
+    padding: 8px 10px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .references-marquee-track { animation-duration: 90s; }
+  .references-marquee-track {
+    animation-duration: 80s;
+    -webkit-animation-duration: 80s;
+  }
 }
 
 .references-grid {

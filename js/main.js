@@ -248,11 +248,11 @@ window.MayamakApp = (function () {
     initScrollReveal();
   }
 
-  function refItemHtml(r) {
+  function refItemHtml(r, eagerLoad) {
     return (
       '<div class="ref-item">' +
         '<div class="ref-item-img">' +
-          '<img src="' + encodeURI(r.image) + '" alt="' + r.name + '" loading="lazy" title="' + r.name + '">' +
+          '<img src="' + encodeURI(r.image) + '" alt="' + r.name + '" loading="' + (eagerLoad ? 'eager' : 'lazy') + '" decoding="async" title="' + r.name + '">' +
         '</div>' +
       '</div>'
     );
@@ -280,9 +280,28 @@ window.MayamakApp = (function () {
     var setB = document.getElementById("home-references-set-b");
     if (!setA || !setB) return;
     var refs = window.MAYAMAK_DATA.references;
-    var items = refs.map(refItemHtml).join("");
+    var items = refs.map(function (r) { return refItemHtml(r, true); }).join("");
     setA.innerHTML = items;
     setB.innerHTML = items;
+    initHomeReferencesMarquee();
+  }
+
+  function initHomeReferencesMarquee() {
+    var track = document.querySelector(".references-marquee-track");
+    if (!track) return;
+
+    track.querySelectorAll("img").forEach(function (img) {
+      img.loading = "eager";
+      img.decoding = "async";
+    });
+
+    requestAnimationFrame(function () {
+      track.style.animation = "none";
+      track.style.webkitAnimation = "none";
+      void track.offsetWidth;
+      track.style.animation = "";
+      track.style.webkitAnimation = "";
+    });
   }
 
   function renderPrograms(container) {
