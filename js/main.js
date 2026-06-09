@@ -145,14 +145,14 @@ window.MayamakApp = (function () {
     });
 
     document.querySelectorAll("[data-contact=\"map\"]").forEach(function (el) {
-      el.href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(c.mapQuery);
+      el.href = c.mapUrl;
       el.setAttribute("target", "_blank");
       el.setAttribute("rel", "noopener noreferrer");
     });
 
     var mapFrame = document.getElementById("contact-map-frame");
-    if (mapFrame && c.mapQuery) {
-      mapFrame.src = "https://maps.google.com/maps?q=" + encodeURIComponent(c.mapQuery) + "&z=16&hl=tr&output=embed";
+    if (mapFrame && c.mapEmbed) {
+      mapFrame.src = c.mapEmbed;
     }
 
     var addressEl = document.getElementById("contact-address");
@@ -320,19 +320,22 @@ window.MayamakApp = (function () {
     container.innerHTML = companies.map(function (c, i) {
       var name = lang === "en" ? c.nameEn : c.nameTr;
       var desc = lang === "en" ? c.descEn : c.descTr;
-      var isExternal = c.url.indexOf("http") === 0;
-      var href = isExternal ? c.url : c.url;
+      var hasLink = c.url && c.url.length > 0;
+      var isExternal = hasLink && c.url.indexOf("http") === 0;
       var target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : "";
+      var inner =
+        '<div class="company-card-logo">' +
+          '<img src="' + encodeURI(c.logo) + '" alt="' + name + '" loading="lazy">' +
+        '</div>' +
+        '<h3>' + name + '</h3>' +
+        '<p>' + desc + '</p>' +
+        (hasLink ? '<span class="company-card-cta">' + MayamakI18n.t("companies.visit") + ' →</span>' : '');
+
       return (
-        '<article class="company-card reveal" style="animation-delay:' + (i * 0.08) + 's">' +
-          '<a href="' + href + '"' + target + ' class="company-card-link">' +
-            '<div class="company-card-logo">' +
-              '<img src="' + encodeURI(c.logo) + '" alt="' + name + '" loading="lazy">' +
-            '</div>' +
-            '<h3>' + name + '</h3>' +
-            '<p>' + desc + '</p>' +
-            '<span class="company-card-cta">' + MayamakI18n.t("companies.visit") + ' →</span>' +
-          '</a>' +
+        '<article class="company-card reveal' + (hasLink ? '' : ' company-card-static') + '" style="animation-delay:' + (i * 0.08) + 's">' +
+          (hasLink
+            ? '<a href="' + c.url + '"' + target + ' class="company-card-link">' + inner + '</a>'
+            : '<div class="company-card-link">' + inner + '</div>') +
         '</article>'
       );
     }).join("");

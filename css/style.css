@@ -1829,6 +1829,20 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   padding: 0;
   height: 100%;
   color: var(--text);
+  text-decoration: none;
+}
+
+.company-card-static {
+  cursor: default;
+}
+
+.company-card-static:hover {
+  transform: none;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.company-card-static .company-card-link {
+  cursor: default;
 }
 
 .company-card-logo {

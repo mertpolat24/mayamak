@@ -10,7 +10,8 @@ window.MAYAMAK_DATA = {
       "DİLOVASI / KOCAELİ",
       "Türkiye"
     ],
-    mapQuery: "Organize Sanayi Bölgesi, 21. Cd. İstanbul Mermerciler Sanayi Sitesi, 41455 Dilovası, 41455 Dilovası/Kocaeli",
+    mapUrl: "https://www.google.com/maps/place/MAYAMAK+M%C3%9CHEND%C4%B0SL%C4%B0K/@40.8794025,29.5703546,16z/data=!4m6!3m5!1s0x14cb2f9fc5f3af61:0x93e182b815e98911!8m2!3d40.8794025!4d29.5703546!16s%2Fg%2F11ykg1334b",
+    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3012!2d29.5703546!3d40.8794025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cb2f9fc5f3af61%3A0x93e182b815e98911!2sMAYAMAK%20M%C3%9CHEND%C4%B0SL%C4%B0K!5e0!3m2!1str!2str",
     social: {
       facebook: "",
       instagram: "",
@@ -21,7 +22,7 @@ window.MAYAMAK_DATA = {
   products: [
     {
       id: "stm-denizalti",
-      image: "images/products/1746616350_stm-500-mini-denizalti.webp",
+      image: "images/products/denizalti.png",
       nameTr: "STM Denizaltı",
       nameEn: "STM Submarine",
       descTr: "STM 500 mini denizaltı platformu için hassas talaşlı imalat parçaları.",
@@ -30,8 +31,8 @@ window.MAYAMAK_DATA = {
     {
       id: "stm-corvette",
       image: "images/products/0796a901da53452ab255f69e262ac609.png",
-      nameTr: "STM Malezya Corvette Savaş Gemisi",
-      nameEn: "STM Malaysia Corvette Warship",
+      nameTr: "STM Malezya Korvet Savaş Gemisi",
+      nameEn: "STM Malaysia Korvet Warship",
       descTr: "Savunma sanayi projelerine yönelik kritik mekanik bileşen üretimi.",
       descEn: "Critical mechanical component manufacturing for defense industry projects."
     },
@@ -58,6 +59,14 @@ window.MAYAMAK_DATA = {
       nameEn: "Hunting Rifle",
       descTr: "Av tüfeği platformları için yüksek hassasiyetli mekanik parça imalatı.",
       descEn: "High-precision mechanical parts for hunting rifle platforms."
+    },
+    {
+      id: "tabanca-aksesuar",
+      image: "images/products/tabanca-aksesuar.png",
+      nameTr: "Tabanca ve Aksesuar",
+      nameEn: "Pistol and Accessories",
+      descTr: "Tabanca ve aksesuar platformları için toleranslı mekanik parça ve komponent üretimi.",
+      descEn: "Tolerance-critical mechanical parts and components for pistol and accessory platforms."
     }
   ],
 
@@ -293,6 +302,7 @@ window.MAYAMAK_DATA = {
     { image: "images/references/STM.png", name: "STM" },
     { image: "images/references/31.tcdd-buyuk-1024x937-1.png", name: "TCDD" },
     { image: "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png.png", name: "ATA Arms" },
+    { image: "images/references/armsan.png", name: "Armsan" },
     { image: "images/references/thyt.png", name: "Turkish Technic" },
     { image: "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv.png", name: "NEU Automotive" },
     { image: "images/references/FAG.png", name: "FAG" },
@@ -321,6 +331,15 @@ window.MAYAMAK_DATA = {
 
   companies: [
     {
+      id: "mayamak",
+      nameTr: "Mayamak Mühendislik",
+      nameEn: "Mayamak Engineering",
+      logo: "images/companies/mayamak.png",
+      url: "",
+      descTr: "Talaşlı ve talaşsız imalat, CNC işleme ve hassas parça üretimi.",
+      descEn: "Machining, non-machining manufacturing, CNC processing and precision parts."
+    },
+    {
       id: "as-is-guvenligi",
       nameTr: "AS İş Güvenliği",
       nameEn: "AS Occupational Safety",
@@ -337,15 +356,6 @@ window.MAYAMAK_DATA = {
       url: "https://ascelikhalat.com/index.php?lang=tr",
       descTr: "Çelik halat, zincir ve güverte ekipmanları alanında uzmanlaşmış grup şirketimiz.",
       descEn: "Our group company specialized in steel wire rope, chain and deck equipment."
-    },
-    {
-      id: "mayamak",
-      nameTr: "Mayamak Mühendislik",
-      nameEn: "Mayamak Engineering",
-      logo: "images/companies/mayamak.png",
-      url: "index.html",
-      descTr: "Talaşlı ve talaşsız imalat, CNC işleme ve hassas parça üretimi.",
-      descEn: "Machining, non-machining manufacturing, CNC processing and precision parts."
     }
   ],
 
