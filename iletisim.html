@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
   <title>İletişim | Mayamak</title>
   <meta name="description" content="Mayamak iletişim – Dilovası/Kocaeli talaşlı imalat firması.">
+  <link rel="canonical" href="https://www.mayamak.com/iletisim.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mayamak">
+  <meta property="og:title" content="İletişim | Mayamak">
+  <meta property="og:description" content="Mayamak iletişim – Dilovası/Kocaeli talaşlı imalat firması.">
+  <meta property="og:url" content="https://www.mayamak.com/iletisim.html">
+  <meta property="og:image" content="https://www.mayamak.com/images/logo/logo.png">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="İletişim | Mayamak">
+  <meta name="twitter:description" content="Mayamak iletişim – Dilovası/Kocaeli talaşlı imalat firması.">
+  <meta name="twitter:image" content="https://www.mayamak.com/images/logo/logo.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="contact" data-page-title="meta.title.contact">
+<body data-page="contact" data-page-title="meta.title.contact" data-page-description="meta.description.contact">
 
   <div class="top-bar">
     <div class="container top-bar-inner">
@@ -27,31 +44,32 @@
 
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <img src="images/logo/logo.png" alt="Mayamak">
-        <span class="logo-brand">
-          <strong class="logo-name">MAYAMAK</strong>
-        </span>
+            <a href="index.html" class="logo">
+        <img src="images/logo/logo-header.png" alt="Mayamak" class="logo-img">
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü"><span></span><span></span><span></span></button>
+      <nav aria-label="Ana menü">
       <ul class="main-nav" id="main-nav">
         <li><a href="index.html" data-nav="home" data-i18n="nav.home">Anasayfa</a></li>
         <li class="nav-dropdown">
           <button class="nav-dropdown-trigger" data-i18n="nav.corporate">Kurumsal ▾</button>
           <ul class="nav-dropdown-menu">
             <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
-            <li><a href="makine-parki.html" data-i18n="nav.machines">Makine Parkı</a></li>
-            <li><a href="sertifikalar.html" data-i18n="nav.certificates">Sertifikalar</a></li>
+            <li><a href="makine-parki.html" data-nav="machines" data-i18n="nav.machines">Makine Parkuru</a></li>
+            <li><a href="sertifikalar.html" data-nav="certificates" data-i18n="nav.certificates">Sertifikalar</a></li>
+            <li><a href="sirketlerimiz.html" data-nav="companies" data-i18n="nav.companies">Şirketlerimiz</a></li>
           </ul>
         </li>
         <li><a href="urunler.html" data-nav="products" data-i18n="nav.products">Ürünler</a></li>
-        <li><a href="makine-doluluk.html" data-nav="occupancy" data-i18n="nav.occupancy">Makine Doluluk Oranları</a></li>
         <li><a href="referanslar.html" data-nav="references" data-i18n="nav.references">Referanslar</a></li>
         <li><a href="iletisim.html" data-nav="contact" data-i18n="nav.contact">İletişim</a></li>
+        <li class="nav-cta-item"><a href="makine-doluluk.html" class="nav-cta" data-nav="occupancy" data-i18n="nav.occupancy">KAPASİTE TAKİP</a></li>
       </ul>
+      </nav>
     </div>
   </header>
 
+  <main>
   <section class="page-hero">
     <div class="container">
       <h1 data-i18n="contact.title">İletişim</h1>
@@ -66,11 +84,10 @@
           <div class="contact-item">
             <div class="contact-icon"></div>
             <div>
-              <h4 data-i18n="contact.address">Adres</h4>
-              <p>
-                Organize Sanayi Bölgesi, 21. Cd.<br>
-                Mermerciler Sanayi Sitesi No: 39<br>
-                Dilovası/Kocaeli 41455<br>
+              <h3 data-i18n="contact.address">Adres</h3>
+              <p id="contact-address">
+                KOBİ OSB 21 CADDE NO46<br>
+                DİLOVASI / KOCAELİ<br>
                 Türkiye
               </p>
               <p style="margin-top:8px"><a href="#" data-contact="map" data-i18n="contact.map">Haritada aç</a></p>
@@ -79,34 +96,65 @@
           <div class="contact-item">
             <div class="contact-icon icon-phone"></div>
             <div>
-              <h4 data-i18n="contact.phone">Telefon / WhatsApp</h4>
+              <h3 data-i18n="contact.phone">Telefon / WhatsApp</h3>
               <p><a href="#" data-contact="whatsapp" data-contact-text>+90 541 939 34 69</a></p>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon icon-email"></div>
             <div>
-              <h4 data-i18n="contact.email">E-posta</h4>
+              <h3 data-i18n="contact.email">E-posta</h3>
               <p><a href="#" data-contact="email" data-contact-text>info@mayamak.com</a></p>
             </div>
           </div>
           <div class="contact-item">
             <div class="contact-icon icon-hours"></div>
             <div>
-              <h4 data-i18n="contact.hours">Çalışma Saatleri</h4>
+              <h3 data-i18n="contact.hours">Çalışma Saatleri</h3>
               <p data-i18n="contact.hours.value">Pazartesi – Cuma: 08:00 – 18:00</p>
             </div>
           </div>
         </div>
-        <div class="reveal">
-          <a href="#" data-contact="map" class="contact-map-link" title="Google Maps">
-            <iframe id="contact-map-frame" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mayamak Konum"></iframe>
-            <span class="map-open-hint" data-i18n="contact.mapHint">Konumu Google Maps'te açmak için tıklayın</span>
-          </a>
+        <div class="contact-map-wrap reveal">
+          <iframe
+            id="contact-map-frame"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mayamak Konum">
+          </iframe>
+          <a href="#" data-contact="map" class="map-open-hint" data-i18n="contact.mapHint">Konumu Google Maps'te açmak için tıklayın</a>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="faq.title">Sıkça Sorulan Sorular</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q1">Hangi sektörlere hizmet veriyorsunuz?</summary>
+          <p data-i18n="faq.a1">Savunma, otomotiv, enerji ve genel sanayi sektörlerine talaşlı ve talaşsız imalat hizmeti sunuyoruz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q2">Teklif süreci nasıl işliyor?</summary>
+          <p data-i18n="faq.a2">Teknik çizim veya numune ile iletişime geçmeniz yeterlidir. Mühendislik ekibimiz kapasite ve tolerans analizi yaparak size özel teklif hazırlar.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q3">Prototipten seri üretime geçiş yapıyor musunuz?</summary>
+          <p data-i18n="faq.a3">Evet. Prototip üretiminden pilot seriye ve tam seri üretime kadar tüm aşamalarda destek veriyoruz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q4">Teslimat süreleri ne kadar?</summary>
+          <p data-i18n="faq.a4">Teslimat süresi parça karmaşıklığına ve mevcut kapasiteye göre değişir. Güncel doluluk oranlarımızı Makine Doluluk sayfasından takip edebilirsiniz.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container">
@@ -137,9 +185,9 @@
     </div>
   </footer>
 
-  <script src="js/data.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/occupancy.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/seo.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -24,6 +24,12 @@ window.MayamakOccupancy = (function () {
     return Math.abs(h);
   }
 
+  function getCncMachines() {
+    return window.MAYAMAK_DATA.machines.filter(function (m) {
+      return m.category === "cnc";
+    });
+  }
+
   function generateRates(machines, dateKey) {
     var rates = {};
     machines.forEach(function (m) {
@@ -34,7 +40,7 @@ window.MayamakOccupancy = (function () {
   }
 
   function getRates() {
-    var machines = window.MAYAMAK_DATA.machines;
+    var machines = getCncMachines();
     var dateKey = getEffectiveDateKey();
     var storageKey = STORAGE_PREFIX + dateKey;
     var stored = localStorage.getItem(storageKey);
@@ -90,7 +96,9 @@ window.MayamakOccupancy = (function () {
     if (!container) return;
     var lang = MayamakI18n.getLang();
     var data = getRates();
-    var machines = window.MAYAMAK_DATA.machines;
+    var machines = window.MAYAMAK_DATA.machines.filter(function (m) {
+      return m.category === "cnc";
+    });
 
     container.innerHTML = "";
 
@@ -101,7 +109,7 @@ window.MayamakOccupancy = (function () {
     }
 
     machines.forEach(function (m, idx) {
-      var rate = data.rates[m.id];
+      var rate = data.rates[m.id] || 70;
       var name = lang === "en" ? m.nameEn : m.nameTr;
       var card = document.createElement("article");
       card.className = "occ-card";

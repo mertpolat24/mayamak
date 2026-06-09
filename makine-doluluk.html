@@ -3,11 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Makine Doluluk Oranları | Mayamak</title>
-  <meta name="description" content="Mayamak makine doluluk oranları – güncel kapasite kullanım durumu.">
+  <meta name="robots" content="index,follow">
+  <title>Kapasite Takip | Mayamak</title>
+  <meta name="description" content="Mayamak kapasite takip – CNC tezgahların güncel doluluk oranları.">
+  <link rel="canonical" href="https://www.mayamak.com/makine-doluluk.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mayamak">
+  <meta property="og:title" content="Kapasite Takip | Mayamak">
+  <meta property="og:description" content="Mayamak kapasite takip – CNC tezgahların güncel doluluk oranları.">
+  <meta property="og:url" content="https://www.mayamak.com/makine-doluluk.html">
+  <meta property="og:image" content="https://www.mayamak.com/images/logo/logo.png">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Kapasite Takip | Mayamak">
+  <meta name="twitter:description" content="Mayamak kapasite takip – CNC tezgahların güncel doluluk oranları.">
+  <meta name="twitter:image" content="https://www.mayamak.com/images/logo/logo.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body data-page="occupancy" data-page-title="meta.title.occupancy">
+<body data-page="occupancy" data-page-title="meta.title.occupancy" data-page-description="meta.description.occupancy">
 
   <div class="top-bar">
     <div class="container top-bar-inner">
@@ -27,31 +44,32 @@
 
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <img src="images/logo/logo.png" alt="Mayamak">
-        <span class="logo-brand">
-          <strong class="logo-name">MAYAMAK</strong>
-        </span>
+            <a href="index.html" class="logo">
+        <img src="images/logo/logo-header.png" alt="Mayamak" class="logo-img">
       </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menü"><span></span><span></span><span></span></button>
+      <nav aria-label="Ana menü">
       <ul class="main-nav" id="main-nav">
         <li><a href="index.html" data-nav="home" data-i18n="nav.home">Anasayfa</a></li>
         <li class="nav-dropdown">
           <button class="nav-dropdown-trigger" data-i18n="nav.corporate">Kurumsal ▾</button>
           <ul class="nav-dropdown-menu">
             <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
-            <li><a href="makine-parki.html" data-i18n="nav.machines">Makine Parkı</a></li>
-            <li><a href="sertifikalar.html" data-i18n="nav.certificates">Sertifikalar</a></li>
+            <li><a href="makine-parki.html" data-nav="machines" data-i18n="nav.machines">Makine Parkuru</a></li>
+            <li><a href="sertifikalar.html" data-nav="certificates" data-i18n="nav.certificates">Sertifikalar</a></li>
+            <li><a href="sirketlerimiz.html" data-nav="companies" data-i18n="nav.companies">Şirketlerimiz</a></li>
           </ul>
         </li>
         <li><a href="urunler.html" data-nav="products" data-i18n="nav.products">Ürünler</a></li>
-        <li><a href="makine-doluluk.html" data-nav="occupancy" data-i18n="nav.occupancy">Makine Doluluk Oranları</a></li>
         <li><a href="referanslar.html" data-nav="references" data-i18n="nav.references">Referanslar</a></li>
         <li><a href="iletisim.html" data-nav="contact" data-i18n="nav.contact">İletişim</a></li>
+        <li class="nav-cta-item"><a href="makine-doluluk.html" class="nav-cta" data-nav="occupancy" data-i18n="nav.occupancy">KAPASİTE TAKİP</a></li>
       </ul>
+      </nav>
     </div>
   </header>
 
+  <main>
   <section class="page-hero">
     <div class="container">
       <h1 data-i18n="occupancy.title">Makine Doluluk Oranları</h1>
@@ -69,6 +87,7 @@
       <div class="occupancy-grid" id="occupancy-grid"></div>
     </div>
   </section>
+  </main>
 
   <footer class="site-footer">
     <div class="container">
@@ -98,9 +117,10 @@
     </div>
   </footer>
 
-  <script src="js/data.js"></script>
-  <script src="js/i18n.js"></script>
-  <script src="js/occupancy.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/seo.js" defer></script>
+  <script src="js/occupancy.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

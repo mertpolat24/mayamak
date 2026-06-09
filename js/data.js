@@ -6,16 +6,15 @@ window.MAYAMAK_DATA = {
     whatsapp: "https://wa.me/905419393469",
     email: "info@mayamak.com",
     addressLines: [
-      "Organize Sanayi Bölgesi, 21. Cd.",
-      "Mermerciler Sanayi Sitesi No: 39",
-      "Dilovası/Kocaeli 41455",
+      "KOBİ OSB 21 CADDE NO46",
+      "DİLOVASI / KOCAELİ",
       "Türkiye"
     ],
-    mapQuery: "Organize Sanayi Bölgesi, 21. Cd. Mermerciler Sanayi Sitesi No: 39, 41455 Dilovası, Kocaeli, Türkiye",
+    mapQuery: "Organize Sanayi Bölgesi, 21. Cd. İstanbul Mermerciler Sanayi Sitesi, 41455 Dilovası, 41455 Dilovası/Kocaeli",
     social: {
-      facebook: "https://www.facebook.com/mayamak",
-      instagram: "https://www.instagram.com/mayamak",
-      linkedin: "https://www.linkedin.com/company/mayamak"
+      facebook: "",
+      instagram: "",
+      linkedin: "https://www.linkedin.com/in/alperen-akku%C5%9F-68318824a/"
     }
   },
 
@@ -37,20 +36,28 @@ window.MAYAMAK_DATA = {
       descEn: "Critical mechanical component manufacturing for defense industry projects."
     },
     {
+      id: "havacilik-komponent",
+      image: "images/products/havacilik-komponent.jpg",
+      nameTr: "Havacılık ve Komponent Parçalar",
+      nameEn: "Aviation & Component Parts",
+      descTr: "Havacılık ve savunma platformları için hassas komponent parça üretimi.",
+      descEn: "Precision component manufacturing for aviation and defense platforms."
+    },
+    {
       id: "ata-silahi",
       image: "images/products/5cd2a44476f64a68990dbb2f96ef4062.png",
-      nameTr: "ATA Silahı",
-      nameEn: "ATA Weapon System",
-      descTr: "Silah sistemleri için yüksek hassasiyetli mekanik parça imalatı.",
-      descEn: "High-precision mechanical parts for weapon systems."
+      nameTr: "Piyade Tüfeği",
+      nameEn: "Infantry Rifle",
+      descTr: "Piyade tüfeği platformlarına özel toleranslı parça üretimi.",
+      descEn: "Tolerance-critical parts for infantry rifle platforms."
     },
     {
       id: "amsan-tufek",
       image: "images/products/cffb63fdbbc14feba684faa2934fadfc.png",
-      nameTr: "AMSAN Tüfek",
-      nameEn: "AMSAN Rifle",
-      descTr: "Küçük silah platformlarına özel toleranslı parça üretimi.",
-      descEn: "Tolerance-critical parts for small arms platforms."
+      nameTr: "Av Tüfeği",
+      nameEn: "Hunting Rifle",
+      descTr: "Av tüfeği platformları için yüksek hassasiyetli mekanik parça imalatı.",
+      descEn: "High-precision mechanical parts for hunting rifle platforms."
     }
   ],
 
@@ -90,6 +97,24 @@ window.MAYAMAK_DATA = {
       nameEn: "Rayfeng RC-42Y 5-Axis Automatic",
       descTr: "5 eksenli otomat tezgah; seri üretimde hız ve mikron seviyesinde tolerans sunar.",
       descEn: "5-axis automatic machine offering speed and micron-level tolerance in serial production."
+    },
+    {
+      id: "topper-120al",
+      category: "cnc",
+      image: "images/machines/cnc/topper-120al-torna.jpg",
+      nameTr: "Topper 120AL 10\" CNC Torna",
+      nameEn: "Topper 120AL 10\" CNC Lathe",
+      descTr: "10 inç kapasiteli Topper 120AL CNC torna; hassas silindirik parça işlemede yüksek verim sunar.",
+      descEn: "10-inch Topper 120AL CNC lathe delivering high efficiency in precision cylindrical machining."
+    },
+    {
+      id: "hexagon-cmm",
+      category: "kalite",
+      image: "images/machines/kalite/hexagon-cmm.jpg",
+      nameTr: "Hexagon 7.10.7 CMM",
+      nameEn: "Hexagon 7.10.7 CMM",
+      descTr: "Hexagon koordinat ölçüm makinesi; mikron hassasiyetinde 3D ölçüm ve kalite kontrol.",
+      descEn: "Hexagon coordinate measuring machine for micron-precision 3D measurement and quality control."
     },
     {
       id: "kaynak-2",
@@ -265,29 +290,68 @@ window.MAYAMAK_DATA = {
   ],
 
   references: [
-    { image: "images/references/aygaz.png", name: "Aygaz" },
-    { image: "images/references/goodyear.png", name: "Goodyear" },
-    { image: "images/references/hidromek.png", name: "Hidromek" },
-    { image: "images/references/pg.png", name: "P&G" },
-    { image: "images/references/tai.png", name: "TAI" },
-    { image: "images/references/tcdd.png", name: "TCDD" },
-    { image: "images/references/vitra.png", name: "VitrA" },
-    { image: "images/references/sisecam.png", name: "Şişecam" },
-    { image: "images/references/turk-telekom.jpg", name: "Türk Telekom" },
-    { image: "images/references/stm.jpg", name: "STM" },
-    { image: "images/references/aselsan.jpg", name: "Aselsan" },
-    { image: "images/references/roketsan.webp", name: "Roketsan" }
+    { image: "images/references/STM.png", name: "STM" },
+    { image: "images/references/31.tcdd-buyuk-1024x937-1.png", name: "TCDD" },
+    { image: "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png.png", name: "ATA Arms" },
+    { image: "images/references/thyt.png", name: "Turkish Technic" },
+    { image: "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv.png", name: "NEU Automotive" },
+    { image: "images/references/FAG.png", name: "FAG" },
+    { image: "images/references/goodyear-7-logo-png-transparent.png", name: "Goodyear" },
+    { image: "images/references/hidromek-logo.png", name: "Hidromek" },
+    { image: "images/references/inci_endustri.png", name: "İnci Endüstri" },
+    { image: "images/references/mutlu-aku-1.png", name: "Mutlu Akü" },
+    { image: "images/references/P&G_logo.png", name: "P&G" },
+    { image: "images/references/soyvalve-logo.png", name: "Soyvalve" },
+    { image: "images/references/vitra-logo-png_seeklogo-273245.png", name: "VitrA" },
+    { image: "images/references/Şişecam.png", name: "Şişecam" }
   ],
 
   programs: [
-    { image: "images/programs/SolidWorks-Logo.jpg", name: "SolidWorks" },
-    { image: "images/programs/siemens-nx-cam-mini-1200x900.png", name: "Siemens NX CAM" },
-    { image: "images/programs/logo-solidcam.webp", name: "SolidCAM" },
-    { image: "images/programs/nx-cad-cam.svg", name: "NX CAD/CAM" }
+    { image: "images/programs/solidworks.png", name: "SolidWorks" },
+    { image: "images/programs/autocad.png", name: "AutoCAD" },
+    { image: "images/programs/catia.png", name: "CATIA" },
+    { image: "images/programs/nx.png", name: "NX" }
+  ],
+
+  certificates: [
+    { image: "images/certificates/9001.png", nameTr: "ISO 9001 Kalite Yönetim Sistemi", nameEn: "ISO 9001 Quality Management System" },
+    { image: "images/certificates/14001.png", nameTr: "ISO 14001 Çevre Yönetim Sistemi", nameEn: "ISO 14001 Environmental Management System" },
+    { image: "images/certificates/45001.png", nameTr: "ISO 45001 İş Sağlığı ve Güvenliği", nameEn: "ISO 45001 Occupational Health & Safety" }
+  ],
+
+  companies: [
+    {
+      id: "as-is-guvenligi",
+      nameTr: "AS İş Güvenliği",
+      nameEn: "AS Occupational Safety",
+      logo: "images/companies/as-is-guvenligi.png",
+      url: "https://assafety.com.tr/tr",
+      descTr: "İş güvenliği ekipmanları ve kişisel koruyucu donanım çözümleri sunan grup şirketimiz.",
+      descEn: "Our group company providing occupational safety equipment and PPE solutions."
+    },
+    {
+      id: "as-guverte",
+      nameTr: "AS Güverte",
+      nameEn: "AS Güverte",
+      logo: "images/companies/as-guverte.png",
+      url: "https://ascelikhalat.com/index.php?lang=tr",
+      descTr: "Çelik halat, zincir ve güverte ekipmanları alanında uzmanlaşmış grup şirketimiz.",
+      descEn: "Our group company specialized in steel wire rope, chain and deck equipment."
+    },
+    {
+      id: "mayamak",
+      nameTr: "Mayamak Mühendislik",
+      nameEn: "Mayamak Engineering",
+      logo: "images/companies/mayamak.png",
+      url: "index.html",
+      descTr: "Talaşlı ve talaşsız imalat, CNC işleme ve hassas parça üretimi.",
+      descEn: "Machining, non-machining manufacturing, CNC processing and precision parts."
+    }
   ],
 
   categoryLabels: {
     cnc: { tr: "CNC Tezgahlar", en: "CNC Machines" },
+    kalite: { tr: "Kalite Kontrol Makineleri", en: "Quality Control Machines" },
     kaynak: { tr: "Kaynak Makineleri", en: "Welding Equipment" },
     pres: { tr: "Presler", en: "Presses" },
     surucu: { tr: "Sürücüler", en: "Bar Feeders" },
