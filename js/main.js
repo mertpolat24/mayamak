@@ -171,9 +171,9 @@ window.MayamakApp = (function () {
           );
         }
         return (
-          '<span class="social-link social-link-inactive" aria-label="' + label + ' (yakında)" aria-disabled="true">' +
+          '<button type="button" class="social-link social-link-inactive" disabled aria-label="' + label + ' (yakında)">' +
             svg +
-          '</span>'
+          '</button>'
         );
       }
 
@@ -412,14 +412,10 @@ window.MayamakApp = (function () {
     });
   }
 
-  function init() {
+  function initCritical() {
     MayamakI18n.init();
-    if (window.MayamakSEO) MayamakSEO.init();
     initContactLinks();
     initHeader();
-    initScrollReveal();
-    initCounters();
-    initMachineFilters();
     setActiveNav();
 
     if (document.getElementById("product-hero-single") && window.MayamakHero) {
@@ -429,26 +425,53 @@ window.MayamakApp = (function () {
     if (document.getElementById("product-showcase") && window.MayamakProductShowcase) {
       MayamakProductShowcase.init();
     }
+  }
 
-    renderHomeReferences();
+  function scheduleChunk(fn) {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(fn, { timeout: 2000 });
+    } else {
+      setTimeout(fn, 0);
+    }
+  }
 
-    var allRefs = document.getElementById("references-grid");
-    if (allRefs) renderReferences(allRefs);
+  function initDeferred() {
+    if (window.MayamakSEO) MayamakSEO.init();
+    initScrollReveal();
+    initCounters();
+    initMachineFilters();
 
-    var machinesGrid = document.getElementById("machines-grid");
-    if (machinesGrid) renderMachines(machinesGrid, "all");
+    scheduleChunk(function () {
+      renderHomeReferences();
+      var allRefs = document.getElementById("references-grid");
+      if (allRefs) renderReferences(allRefs);
+    });
 
-    var occGrid = document.getElementById("occupancy-grid");
-    if (occGrid) MayamakOccupancy.renderOccupancyGrid(occGrid);
+    scheduleChunk(function () {
+      var machinesGrid = document.getElementById("machines-grid");
+      if (machinesGrid) renderMachines(machinesGrid, "all");
 
-    var programsRow = document.getElementById("programs-row");
-    if (programsRow) renderPrograms(programsRow);
+      var occGrid = document.getElementById("occupancy-grid");
+      if (occGrid) MayamakOccupancy.renderOccupancyGrid(occGrid);
+    });
 
-    var certGrid = document.getElementById("certificates-grid");
-    if (certGrid) renderCertificates(certGrid);
+    scheduleChunk(function () {
+      var programsRow = document.getElementById("programs-row");
+      if (programsRow) renderPrograms(programsRow);
 
-    var companiesGrid = document.getElementById("companies-grid");
-    if (companiesGrid) renderCompanies(companiesGrid);
+      var certGrid = document.getElementById("certificates-grid");
+      if (certGrid) renderCertificates(certGrid);
+
+      var companiesGrid = document.getElementById("companies-grid");
+      if (companiesGrid) renderCompanies(companiesGrid);
+    });
+  }
+
+  function init() {
+    initCritical();
+    requestAnimationFrame(function () {
+      initDeferred();
+    });
   }
 
   document.addEventListener("mayamak:langchange", function () {

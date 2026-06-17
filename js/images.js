@@ -17,7 +17,7 @@ window.MayamakImages = (function () {
   }
 
   function dims(src) {
-    var entry = manifest[src];
+    var entry = manifest[src] || manifest[toWebp(src)];
     if (!entry) return { width: "", height: "" };
     return { width: entry.width, height: entry.height };
   }

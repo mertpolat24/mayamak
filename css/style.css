@@ -1,5 +1,4 @@
 /* Mayamak – Modern Industrial Theme */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -81,8 +80,28 @@ main {
   overflow-x: hidden;
   max-width: 100%;
 }
-a { color: var(--blue); text-decoration: none; transition: color var(--transition); }
-a:hover { color: var(--blue-light); }
+a {
+  color: var(--blue-light);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  font-weight: 500;
+  transition: opacity var(--transition);
+}
+
+a:hover {
+  opacity: 0.88;
+  text-decoration-thickness: 2px;
+}
+
+.logo,
+.btn,
+.nav-cta,
+.nav-cta:hover,
+.product-name-btn,
+.lang-btn {
+  text-decoration: none;
+}
 
 h1, h2, h3, h4 {
   font-family: var(--font);
@@ -154,26 +173,29 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   width: 32px;
   height: 32px;
   border: none;
+  padding: 0;
   border-radius: 50%;
   background: rgba(255,255,255,0.06);
   color: var(--text-muted);
-  transition: all var(--transition);
+  font: inherit;
+  cursor: pointer;
+  transition: opacity var(--transition), transform var(--transition);
 }
 
 .social-link:hover {
-  background: var(--blue);
-  color: var(--white);
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .social-link-inactive {
   opacity: 0.45;
-  cursor: default;
+  cursor: not-allowed;
   pointer-events: none;
 }
 
 .social-link-inactive:hover {
-  background: rgba(255,255,255,0.06);
-  color: var(--text-muted);
+  opacity: 0.45;
+  transform: none;
 }
 
 .social-link svg {
@@ -247,6 +269,8 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 .logo-img {
   height: 44px;
   width: auto;
+  max-width: 145px;
+  aspect-ratio: 1040 / 316;
   object-fit: contain;
   display: block;
 }
@@ -262,12 +286,13 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 .nav-dropdown-trigger {
   display: block;
   padding: 8px 14px;
-  color: rgba(255,255,255,0.82);
+  color: rgba(255,255,255,0.9);
   font-size: var(--fs-sm);
   font-family: var(--font);
   font-weight: 400;
+  text-decoration: none;
   border-radius: var(--radius-pill);
-  transition: all var(--transition);
+  transition: opacity var(--transition), transform var(--transition);
   cursor: pointer;
   background: none;
   border: none;
@@ -277,7 +302,9 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 .main-nav > li > a.active,
 .nav-dropdown-trigger:hover {
   color: var(--white);
-  background: rgba(255,255,255,0.08);
+  opacity: 0.92;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .nav-dropdown-menu {
@@ -389,7 +416,7 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   cursor: pointer;
   font-family: var(--font);
   -webkit-tap-highlight-color: transparent;
-  transition: background var(--transition);
+  transition: opacity var(--transition);
 }
 
 .nav-close:hover {
@@ -528,21 +555,21 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   font-weight: 500;
   letter-spacing: 0.02em;
   cursor: pointer;
-  transition: color var(--transition), border-color var(--transition);
+  transition: opacity var(--transition);
   white-space: nowrap;
   border-bottom: 1.5px solid transparent;
 }
 
 .product-name-btn:hover {
-  color: rgba(255,255,255,0.88);
-  background: transparent;
+  opacity: 0.85;
 }
 
 .product-name-btn.active {
   color: var(--white);
+  opacity: 1;
   background: transparent;
   box-shadow: none;
-  border-bottom-color: var(--white);
+  border-bottom-color: var(--blue);
 }
 
 /* ─── PRODUCTS PAGE – 4 expanding full-photo cards ─── */
@@ -787,7 +814,7 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   border-radius: var(--radius-pill);
   border: none;
   cursor: pointer;
-  transition: opacity var(--transition), background var(--transition);
+  transition: opacity var(--transition), transform var(--transition);
   text-align: center;
   letter-spacing: 0.02em;
 }
@@ -798,9 +825,8 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 }
 
 .btn-primary:hover {
-  opacity: 1;
-  background: var(--blue);
-  color: var(--white);
+  opacity: 0.92;
+  transform: translateY(-1px);
 }
 
 .btn-outline {
@@ -810,8 +836,8 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 }
 
 .btn-outline:hover {
-  background: rgba(255,255,255,0.06);
-  color: var(--white);
+  opacity: 0.9;
+  transform: translateY(-1px);
 }
 
 .hero-scroll {
@@ -1746,13 +1772,13 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   background: var(--navy-card);
   font-size: var(--fs-sm);
   color: var(--text-muted);
-  text-decoration: none;
-  transition: color var(--transition), background var(--transition);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity var(--transition);
 }
 
 .map-open-hint:hover {
-  color: var(--white);
-  background: var(--navy-light);
+  opacity: 0.85;
 }
 
 .contact-map {
@@ -1833,15 +1859,17 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 .footer-brand img,
 .footer-logo {
   display: block;
-  height: clamp(36px, 6vw, 54px);
-  width: auto;
-  max-width: 100%;
+  width: 156px;
+  height: 54px;
+  object-fit: contain;
+  object-position: left center;
   margin-bottom: 16px;
 }
 
 .footer-brand p {
   font-size: var(--fs-sm);
   margin-bottom: 16px;
+  color: #c8d4e6;
 }
 
 .footer-col h4 {
@@ -1855,17 +1883,29 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 .footer-col ul li { margin-bottom: 8px; }
 
 .footer-col ul a {
-  color: rgba(255,255,255,0.6);
+  color: #c8d4e6;
   font-size: var(--fs-sm);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: opacity var(--transition);
 }
 
-.footer-col ul a:hover { color: var(--white); }
+.footer-col ul a:hover {
+  opacity: 0.85;
+  text-decoration-thickness: 2px;
+}
 
 .footer-bottom {
   padding: 20px 0;
   text-align: center;
   font-size: var(--fs-sm);
-  color: rgba(255,255,255,0.4);
+  color: #a8b8cc;
+}
+
+.footer-bottom a {
+  color: #c8d4e6;
+  font-weight: 600;
 }
 
 /* ─── COMPANIES ─── */
