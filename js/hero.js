@@ -21,7 +21,7 @@ window.MayamakHero = (function () {
     container.innerHTML = products.map(function (p, i) {
       return (
         '<article class="product-hero-item' + (i === current ? " active" : "") + '" data-index="' + i + '">' +
-          '<img src="' + p.image + '" alt="' + productName(p) + '" loading="' + (i === 0 ? "eager" : "lazy") + '">' +
+          MayamakImages.buildImg(p.image, productName(p), { priority: i === 0 }) +
           '<div class="product-hero-shade"></div>' +
           '<div class="product-hero-caption">' +
             '<h2>' + productName(p) + '</h2>' +

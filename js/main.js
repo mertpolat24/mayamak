@@ -235,7 +235,7 @@ window.MayamakApp = (function () {
       var desc = lang === "en" ? p.descEn : p.descTr;
       return (
         '<article class="product-page-card reveal">' +
-          '<img src="' + p.image + '" alt="' + name + '" loading="lazy">' +
+          MayamakImages.buildImg(p.image, name) +
           '<div class="product-page-shade"></div>' +
           '<div class="product-page-caption">' +
             '<h3>' + name + '</h3>' +
@@ -248,11 +248,11 @@ window.MayamakApp = (function () {
     initScrollReveal();
   }
 
-  function refItemHtml(r, eagerLoad) {
+  function refItemHtml(r) {
     return (
       '<div class="ref-item">' +
         '<div class="ref-item-img">' +
-          '<img src="' + encodeURI(r.image) + '" alt="' + r.name + '" loading="' + (eagerLoad ? 'eager' : 'lazy') + '" decoding="async" title="' + r.name + '">' +
+          MayamakImages.buildImg(r.image, r.name, { className: "ref-logo" }) +
         '</div>' +
       '</div>'
     );
@@ -266,7 +266,7 @@ window.MayamakApp = (function () {
       return (
         '<div class="ref-item reveal" style="animation-delay:' + (i * 0.05) + 's">' +
           '<div class="ref-item-img">' +
-            '<img src="' + encodeURI(r.image) + '" alt="' + r.name + '" loading="lazy" title="' + r.name + '">' +
+            MayamakImages.buildImg(r.image, r.name) +
           '</div>' +
         '</div>'
       );
@@ -280,7 +280,7 @@ window.MayamakApp = (function () {
     var setB = document.getElementById("home-references-set-b");
     if (!setA || !setB) return;
     var refs = window.MAYAMAK_DATA.references;
-    var items = refs.map(function (r) { return refItemHtml(r, true); }).join("");
+    var items = refs.map(function (r) { return refItemHtml(r); }).join("");
     setA.innerHTML = items;
     setB.innerHTML = items;
     initHomeReferencesMarquee();
@@ -289,11 +289,6 @@ window.MayamakApp = (function () {
   function initHomeReferencesMarquee() {
     var track = document.querySelector(".references-marquee-track");
     if (!track) return;
-
-    track.querySelectorAll("img").forEach(function (img) {
-      img.loading = "eager";
-      img.decoding = "async";
-    });
 
     requestAnimationFrame(function () {
       track.style.animation = "none";
@@ -310,7 +305,7 @@ window.MayamakApp = (function () {
     container.innerHTML = programs.map(function (p) {
       return (
         '<div class="program-item">' +
-          '<img src="' + encodeURI(p.image) + '" alt="' + p.name + '" loading="lazy">' +
+          MayamakImages.buildImg(p.image, p.name) +
         '</div>'
       );
     }).join("");
@@ -324,7 +319,7 @@ window.MayamakApp = (function () {
       var name = lang === "en" ? c.nameEn : c.nameTr;
       return (
         '<div class="cert-item reveal">' +
-          '<img src="' + encodeURI(c.image) + '" alt="' + name + '" loading="lazy">' +
+          MayamakImages.buildImg(c.image, name) +
           '<p class="cert-caption">' + name + '</p>' +
         '</div>'
       );
@@ -344,7 +339,7 @@ window.MayamakApp = (function () {
       var target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : "";
       var inner =
         '<div class="company-card-logo">' +
-          '<img src="' + encodeURI(c.logo) + '" alt="' + name + '" loading="lazy">' +
+          MayamakImages.buildImg(c.logo, name) +
         '</div>' +
         '<h3>' + name + '</h3>' +
         '<p>' + desc + '</p>' +
@@ -378,7 +373,7 @@ window.MayamakApp = (function () {
       return (
         '<article class="machine-card reveal" data-category="' + m.category + '" style="animation-delay:' + (i * 0.05) + 's">' +
           '<div class="machine-card-img">' +
-            '<img src="' + encodeURI(m.image) + '" alt="' + name + '" loading="lazy">' +
+            MayamakImages.buildImg(m.image, name) +
             '<span class="machine-cat-badge">' + cat + '</span>' +
           '</div>' +
           '<div class="machine-card-body">' +

@@ -22,7 +22,7 @@ window.MAYAMAK_DATA = {
   products: [
     {
       id: "stm-denizalti",
-      image: "images/products/denizalti.png",
+      image: "images/products/denizalti.webp",
       nameTr: "STM Denizaltı",
       nameEn: "STM Submarine",
       descTr: "STM 500 mini denizaltı platformu için hassas talaşlı imalat parçaları.",
@@ -30,7 +30,7 @@ window.MAYAMAK_DATA = {
     },
     {
       id: "stm-corvette",
-      image: "images/products/0796a901da53452ab255f69e262ac609.png",
+      image: "images/products/0796a901da53452ab255f69e262ac609.webp",
       nameTr: "STM Malezya Korvet Savaş Gemisi",
       nameEn: "STM Malaysia Korvet Warship",
       descTr: "Savunma sanayi projelerine yönelik kritik mekanik bileşen üretimi.",
@@ -38,7 +38,7 @@ window.MAYAMAK_DATA = {
     },
     {
       id: "havacilik-komponent",
-      image: "images/products/havacilik-komponent.jpg",
+      image: "images/products/havacilik-komponent.webp",
       nameTr: "Havacılık ve Komponent Parçalar",
       nameEn: "Aviation & Component Parts",
       descTr: "Havacılık ve savunma platformları için hassas komponent parça üretimi.",
@@ -46,7 +46,7 @@ window.MAYAMAK_DATA = {
     },
     {
       id: "ata-silahi",
-      image: "images/products/5cd2a44476f64a68990dbb2f96ef4062.png",
+      image: "images/products/5cd2a44476f64a68990dbb2f96ef4062.webp",
       nameTr: "Piyade Tüfeği",
       nameEn: "Infantry Rifle",
       descTr: "Piyade tüfeği platformlarına özel toleranslı parça üretimi.",
@@ -54,7 +54,7 @@ window.MAYAMAK_DATA = {
     },
     {
       id: "amsan-tufek",
-      image: "images/products/cffb63fdbbc14feba684faa2934fadfc.png",
+      image: "images/products/cffb63fdbbc14feba684faa2934fadfc.webp",
       nameTr: "Av Tüfeği",
       nameEn: "Hunting Rifle",
       descTr: "Av tüfeği platformları için yüksek hassasiyetli mekanik parça imalatı.",
@@ -62,7 +62,7 @@ window.MAYAMAK_DATA = {
     },
     {
       id: "tabanca-aksesuar",
-      image: "images/products/tabanca-aksesuar.png",
+      image: "images/products/tabanca-aksesuar.webp",
       nameTr: "Tabanca ve Aksesuar",
       nameEn: "Pistol and Accessories",
       descTr: "Tabanca ve aksesuar platformları için toleranslı mekanik parça ve komponent üretimi.",
@@ -74,7 +74,7 @@ window.MAYAMAK_DATA = {
     {
       id: "bf46dw-torna",
       category: "cnc",
-      image: "images/machines/cnc/boafeng-bf46dw-torna.jpg",
+      image: "images/machines/cnc/boafeng-bf46dw-torna.webp",
       nameTr: "Boafeng BF-46DW 8\" CNC Torna",
       nameEn: "Boafeng BF-46DW 8\" CNC Lathe",
       descTr: "8 inç çap kapasiteli CNC torna tezgahı; silindirik parça işlemede yüksek hassasiyet ve tekrarlanabilirlik sağlar.",
@@ -83,7 +83,7 @@ window.MAYAMAK_DATA = {
     {
       id: "v13-isleme",
       category: "cnc",
-      image: "images/machines/cnc/boafeng-v13-isleme.jpg",
+      image: "images/machines/cnc/boafeng-v13-isleme.webp",
       nameTr: "Boafeng V13 4 Eksen İşleme Merkezi",
       nameEn: "Boafeng V13 4-Axis Machining Center",
       descTr: "4 eksenli işleme merkezi; karmaşık geometrili parçaların tek seferde işlenmesine olanak tanır.",
@@ -92,7 +92,7 @@ window.MAYAMAK_DATA = {
     {
       id: "mazak-torna",
       category: "cnc",
-      image: "images/machines/cnc/mazak-c-eksen-torna.jpg",
+      image: "images/machines/cnc/mazak-c-eksen-torna.webp",
       nameTr: "Mazak C Eksen CNC Torna (6\")",
       nameEn: "Mazak C-Axis CNC Lathe (6\")",
       descTr: "C eksenli Mazak torna; canlı takım desteği ile milling ve turning operasyonlarını birleştirir.",
@@ -101,7 +101,7 @@ window.MAYAMAK_DATA = {
     {
       id: "rayfeng-5eksen",
       category: "cnc",
-      image: "images/machines/cnc/rayfeng-rc42y-5eksen.png",
+      image: "images/machines/cnc/rayfeng-rc42y-5eksen.webp",
       nameTr: "Rayfeng RC-42Y 5 Eksen Otomat",
       nameEn: "Rayfeng RC-42Y 5-Axis Automatic",
       descTr: "5 eksenli otomat tezgah; seri üretimde hız ve mikron seviyesinde tolerans sunar.",
@@ -110,7 +110,7 @@ window.MAYAMAK_DATA = {
     {
       id: "topper-120al",
       category: "cnc",
-      image: "images/machines/cnc/topper-120al-torna.jpg",
+      image: "images/machines/cnc/topper-120al-torna.webp",
       nameTr: "Topper 120AL 10\" CNC Torna",
       nameEn: "Topper 120AL 10\" CNC Lathe",
       descTr: "10 inç kapasiteli Topper 120AL CNC torna; hassas silindirik parça işlemede yüksek verim sunar.",
@@ -119,7 +119,7 @@ window.MAYAMAK_DATA = {
     {
       id: "hexagon-cmm",
       category: "kalite",
-      image: "images/machines/kalite/hexagon-cmm.jpg",
+      image: "images/machines/kalite/hexagon-cmm.webp",
       nameTr: "Hexagon 7.10.7 CMM",
       nameEn: "Hexagon 7.10.7 CMM",
       descTr: "Hexagon koordinat ölçüm makinesi; mikron hassasiyetinde 3D ölçüm ve kalite kontrol.",
@@ -128,7 +128,7 @@ window.MAYAMAK_DATA = {
     {
       id: "kaynak-2",
       category: "kaynak",
-      image: "images/machines/kaynak/kaynak-makinesi-2.jpg",
+      image: "images/machines/kaynak/kaynak-makinesi-2.webp",
       nameTr: "Kaynak Makinesi (2 Adet)",
       nameEn: "Welding Machine (2 Units)",
       descTr: "MIG/MAG kaynak üniteleri; çelik ve alüminyum yapı birleştirmelerinde kullanılır.",
@@ -146,7 +146,7 @@ window.MAYAMAK_DATA = {
     {
       id: "plazma-kesim",
       category: "kaynak",
-      image: "images/machines/kaynak/plazma-kesim.jpg",
+      image: "images/machines/kaynak/plazma-kesim.webp",
       nameTr: "Plazma Kesim Makinesi",
       nameEn: "Plasma Cutting Machine",
       descTr: "CNC plazma kesim; kalın sac malzemelerde hızlı ve temiz kesim profili.",
@@ -164,7 +164,7 @@ window.MAYAMAK_DATA = {
     {
       id: "tig-kaynak-2",
       category: "kaynak",
-      image: "images/machines/kaynak/tig-kaynak-2.jpg",
+      image: "images/machines/kaynak/tig-kaynak-2.webp",
       nameTr: "TIG Kaynak İstasyonu (2 Adet)",
       nameEn: "TIG Welding Station (2 Units)",
       descTr: "Çift istasyonlu TIG kaynak hattı; hassas savunma parçaları için ideal.",
@@ -173,7 +173,7 @@ window.MAYAMAK_DATA = {
     {
       id: "pres-100",
       category: "pres",
-      image: "images/machines/pres/pres-100-ton.jpg",
+      image: "images/machines/pres/pres-100-ton.webp",
       nameTr: "100 Ton Hidrolik Pres",
       nameEn: "100 Ton Hydraulic Press",
       descTr: "100 ton kapasiteli hidrolik pres; sac şekillendirme ve kalıp operasyonları.",
@@ -182,7 +182,7 @@ window.MAYAMAK_DATA = {
     {
       id: "pres-120",
       category: "pres",
-      image: "images/machines/pres/pres-120-ton-4.jpg",
+      image: "images/machines/pres/pres-120-ton-4.webp",
       nameTr: "120 Ton Pres (4 Adet)",
       nameEn: "120 Ton Press (4 Units)",
       descTr: "120 ton pres parkı; seri baskı ve derin çekme operasyonlarında yüksek verim.",
@@ -191,7 +191,7 @@ window.MAYAMAK_DATA = {
     {
       id: "pres-150",
       category: "pres",
-      image: "images/machines/pres/pres-150-ton-hizli.jpg",
+      image: "images/machines/pres/pres-150-ton-hizli.webp",
       nameTr: "150 Ton Hızlı Pres",
       nameEn: "150 Ton High-Speed Press",
       descTr: "Yüksek strok hızına sahip 150 ton pres; seri üretim hatları için optimize.",
@@ -209,7 +209,7 @@ window.MAYAMAK_DATA = {
     {
       id: "pres-egzantrik",
       category: "pres",
-      image: "images/machines/pres/egzantrik-pres-3.jpg",
+      image: "images/machines/pres/egzantrik-pres-3.webp",
       nameTr: "Eksantrik Pres (3 Adet)",
       nameEn: "Eccentric Press (3 Units)",
       descTr: "Mekanik eksantrik presler; yüksek frekanslı sac kesme ve delme işlemleri.",
@@ -218,7 +218,7 @@ window.MAYAMAK_DATA = {
     {
       id: "surucu-42",
       category: "surucu",
-      image: "images/machines/surucu/surucu-42.jpg",
+      image: "images/machines/surucu/surucu-42.webp",
       nameTr: "42 mm Çubuk Sürücü",
       nameEn: "42 mm Bar Feeder",
       descTr: "42 mm çap otomatik çubuk sürücü; torna tezgahlarında kesintisiz üretim.",
@@ -227,7 +227,7 @@ window.MAYAMAK_DATA = {
     {
       id: "surucu-65",
       category: "surucu",
-      image: "images/machines/surucu/surucu-65.png",
+      image: "images/machines/surucu/surucu-65.webp",
       nameTr: "65 mm Çubuk Sürücü",
       nameEn: "65 mm Bar Feeder",
       descTr: "65 mm kapasiteli çubuk sürücü; orta çap parçalarda otomasyon desteği.",
@@ -236,7 +236,7 @@ window.MAYAMAK_DATA = {
     {
       id: "halat-sarma",
       category: "universal",
-      image: "images/machines/universal/halat-sarma.avif",
+      image: "images/machines/universal/halat-sarma.webp",
       nameTr: "Halat Sarma Makinesi",
       nameEn: "Wire Rope Winding Machine",
       descTr: "Halat ve tel sarma makinesi; kablo ve halat montaj operasyonları.",
@@ -245,7 +245,7 @@ window.MAYAMAK_DATA = {
     {
       id: "lazer-markalama",
       category: "universal",
-      image: "images/machines/universal/lazer-markalama.avif",
+      image: "images/machines/universal/lazer-markalama.webp",
       nameTr: "Lazer Markalama",
       nameEn: "Laser Marking",
       descTr: "Fiber lazer markalama sistemi; kalıcı parça numaralandırma ve izlenebilirlik.",
@@ -254,7 +254,7 @@ window.MAYAMAK_DATA = {
     {
       id: "otomatik-testere",
       category: "universal",
-      image: "images/machines/universal/otomatik-testere.jpg",
+      image: "images/machines/universal/otomatik-testere.webp",
       nameTr: "Otomatik Testere",
       nameEn: "Automatic Saw",
       descTr: "Otomatik bant testere; profil ve çubuk kesiminde hızlı ve düzgün yüzey.",
@@ -263,7 +263,7 @@ window.MAYAMAK_DATA = {
     {
       id: "ovalama",
       category: "universal",
-      image: "images/machines/universal/ovalama-2.jpg",
+      image: "images/machines/universal/ovalama-2.webp",
       nameTr: "Ovalama Makinesi (2 Adet)",
       nameEn: "Thread Rolling Machine (2 Units)",
       descTr: "Ovalama makineleri; vida dişi ve profil oluşturmada soğuk şekillendirme.",
@@ -272,7 +272,7 @@ window.MAYAMAK_DATA = {
     {
       id: "percın-pres",
       category: "universal",
-      image: "images/machines/universal/percin-sivama.png",
+      image: "images/machines/universal/percin-sivama.webp",
       nameTr: "Perçin Sıvama Presi",
       nameEn: "Rivet Staking Press",
       descTr: "Perçin sıvama presi; sac birleştirmelerinde güvenilir bağlantı.",
@@ -281,7 +281,7 @@ window.MAYAMAK_DATA = {
     {
       id: "radyal-matkap",
       category: "universal",
-      image: "images/machines/universal/radyal-matkap-2.jpg",
+      image: "images/machines/universal/radyal-matkap-2.webp",
       nameTr: "Radyal Matkap (2 Adet)",
       nameEn: "Radial Drill (2 Units)",
       descTr: "Radyal matkap tezgahları; büyük parçalarda hassas delme operasyonları.",
@@ -290,7 +290,7 @@ window.MAYAMAK_DATA = {
     {
       id: "vibrasyon",
       category: "universal",
-      image: "images/machines/universal/vibrasyon-2.jpg",
+      image: "images/machines/universal/vibrasyon-2.webp",
       nameTr: "Vibrasyon Makinesi (2 Adet)",
       nameEn: "Vibration Machine (2 Units)",
       descTr: "Vibrasyon finiş makineleri; parça yüzey temizliği ve köşe yuvarlama.",
@@ -299,34 +299,34 @@ window.MAYAMAK_DATA = {
   ],
 
   references: [
-    { image: "images/references/STM.png", name: "STM" },
-    { image: "images/references/31.tcdd-buyuk-1024x937-1.png", name: "TCDD" },
-    { image: "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png.png", name: "ATA Arms" },
-    { image: "images/references/armsan.png", name: "Armsan" },
-    { image: "images/references/thyt.png", name: "Turkish Technic" },
-    { image: "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv.png", name: "NEU Automotive" },
-    { image: "images/references/FAG.png", name: "FAG" },
-    { image: "images/references/goodyear-7-logo-png-transparent.png", name: "Goodyear" },
-    { image: "images/references/hidromek-logo.png", name: "Hidromek" },
-    { image: "images/references/inci_endustri.png", name: "İnci Endüstri" },
-    { image: "images/references/mutlu-aku-1.png", name: "Mutlu Akü" },
-    { image: "images/references/P&G_logo.png", name: "P&G" },
-    { image: "images/references/soyvalve-logo.png", name: "Soyvalve" },
-    { image: "images/references/vitra-logo-png_seeklogo-273245.png", name: "VitrA" },
-    { image: "images/references/Şişecam.png", name: "Şişecam" }
+    { image: "images/references/STM.webp", name: "STM" },
+    { image: "images/references/31.tcdd-buyuk-1024x937-1.webp", name: "TCDD" },
+    { image: "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png.webp", name: "ATA Arms" },
+    { image: "images/references/armsan.webp", name: "Armsan" },
+    { image: "images/references/thyt.webp", name: "Turkish Technic" },
+    { image: "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv.webp", name: "NEU Automotive" },
+    { image: "images/references/FAG.webp", name: "FAG" },
+    { image: "images/references/goodyear-7-logo-png-transparent.webp", name: "Goodyear" },
+    { image: "images/references/hidromek-logo.webp", name: "Hidromek" },
+    { image: "images/references/inci_endustri.webp", name: "İnci Endüstri" },
+    { image: "images/references/mutlu-aku-1.webp", name: "Mutlu Akü" },
+    { image: "images/references/P&G_logo.webp", name: "P&G" },
+    { image: "images/references/soyvalve-logo.webp", name: "Soyvalve" },
+    { image: "images/references/vitra-logo-png_seeklogo-273245.webp", name: "VitrA" },
+    { image: "images/references/Şişecam.webp", name: "Şişecam" }
   ],
 
   programs: [
-    { image: "images/programs/solidworks.png", name: "SolidWorks" },
-    { image: "images/programs/autocad.png", name: "AutoCAD" },
-    { image: "images/programs/catia.png", name: "CATIA" },
-    { image: "images/programs/nx.png", name: "NX" }
+    { image: "images/programs/solidworks.webp", name: "SolidWorks" },
+    { image: "images/programs/autocad.webp", name: "AutoCAD" },
+    { image: "images/programs/catia.webp", name: "CATIA" },
+    { image: "images/programs/nx.webp", name: "NX" }
   ],
 
   certificates: [
-    { image: "images/certificates/9001.png", nameTr: "ISO 9001 Kalite Yönetim Sistemi", nameEn: "ISO 9001 Quality Management System" },
-    { image: "images/certificates/14001.png", nameTr: "ISO 14001 Çevre Yönetim Sistemi", nameEn: "ISO 14001 Environmental Management System" },
-    { image: "images/certificates/45001.png", nameTr: "ISO 45001 İş Sağlığı ve Güvenliği", nameEn: "ISO 45001 Occupational Health & Safety" }
+    { image: "images/certificates/9001.webp", nameTr: "ISO 9001 Kalite Yönetim Sistemi", nameEn: "ISO 9001 Quality Management System" },
+    { image: "images/certificates/14001.webp", nameTr: "ISO 14001 Çevre Yönetim Sistemi", nameEn: "ISO 14001 Environmental Management System" },
+    { image: "images/certificates/45001.webp", nameTr: "ISO 45001 İş Sağlığı ve Güvenliği", nameEn: "ISO 45001 Occupational Health & Safety" }
   ],
 
   companies: [
@@ -334,7 +334,7 @@ window.MAYAMAK_DATA = {
       id: "mayamak",
       nameTr: "Mayamak Mühendislik",
       nameEn: "Mayamak Engineering",
-      logo: "images/companies/mayamak.png",
+      logo: "images/companies/mayamak.webp",
       url: "",
       descTr: "Talaşlı ve talaşsız imalat, CNC işleme ve hassas parça üretimi.",
       descEn: "Machining, non-machining manufacturing, CNC processing and precision parts."
@@ -343,7 +343,7 @@ window.MAYAMAK_DATA = {
       id: "as-is-guvenligi",
       nameTr: "AS İş Güvenliği",
       nameEn: "AS Occupational Safety",
-      logo: "images/companies/as-is-guvenligi.png",
+      logo: "images/companies/as-is-guvenligi.webp",
       url: "https://assafety.com.tr/tr",
       descTr: "İş güvenliği ekipmanları ve kişisel koruyucu donanım çözümleri sunan grup şirketimiz.",
       descEn: "Our group company providing occupational safety equipment and PPE solutions."
@@ -352,7 +352,7 @@ window.MAYAMAK_DATA = {
       id: "as-guverte",
       nameTr: "AS Güverte",
       nameEn: "AS Güverte",
-      logo: "images/companies/as-guverte.png",
+      logo: "images/companies/as-guverte.webp",
       url: "https://ascelikhalat.com/index.php?lang=tr",
       descTr: "Çelik halat, zincir ve güverte ekipmanları alanında uzmanlaşmış grup şirketimiz.",
       descEn: "Our group company specialized in steel wire rope, chain and deck equipment."
