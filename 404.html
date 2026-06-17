@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noindex,follow">
+  <meta name="robots" content="noindex, follow">
   <title>Sayfa Bulunamadı | Mayamak</title>
-  <meta name="description" content="Aradığınız sayfa bulunamadı. Mayamak ana sayfasına dönebilirsiniz.">
+  <meta name="description" content="Aradığınız sayfa bulunamadı. Mayamak ana sayfasına dönebilir veya iletişime geçebilirsiniz.">
   <link rel="canonical" href="https://www.mayamak.com/404.html">
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.png" type="image/png">
@@ -31,21 +31,28 @@
 
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-            <a href="index.html" class="logo">
+      <a href="/" class="logo">
         <img src="images/logo/logo-header.png" alt="Mayamak" class="logo-img" width="1040" height="316" decoding="async">
       </a>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
-      <div class="container" style="text-align:center">
-        <h1>404 – Sayfa Bulunamadı</h1>
-        <p>Aradığınız sayfa taşınmış, silinmiş veya hiç var olmamış olabilir.</p>
-        <p style="margin-top:24px">
-          <a href="index.html" class="btn btn-primary">Ana Sayfaya Dön</a>
-          <a href="iletisim.html" class="btn btn-outline" style="margin-left:12px">İletişim</a>
-        </p>
+    <section class="error-page">
+      <div class="container error-page-inner">
+        <p class="error-page-code" aria-hidden="true">404</p>
+        <h1>Sayfa Bulunamadı</h1>
+        <p class="error-page-desc">Aradığınız sayfa taşınmış, silinmiş veya hiç var olmamış olabilir. Ana sayfadan devam edebilir veya aşağıdaki bağlantıları kullanabilirsiniz.</p>
+        <div class="error-page-actions">
+          <a href="/" class="btn btn-primary">Ana Sayfaya Dön</a>
+          <a href="/iletisim.html" class="btn btn-outline">İletişim</a>
+        </div>
+        <nav class="error-page-links" aria-label="Yararlı bağlantılar">
+          <a href="/urunler.html">Ürünler</a>
+          <a href="/makine-parki.html">Makine Parkı</a>
+          <a href="/hakkimizda.html">Hakkımızda</a>
+          <a href="/referanslar.html">Referanslar</a>
+        </nav>
       </div>
     </section>
   </main>
@@ -53,7 +60,7 @@
   <footer class="site-footer">
     <div class="container">
       <div class="footer-bottom">
-        <p>&copy; 2026 mayamak.com — Tüm hakları saklıdır.</p>
+        <p>&copy; 2026 <a href="https://www.mayamak.com/">mayamak.com</a> — Tüm hakları saklıdır.</p>
       </div>
     </div>
   </footer>

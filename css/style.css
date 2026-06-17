@@ -1405,6 +1405,67 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
 }
 
 /* ─── PAGE HERO ─── */
+/* ─── 404 ERROR PAGE ─── */
+.error-page {
+  min-height: calc(100svh - var(--chrome-h) - 120px);
+  display: flex;
+  align-items: center;
+  padding: 64px 0 80px;
+  background: var(--navy);
+}
+
+.error-page-inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error-page-code {
+  font-size: clamp(72px, 18vw, 120px);
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(61, 139, 253, 0.25);
+  margin-bottom: 8px;
+  letter-spacing: -0.04em;
+}
+
+.error-page h1 {
+  font-size: var(--fs-2xl);
+  margin-bottom: 16px;
+  color: var(--white);
+}
+
+.error-page-desc {
+  font-size: var(--fs-base);
+  color: #c8d4e6;
+  margin-bottom: 32px;
+  line-height: 1.7;
+}
+
+.error-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.error-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 24px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.error-page-links a {
+  color: #c8d4e6;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+/* ─── PAGE HERO ─── */
 .page-hero {
   background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
   padding: 60px 0;
