@@ -6,11 +6,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/sirketlerimiz.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.mayamak.com/hakkimizda.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -39,6 +34,11 @@
     <loc>https://www.mayamak.com/sertifikalar.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.mayamak.com/sirketlerimiz.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.mayamak.com/iletisim.html</loc>
