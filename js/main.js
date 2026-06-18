@@ -12,18 +12,62 @@ window.MayamakApp = (function () {
     var nav = document.getElementById("main-nav");
     var navHost = document.querySelector(".header-inner nav");
     var mq = window.matchMedia("(max-width: 992px)");
+    var navClosing = false;
+
+    function updateChromeHeight() {
+      var topBar = document.querySelector(".top-bar");
+      if (!topBar || !header) return;
+      var height = topBar.getBoundingClientRect().height + header.getBoundingClientRect().height;
+      document.documentElement.style.setProperty("--chrome-h", Math.round(height) + "px");
+    }
 
     function closeNav() {
-      if (!nav || !toggle) return;
-      nav.classList.remove("open");
+      if (!nav || !toggle || !nav.classList.contains("open") || nav.classList.contains("is-closing")) return;
+
       toggle.classList.remove("active");
-      document.body.classList.remove("nav-open");
       toggle.setAttribute("aria-expanded", "false");
       toggle.setAttribute("aria-label", "Menü");
+
+      function finishClose() {
+        nav.classList.remove("is-closing");
+        document.body.classList.remove("nav-open");
+        navClosing = false;
+      }
+
+      if (!mq.matches) {
+        nav.classList.remove("open");
+        finishClose();
+        return;
+      }
+
+      navClosing = true;
+      nav.classList.add("is-closing");
+      requestAnimationFrame(function () {
+        nav.classList.remove("open");
+      });
+
+      var closed = false;
+      function onTransitionEnd(e) {
+        if (closed || e.target !== nav || e.propertyName !== "transform") return;
+        closed = true;
+        nav.removeEventListener("transitionend", onTransitionEnd);
+        finishClose();
+      }
+
+      nav.addEventListener("transitionend", onTransitionEnd);
+      setTimeout(function () {
+        if (!closed) {
+          closed = true;
+          nav.removeEventListener("transitionend", onTransitionEnd);
+          finishClose();
+        }
+      }, 500);
     }
 
     function openNav() {
-      if (!nav || !toggle) return;
+      if (!nav || !toggle || navClosing) return;
+      nav.classList.remove("is-closing");
+      updateChromeHeight();
       nav.classList.add("open");
       toggle.classList.add("active");
       document.body.classList.add("nav-open");
@@ -32,7 +76,7 @@ window.MayamakApp = (function () {
     }
 
     function ensureNavCloseBtn() {
-      if (!nav || nav.querySelector(".nav-close")) return;
+      if (!nav || mq.matches || nav.querySelector(".nav-close")) return;
       var li = document.createElement("li");
       li.className = "nav-close-item";
       var btn = document.createElement("button");
@@ -48,7 +92,15 @@ window.MayamakApp = (function () {
       });
     }
 
-    ensureNavCloseBtn();
+    function syncNavCloseBtn() {
+      if (!nav) return;
+      var closeItem = nav.querySelector(".nav-close-item");
+      if (mq.matches) {
+        if (closeItem) closeItem.remove();
+      } else {
+        ensureNavCloseBtn();
+      }
+    }
 
     function placeNav() {
       if (!nav) return;
@@ -62,9 +114,22 @@ window.MayamakApp = (function () {
           navHost.appendChild(nav);
         }
       }
+      syncNavCloseBtn();
+      updateChromeHeight();
     }
 
     placeNav();
+    updateChromeHeight();
+    window.addEventListener("resize", updateChromeHeight);
+    window.addEventListener("load", updateChromeHeight);
+    if (window.ResizeObserver) {
+      var topBar = document.querySelector(".top-bar");
+      if (topBar) {
+        var chromeObserver = new ResizeObserver(updateChromeHeight);
+        chromeObserver.observe(topBar);
+        chromeObserver.observe(header);
+      }
+    }
     if (mq.addEventListener) {
       mq.addEventListener("change", placeNav);
     } else {

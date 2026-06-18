@@ -60,6 +60,7 @@ body.nav-open { overflow: hidden; }
 
 body.nav-open .site-header {
   z-index: 1102;
+  transition: none;
 }
 
 .sr-only {
@@ -2247,8 +2248,8 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
     align-items: stretch;
     padding: 24px;
     gap: 4px;
-    transform: translateX(100%);
-    transition: transform var(--transition);
+    transform: translate3d(100%, 0, 0);
+    transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     pointer-events: none;
@@ -2256,15 +2257,23 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   }
 
   .main-nav.open {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
     pointer-events: auto;
     visibility: visible;
   }
 
+  .main-nav.is-closing {
+    pointer-events: none;
+    visibility: visible;
+  }
+
   .nav-close-item {
-    display: flex;
-    justify-content: flex-end;
-    margin: -4px 0 12px;
+    display: none;
+  }
+
+  body.nav-open .top-bar {
+    position: relative;
+    z-index: 1103;
   }
 
   .nav-cta-item { margin-left: 0; margin-top: 8px; }
@@ -2321,25 +2330,27 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   }
 
   .top-bar-inner {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px 12px;
   }
 
   .top-bar-contact {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px 14px;
+    width: auto;
   }
 
   .top-bar-contact a {
     font-size: 12px;
     line-height: 1.35;
-    white-space: normal;
-    word-break: break-word;
-    min-height: 44px;
+    white-space: nowrap;
+    min-height: auto;
     display: inline-flex;
     align-items: center;
   }
@@ -2369,9 +2380,10 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   .top-bar-right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: flex-end;
+    width: auto;
     gap: 12px;
+    margin-left: auto;
   }
 
   .top-bar-social {
