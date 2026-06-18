@@ -21,7 +21,7 @@ window.MAYAMAK_I18N = {
     "meta.description.contact": "Mayamak iletişim: Dilovası/Kocaeli talaşlı imalat ve CNC üretim tesisi adres ve iletişim bilgileri.",
 
     "nav.home": "Anasayfa",
-    "nav.corporate": "Kurumsal",
+    "nav.corporate": "Kurumsal ▾",
     "nav.about": "Hakkımızda",
     "nav.machines": "Makine Parkuru",
     "nav.companies": "Şirketlerimiz",
@@ -162,7 +162,7 @@ window.MAYAMAK_I18N = {
     "meta.description.contact": "Contact Mayamak: address and details for our precision machining facility in Dilovasi/Kocaeli.",
 
     "nav.home": "Home",
-    "nav.corporate": "Corporate",
+    "nav.corporate": "Corporate ▾",
     "nav.about": "About Us",
     "nav.machines": "Machine Park",
     "nav.companies": "Our Companies",

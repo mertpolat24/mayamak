@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Mayamak Kurumsal Katalog | CNC Talaşlı İmalat ve Endüstriyel Üretim</title>
+  <meta name="description" content="Mayamak kurumsal PDF katalog: CNC torna, CNC freze, lazer kesim, abkant büküm, kaynak, montaj, makine parkı, ürünler, referanslar ve sertifikalar.">
+  <link rel="canonical" href="https://www.mayamak.com/catalog.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mayamak">
+  <meta property="og:title" content="Mayamak Kurumsal Katalog">
+  <meta property="og:description" content="Mayamak CNC talaşlı imalat ve endüstriyel üretim çözümleri kataloğu.">
+  <meta property="og:url" content="https://www.mayamak.com/catalog.html">
+  <meta property="og:image" content="https://www.mayamak.com/images/logo/logo.png">
+  <meta property="og:locale" content="tr_TR">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/critical.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <style>
+    :root { --catalog-blue: #3d8bfd; --catalog-navy: #0a1628; --catalog-ink: #182235; --catalog-muted: #5f6c7d; --catalog-line: #dce4ef; --catalog-soft: #f4f7fb; }
+    body.catalog-body { background: #d8dee8; color: var(--catalog-ink); }
+    .catalog-toolbar { position: sticky; top: 0; z-index: 1200; background: rgba(10,22,40,0.96); border-bottom: 1px solid rgba(255,255,255,0.08); padding: 14px 20px; display: flex; justify-content: center; gap: 12px; }
+    .catalog-toolbar button, .catalog-toolbar a { min-height: 44px; border: 0; border-radius: 4px; padding: 10px 18px; font-family: var(--font); font-size: 14px; font-weight: 600; cursor: pointer; text-decoration: none; }
+    .catalog-toolbar button { background: var(--catalog-blue); color: #fff; box-shadow: 0 8px 24px rgba(61,139,253,0.28); }
+    .catalog-toolbar a { color: #dce8f8; background: rgba(255,255,255,0.08); display: inline-flex; align-items: center; }
+    .catalog-shell { padding: 28px 0; }
+    .page { width: 210mm; height: 297mm; min-height: 297mm; page-break-after: always; break-after: page; page-break-inside: avoid; break-inside: avoid; margin: 0 auto 18px; background: #fff; color: var(--catalog-ink); position: relative; overflow: hidden; box-shadow: 0 18px 42px rgba(10,22,40,0.22); }
+    .page:last-child { page-break-after: auto; break-after: auto; }
+    .page-inner { padding: 14mm 15mm 16mm; height: 297mm; min-height: 0; position: relative; z-index: 1; }
+    .page-kicker { color: var(--catalog-blue); font-size: 11px; letter-spacing: 0.16em; font-weight: 700; text-transform: uppercase; margin-bottom: 8px; }
+    .page h1, .page h2, .page h3 { color: var(--catalog-ink); }
+    .page h1 { font-size: 36px; line-height: 1.05; margin: 0 0 14px; }
+    .page h2 { font-size: 28px; margin: 0 0 12px; }
+    .page h3 { font-size: 15px; margin: 0 0 7px; }
+    .page p { color: var(--catalog-muted); font-size: 13px; line-height: 1.55; margin: 0 0 10px; }
+    .page-title-line { width: 48px; height: 3px; background: var(--catalog-blue); margin: 0 0 14px; }
+    .page-footer { position: absolute; left: 15mm; right: 15mm; bottom: 9mm; display: flex; justify-content: space-between; align-items: center; color: #8491a3; font-size: 10px; border-top: 1px solid var(--catalog-line); padding-top: 7px; }
+    .cover { background: var(--catalog-navy); color: #fff; }
+    .cover::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,22,40,0.96) 0%, rgba(10,22,40,0.68) 48%, rgba(10,22,40,0.28) 100%), url('images/machines/cnc/boafeng-v13-isleme.webp') center/cover no-repeat; }
+    .cover .page-inner { display: flex; flex-direction: column; justify-content: space-between; color: #fff; }
+    .cover-logo { width: 190px; height: auto; filter: drop-shadow(0 6px 20px rgba(0,0,0,0.45)); }
+    .cover h1 { color: #fff; font-size: 52px; max-width: 460px; letter-spacing: -0.03em; }
+    .cover p { color: rgba(255,255,255,0.78); max-width: 430px; font-size: 15px; }
+    .cover-meta { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; max-width: 520px; }
+    .cover-meta span { border-left: 3px solid var(--catalog-blue); padding-left: 10px; color: #dce8f8; font-size: 12px; font-weight: 600; }
+    .intro-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 14px; align-items: center; margin-top: 12px; }
+    .intro-panel, .blue-panel { border-radius: 6px; padding: 18px; background: var(--catalog-soft); border: 1px solid var(--catalog-line); }
+    .blue-panel { background: var(--catalog-navy); color: #fff; border: 0; }
+    .blue-panel p, .blue-panel h3 { color: #fff; }
+    .stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 14px; }
+    .stat-box { background: var(--catalog-soft); border: 1px solid var(--catalog-line); padding: 13px; border-radius: 5px; }
+    .stat-box strong { display: block; color: var(--catalog-blue); font-size: 24px; line-height: 1; }
+    .stat-box span { font-size: 10px; color: var(--catalog-muted); text-transform: uppercase; letter-spacing: .08em; }
+    .capability-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 14px; }
+    .capability-card { min-height: 92px; background: var(--catalog-soft); border: 1px solid var(--catalog-line); border-left: 4px solid var(--catalog-blue); padding: 14px; border-radius: 5px; }
+    .machine-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .machine-card-catalog, .product-card-catalog { border: 1px solid var(--catalog-line); border-radius: 4px; overflow: hidden; background: #fff; break-inside: avoid; }
+    .machine-card-catalog img { width: 100%; height: 112px; object-fit: contain; background: #f6f8fb; padding: 6px; }
+    .machine-card-catalog div { padding: 6px; }
+    .machine-card-catalog h3 { font-size: 9.6px; line-height: 1.18; margin-bottom: 3px; }
+    .machine-card-catalog p { font-size: 7.5px; line-height: 1.24; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+    .product-grid { display: grid; grid-template-columns: 1fr; gap: 9px; margin-top: 12px; }
+    .product-card-catalog { display: grid; grid-template-columns: 190px 1fr; min-height: 82px; }
+    .product-card-catalog img { width: 190px; height: 100%; min-height: 82px; object-fit: cover; background: #eef2f6; }
+    .product-card-catalog div { padding: 10px 12px; }
+    .product-card-catalog h3 { font-size: 12px; line-height: 1.22; margin-bottom: 5px; }
+    .product-card-catalog p { font-size: 10px; line-height: 1.34; margin: 0; }
+    .reference-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 11px; margin-top: 20px; }
+    .reference-card { height: 72px; border: 1px solid var(--catalog-line); border-radius: 5px; display: flex; align-items: center; justify-content: center; padding: 10px; background: #fff; }
+    .reference-card img { max-width: 100%; max-height: 48px; object-fit: contain; }
+    .cert-grid-catalog { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 16px; align-items: start; max-width: 560px; }
+    .cert-card-catalog { border: 1px solid var(--catalog-line); border-radius: 5px; overflow: hidden; background: #fff; }
+    .cert-card-catalog img { width: 100%; height: 150px; object-fit: contain; background: #fff; }
+    .cert-card-catalog h3 { padding: 8px; text-align: center; font-size: 10.5px; }
+    .contact-grid-catalog { display: grid; grid-template-columns: 1fr 0.72fr; gap: 18px; margin-top: 18px; align-items: stretch; }
+    .contact-list { display: grid; gap: 10px; }
+    .contact-box { border-left: 4px solid var(--catalog-blue); background: var(--catalog-soft); padding: 13px 15px; border-radius: 5px; }
+    .contact-box span { display: block; color: var(--catalog-muted); font-size: 10px; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 4px; }
+    .contact-box strong, .contact-box a { color: var(--catalog-ink); font-size: 14px; text-decoration: none; }
+    .qr-box { border: 1px solid var(--catalog-line); border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 210px; color: #758399; text-align: center; padding: 18px; background: #fafcff; }
+    .qr-box img { width: 150px; height: 150px; object-fit: contain; margin-bottom: 10px; }
+    .qr-box span { color: var(--catalog-ink); font-size: 12px; font-weight: 700; }
+    .catalog-logo-small { width: 112px; height: auto; margin-bottom: 18px; }
+    @media screen and (max-width: 900px) {
+      body.catalog-body { background: #f4f7fb; }
+      .catalog-toolbar { position: sticky; padding: 10px 12px; gap: 8px; }
+      .catalog-toolbar button, .catalog-toolbar a { flex: 1 1 0; padding: 10px 12px; font-size: 13px; }
+      .catalog-shell { padding: 0; }
+      .page { width: 100%; height: auto; min-height: 0; margin: 0; box-shadow: none; border-bottom: 8px solid #edf2f8; page-break-after: auto; break-after: auto; overflow: visible; }
+      .page-inner { height: auto; min-height: 0; padding: 28px 18px 46px; }
+      .page-footer { position: static; margin-top: 24px; left: auto; right: auto; bottom: auto; }
+      .catalog-logo-small { margin-bottom: 16px; }
+      .cover .page-inner { min-height: 78svh; padding: 32px 20px; }
+      .cover-logo { width: 150px; }
+      .cover h1 { font-size: 40px; max-width: none; }
+      .cover p { font-size: 14px; max-width: none; }
+      .cover-meta { grid-template-columns: 1fr; gap: 8px; }
+      .page h1 { font-size: 34px; }
+      .page h2 { font-size: 24px; }
+      .page h3 { font-size: 15px; }
+      .page p { font-size: 14px; line-height: 1.62; }
+      .intro-grid, .contact-grid-catalog { grid-template-columns: 1fr; }
+      .stat-row, .capability-grid, .machine-grid, .product-grid, .cert-grid-catalog { grid-template-columns: 1fr; }
+      .machine-grid { gap: 12px; }
+      .machine-card-catalog img { height: 190px; padding: 10px; }
+      .machine-card-catalog div { padding: 12px; }
+      .machine-card-catalog h3 { font-size: 15px; line-height: 1.25; }
+      .machine-card-catalog p { display: block; font-size: 13px; line-height: 1.5; }
+      .product-card-catalog { display: block; min-height: 0; }
+      .product-card-catalog img { width: 100%; height: 190px; min-height: 0; }
+      .product-card-catalog div { padding: 14px; }
+      .product-card-catalog h3 { font-size: 16px; }
+      .product-card-catalog p { font-size: 13px; line-height: 1.5; }
+      .reference-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+      .reference-card { height: 82px; }
+      .cert-grid-catalog { max-width: none; }
+      .cert-card-catalog img { height: 220px; }
+      .contact-box strong, .contact-box a { font-size: 15px; }
+      .qr-box { min-height: 220px; }
+    }
+    @media screen and (max-width: 520px) {
+      .catalog-toolbar { flex-direction: column; }
+      .catalog-toolbar button, .catalog-toolbar a { width: 100%; }
+      .page-inner { padding: 24px 14px 42px; }
+      .cover h1 { font-size: 34px; }
+      .page h2 { font-size: 22px; }
+      .stat-row { gap: 8px; }
+      .machine-card-catalog img, .product-card-catalog img { height: 160px; }
+      .reference-grid { grid-template-columns: 1fr; }
+    }
+    @media screen and (max-width: 900px) {
+      body.pdf-render-mode { background: #d8dee8; }
+      body.pdf-render-mode .catalog-shell { padding: 28px 0; }
+      body.pdf-render-mode .page { width: 210mm; height: 297mm; min-height: 297mm; margin: 0 auto 18px; box-shadow: 0 18px 42px rgba(10,22,40,0.22); border-bottom: 0; overflow: hidden; }
+      body.pdf-render-mode .page-inner { padding: 14mm 15mm 16mm; height: 297mm; min-height: 0; }
+      body.pdf-render-mode .page-footer { position: absolute; left: 15mm; right: 15mm; bottom: 9mm; margin-top: 0; }
+      body.pdf-render-mode .cover .page-inner { min-height: 0; padding: 14mm 15mm 16mm; }
+      body.pdf-render-mode .cover-logo { width: 190px; }
+      body.pdf-render-mode .cover h1 { font-size: 52px; max-width: 460px; }
+      body.pdf-render-mode .cover p { font-size: 15px; max-width: 430px; }
+      body.pdf-render-mode .cover-meta { grid-template-columns: repeat(3, 1fr); }
+      body.pdf-render-mode .page h2 { font-size: 28px; }
+      body.pdf-render-mode .page p { font-size: 13px; line-height: 1.55; }
+      body.pdf-render-mode .intro-grid { grid-template-columns: 1.2fr 0.8fr; }
+      body.pdf-render-mode .stat-row { grid-template-columns: repeat(4, 1fr); }
+      body.pdf-render-mode .capability-grid { grid-template-columns: repeat(2, 1fr); }
+      body.pdf-render-mode .machine-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      body.pdf-render-mode .machine-card-catalog img { height: 112px; padding: 6px; }
+      body.pdf-render-mode .machine-card-catalog div { padding: 6px; }
+      body.pdf-render-mode .machine-card-catalog h3 { font-size: 9.6px; }
+      body.pdf-render-mode .machine-card-catalog p { display: -webkit-box; font-size: 7.5px; line-height: 1.24; }
+      body.pdf-render-mode .product-card-catalog { display: grid; grid-template-columns: 190px 1fr; }
+      body.pdf-render-mode .product-card-catalog img { width: 190px; height: 100%; min-height: 82px; }
+      body.pdf-render-mode .product-card-catalog h3 { font-size: 12px; }
+      body.pdf-render-mode .product-card-catalog p { font-size: 10px; }
+      body.pdf-render-mode .reference-grid { grid-template-columns: repeat(5, 1fr); }
+      body.pdf-render-mode .cert-grid-catalog { grid-template-columns: repeat(3, 1fr); max-width: 560px; }
+      body.pdf-render-mode .cert-card-catalog img { height: 150px; }
+      body.pdf-render-mode .contact-grid-catalog { grid-template-columns: 1fr 0.72fr; }
+    }
+    @media print { body.catalog-body { background: #fff; } .catalog-toolbar { display: none; } .catalog-shell { padding: 0; } .page { width: 210mm; height: 297mm; min-height: 297mm; margin: 0; box-shadow: none; page-break-after: always; break-after: page; page-break-inside: avoid; break-inside: avoid; } .page-inner { height: 297mm; min-height: 0; } .page:last-child { page-break-after: auto; break-after: auto; } }
+  </style>
+</head>
+<body class="catalog-body" data-page="catalog">
+  <div class="catalog-toolbar">
+    <button onclick="downloadCatalog()">Kataloğu PDF Olarak İndir</button>
+    <a href="/">Siteye Dön</a>
+  </div>
+
+  <main class="catalog-shell" id="catalog">
+    <section class="page cover">
+      <div class="page-inner">
+        <div><img src="images/logo/logo2.webp" alt="Mayamak" class="cover-logo"></div>
+        <div>
+          <div class="page-kicker">Kurumsal Üretim Kataloğu</div>
+          <h1>Ciddiyetle Üretir.</h1>
+          <p>Talaşlı ve talaşsız imalat yöntemleriyle savunma, otomotiv, enerji ve genel sanayi sektörleri için hassas üretim çözümleri.</p>
+        </div>
+        <div class="cover-meta"><span>CNC Talaşlı İmalat</span><span>Kaynak ve Montaj</span><span>Kalite Güvencesi</span></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <img src="images/logo/logo-header.png" alt="Mayamak" class="catalog-logo-small">
+        <div class="page-kicker">Mayamak Hakkında</div><h2>Hakkımızda</h2><div class="page-title-line"></div>
+        <div class="intro-grid">
+          <div>
+            <p>Mayamak, talaşlı ve talaşsız imalat alanlarında faaliyet gösteren, yüksek kaliteli üretim anlayışıyla sanayinin ihtiyaçlarına çözüm sunan bir mühendislik ve üretim firmasıdır.</p>
+            <p>Modern CNC torna, CNC freze, lazer kesim, abkant büküm, otomat makineleri ve üretim destek ekipmanlarıyla prototipten seri üretime kadar geniş bir hizmet alanı sunar.</p>
+            <p>Metal ve plastik parça imalatında hassasiyet, hız ve tekrarlanabilirliği temel alır; müşterilerine proje ihtiyaçlarına göre şekillenen güvenilir üretim çözümleri üretir.</p>
+            <p>Dilovası/Kocaeli'deki tesisinde savunma, otomotiv, enerji ve genel sanayi sektörleri için planlı, disiplinli ve izlenebilir üretim yaklaşımıyla çalışır.</p>
+          </div>
+          <div class="blue-panel"><h3>Üretim Yaklaşımı</h3><p>Her adımda planlı, disiplinli ve sonuç odaklı çalışma; üretimde hassasiyet, iletişimde şeffaflık ve teslimatta dakiklik Mayamak standardıdır.</p></div>
+        </div>
+        <div class="stat-row"><div class="stat-box"><strong>23</strong><span>Makine</span></div><div class="stat-box"><strong>15+</strong><span>Yıllık Tecrübe</span></div><div class="stat-box"><strong>200+</strong><span>Proje</span></div><div class="stat-box"><strong>%100</strong><span>Kalite Odağı</span></div></div>
+        <div class="page-footer"><span>Mayamak Kurumsal Katalog</span><span>02</span></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <div class="page-kicker">Mühendislik ve İmalat</div><h2>Üretim Kabiliyetleri</h2><div class="page-title-line"></div>
+        <p>Mayamak, prototipten seri üretime kadar uçtan uca mühendislik çözümleri sunar. Üretim altyapısı; hassas işleme, şekillendirme, kaynak, montaj ve kalite kontrol süreçlerini birlikte yönetebilecek şekilde kurgulanmıştır.</p>
+        <div class="capability-grid">
+          <div class="capability-card"><h3>CNC Torna</h3><p>Silindirik ve tolerans kritik parçalar için yüksek hassasiyetli, tekrarlanabilir talaşlı imalat.</p></div>
+          <div class="capability-card"><h3>CNC Freze</h3><p>Karmaşık geometrili parçaların işlenmesi, 4 eksenli işleme ve komponent üretimi.</p></div>
+          <div class="capability-card"><h3>Lazer Kesim</h3><p>Sac ve profil malzemelerde hızlı, temiz ve izlenebilir kesim operasyonları.</p></div>
+          <div class="capability-card"><h3>Abkant Büküm</h3><p>Endüstriyel sac parçalar için kontrollü şekillendirme ve seri üretim desteği.</p></div>
+          <div class="capability-card"><h3>Kaynak</h3><p>TIG, MIG/MAG ve plazma kaynak süreçleriyle çelik, alüminyum ve paslanmaz uygulamalar.</p></div>
+          <div class="capability-card"><h3>Montaj</h3><p>Üretilen parçaların alt montaj ve hat entegrasyonuna hazır teslim süreçleri.</p></div>
+        </div>
+        <div class="intro-panel" style="margin-top:18px"><h3>Kalite Kontrol</h3><p>Ölçüm ve test süreçleriyle her parçada izlenebilir kalite güvencesi sağlanır. Hexagon CMM gibi ölçüm ekipmanları, hassas parçaların doğrulanmasında aktif olarak kullanılır.</p></div>
+        <div class="page-footer"><span>Üretim Kabiliyetleri</span><span>03</span></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <div class="page-kicker">Tezgah Filosu</div><h2>Makine Parkuru</h2><div class="page-title-line"></div>
+        <div class="machine-grid" id="catalog-machines"></div>
+        <div class="page-footer"><span>Makine Parkuru</span><span>04</span></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <div class="page-kicker">Tezgah Filosu</div><h2>Makine Parkuru</h2><div class="page-title-line"></div>
+        <div class="machine-grid" id="catalog-machines-extra"></div>
+        <div class="page-footer"><span>Makine Parkuru</span><span>05</span></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <div class="page-kicker">Savunma ve Sanayi</div><h2>Ürünler ve Üretim Çözümleri</h2><div class="page-title-line"></div>
+        <p>Mayamak, savunma ve endüstriyel projelerde tolerans kritik mekanik bileşenler, platform parçaları ve özel komponent üretimleriyle çözüm ortağı olarak konumlanır.</p>
+        <div class="product-grid" id="catalog-products"></div>
+        <div class="page-footer"><span>Ürünler ve Üretim Çözümleri</span><span>06</span></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <div class="page-kicker">İş Ortakları</div><h2>Referanslar</h2><div class="page-title-line"></div>
+        <p>Türkiye'nin önde gelen kurumlarıyla kurulan güvene dayalı iş birlikleri, Mayamak'ın disiplinli üretim yaklaşımını ve sektörler arası deneyimini destekler.</p>
+        <div class="reference-grid" id="catalog-references"></div>
+        <div class="page-footer"><span>Referanslar</span><span>07</span></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <div class="page-kicker">Belgeli Süreçler</div><h2>Kalite ve Güven</h2><div class="page-title-line"></div>
+        <p>Mayamak üretim süreçlerinde kalite yönetimi, çevre yönetimi ve iş sağlığı güvenliği standartlarına uyumu esas alır. Operasyonlar belgelenmiş prosedürler ve düzenli denetimlerle yürütülür.</p>
+        <div class="cert-grid-catalog" id="catalog-certificates"></div>
+        <div class="intro-panel" style="margin-top:18px"><h3>Güven Vurgusu</h3><p>Hassasiyet, disiplin, yenilik ve güven değerleri; tekliften teslimata kadar tüm üretim akışında ortak çalışma zemini oluşturur.</p></div>
+        <div class="page-footer"><span>Kalite ve Güven</span><span>08</span></div>
+      </div>
+    </section>
+
+    <section class="page">
+      <div class="page-inner">
+        <img src="images/logo/logo-header.png" alt="Mayamak" class="catalog-logo-small">
+        <div class="page-kicker">Projeleriniz İçin</div><h2>İletişim</h2><div class="page-title-line"></div>
+        <p>Teknik çizim, numune veya proje ihtiyaçlarınız için Mayamak mühendislik ekibiyle iletişime geçebilirsiniz.</p>
+        <div class="contact-grid-catalog">
+          <div class="contact-list">
+            <div class="contact-box"><span>Telefon</span><strong>+90 541 939 34 69</strong></div>
+            <div class="contact-box"><span>E-posta</span><strong>info@mayamak.com</strong></div>
+            <div class="contact-box"><span>Adres</span><strong>KOBİ OSB 21 CADDE NO46<br>DİLOVASI / KOCAELİ / Türkiye</strong></div>
+            <div class="contact-box"><span>Web Sitesi</span><strong>www.mayamak.com</strong></div>
+            <div class="contact-box"><span>Çalışma Saatleri</span><strong>Pazartesi - Cuma: 08:00 - 18:00</strong></div>
+          </div>
+          <div class="qr-box">
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fwww.mayamak.com" alt="Mayamak web sitesi QR kodu" crossorigin="anonymous">
+            <span>www.mayamak.com</span>
+          </div>
+        </div>
+        <div class="page-footer"><span>mayamak.com</span><span>09</span></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/image-manifest.js" defer></script>
+  <script src="js/images.js" defer></script>
+  <script src="js/data.js"></script>
+  <script>
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, function (char) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[char];
+      });
+    }
+
+    function renderCatalogData() {
+      var data = window.MAYAMAK_DATA || {};
+      var machines = data.machines || [];
+      var products = data.products || [];
+      var references = data.references || [];
+      var certificates = data.certificates || [];
+      var machineCard = function (item) {
+        return '<article class="machine-card-catalog"><img src="' + item.image + '" alt="' + escapeHtml(item.nameTr) + '"><div><h3>' + escapeHtml(item.nameTr) + '</h3><p>' + escapeHtml(item.descTr) + '</p></div></article>';
+      };
+      document.getElementById("catalog-machines").innerHTML = machines.slice(0, 12).map(machineCard).join("");
+      document.getElementById("catalog-machines-extra").innerHTML = machines.slice(12).map(machineCard).join("");
+      document.getElementById("catalog-products").innerHTML = products.map(function (item) {
+        return '<article class="product-card-catalog"><img src="' + item.image + '" alt="' + escapeHtml(item.nameTr) + '"><div><h3>' + escapeHtml(item.nameTr) + '</h3><p>' + escapeHtml(item.descTr) + '</p></div></article>';
+      }).join("");
+      document.getElementById("catalog-references").innerHTML = references.map(function (item) {
+        return '<div class="reference-card"><img src="' + item.image + '" alt="' + escapeHtml(item.name) + '"></div>';
+      }).join("");
+      document.getElementById("catalog-certificates").innerHTML = certificates.map(function (item) {
+        return '<article class="cert-card-catalog"><img src="' + item.image + '" alt="' + escapeHtml(item.nameTr) + '"><h3>' + escapeHtml(item.nameTr) + '</h3></article>';
+      }).join("");
+    }
+
+    function waitForCatalogImages() {
+      return Promise.all(Array.from(document.querySelectorAll("#catalog img")).map(function (img) {
+        if (img.complete) return Promise.resolve();
+        return new Promise(function (resolve) {
+          img.addEventListener("load", resolve, { once: true });
+          img.addEventListener("error", resolve, { once: true });
+        });
+      }));
+    }
+
+    async function downloadCatalog() {
+      const pages = Array.from(document.querySelectorAll("#catalog .page"));
+      const button = document.querySelector(".catalog-toolbar button");
+      if (button) {
+        button.disabled = true;
+        button.textContent = "PDF hazırlanıyor...";
+      }
+      try {
+        document.body.classList.add("pdf-render-mode");
+        await new Promise(function (resolve) {
+          requestAnimationFrame(function () {
+            requestAnimationFrame(resolve);
+          });
+        });
+        await waitForCatalogImages();
+        const pdf = new window.jspdf.jsPDF({
+          unit: "mm",
+          format: "a4",
+          orientation: "portrait",
+          compress: true
+        });
+
+        for (let i = 0; i < pages.length; i += 1) {
+          const canvas = await window.html2canvas(pages[i], {
+            scale: 2,
+            useCORS: true,
+            allowTaint: false,
+            backgroundColor: "#ffffff",
+            scrollX: 0,
+            scrollY: 0,
+            windowWidth: pages[i].scrollWidth,
+            windowHeight: pages[i].scrollHeight
+          });
+          const image = canvas.toDataURL("image/jpeg", 1);
+          if (i > 0) pdf.addPage("a4", "portrait");
+          pdf.addImage(image, "JPEG", 0, 0, 210, 297, undefined, "FAST");
+        }
+
+        pdf.save("mayamak-katalog.pdf");
+      } finally {
+        document.body.classList.remove("pdf-render-mode");
+        if (button) {
+          button.disabled = false;
+          button.textContent = "Kataloğu PDF Olarak İndir";
+        }
+      }
+    }
+
+    renderCatalogData();
+  </script>
+</body>
+</html>
