@@ -235,7 +235,7 @@ window.MayamakApp = (function () {
       var desc = lang === "en" ? p.descEn : p.descTr;
       return (
         '<article class="product-page-card reveal">' +
-          MayamakImages.buildImg(p.image, name) +
+          MayamakImages.buildImg(p.image, name, { sizes: "product" }) +
           '<div class="product-page-shade"></div>' +
           '<div class="product-page-caption">' +
             '<h3>' + name + '</h3>' +
@@ -252,7 +252,7 @@ window.MayamakApp = (function () {
     return (
       '<div class="ref-item">' +
         '<div class="ref-item-img">' +
-          MayamakImages.buildImg(r.image, r.name, { className: "ref-logo" }) +
+          MayamakImages.buildImg(r.image, r.name, { className: "ref-logo", sizes: "reference" }) +
         '</div>' +
       '</div>'
     );
@@ -266,7 +266,7 @@ window.MayamakApp = (function () {
       return (
         '<div class="ref-item reveal" style="animation-delay:' + (i * 0.05) + 's">' +
           '<div class="ref-item-img">' +
-            MayamakImages.buildImg(r.image, r.name) +
+            MayamakImages.buildImg(r.image, r.name, { sizes: "reference" }) +
           '</div>' +
         '</div>'
       );
@@ -305,7 +305,7 @@ window.MayamakApp = (function () {
     container.innerHTML = programs.map(function (p) {
       return (
         '<div class="program-item">' +
-          MayamakImages.buildImg(p.image, p.name) +
+          MayamakImages.buildImg(p.image, p.name, { sizes: "program" }) +
         '</div>'
       );
     }).join("");
@@ -319,7 +319,7 @@ window.MayamakApp = (function () {
       var name = lang === "en" ? c.nameEn : c.nameTr;
       return (
         '<div class="cert-item reveal">' +
-          MayamakImages.buildImg(c.image, name) +
+          MayamakImages.buildImg(c.image, name, { sizes: "cert" }) +
           '<p class="cert-caption">' + name + '</p>' +
         '</div>'
       );
@@ -339,7 +339,7 @@ window.MayamakApp = (function () {
       var target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : "";
       var inner =
         '<div class="company-card-logo">' +
-          MayamakImages.buildImg(c.logo, name) +
+          MayamakImages.buildImg(c.logo, name, { sizes: "company" }) +
         '</div>' +
         '<h3>' + name + '</h3>' +
         '<p>' + desc + '</p>' +
@@ -373,7 +373,7 @@ window.MayamakApp = (function () {
       return (
         '<article class="machine-card reveal" data-category="' + m.category + '" style="animation-delay:' + (i * 0.05) + 's">' +
           '<div class="machine-card-img">' +
-            MayamakImages.buildImg(m.image, name) +
+            MayamakImages.buildImg(m.image, name, { sizes: "machine" }) +
             '<span class="machine-cat-badge">' + cat + '</span>' +
           '</div>' +
           '<div class="machine-card-body">' +

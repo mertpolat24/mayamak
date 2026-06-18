@@ -21,7 +21,7 @@ window.MayamakProductShowcase = (function () {
     container.innerHTML = products.map(function (p, i) {
       return (
         '<article class="product-showcase-card' + (i === current ? " active" : "") + '" data-index="' + i + '" tabindex="0">' +
-          MayamakImages.buildImg(p.image, productName(p), { priority: i === 0 }) +
+          MayamakImages.buildImg(p.image, productName(p), { priority: i === 0, sizes: "product" }) +
           '<div class="product-showcase-shade"></div>' +
           '<div class="product-showcase-caption">' +
             '<h2>' + productName(p) + '</h2>' +

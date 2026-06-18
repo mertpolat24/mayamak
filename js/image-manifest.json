@@ -52,7 +52,12 @@
     "webp": "images/logo/logo2.webp",
     "mobileWebp": "images/logo/logo2-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 311
+    "mobileHeight": 311,
+    "srcset": {
+      "480": "images/logo/logo2-480.webp",
+      "768": "images/logo/logo2-768.webp",
+      "1200": "images/logo/logo2-1200.webp"
+    }
   },
   "images/machines/cnc/boafeng-bf46dw-torna.webp": {
     "width": 1080,
@@ -197,7 +202,12 @@
     "webp": "images/products/0796a901da53452ab255f69e262ac609.webp",
     "mobileWebp": "images/products/0796a901da53452ab255f69e262ac609-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 381
+    "mobileHeight": 381,
+    "srcset": {
+      "480": "images/products/0796a901da53452ab255f69e262ac609-480.webp",
+      "768": "images/products/0796a901da53452ab255f69e262ac609-768.webp",
+      "1200": "images/products/0796a901da53452ab255f69e262ac609-1200.webp"
+    }
   },
   "images/products/5cd2a44476f64a68990dbb2f96ef4062.webp": {
     "width": 1376,
@@ -205,7 +215,12 @@
     "webp": "images/products/5cd2a44476f64a68990dbb2f96ef4062.webp",
     "mobileWebp": "images/products/5cd2a44476f64a68990dbb2f96ef4062-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 502
+    "mobileHeight": 502,
+    "srcset": {
+      "480": "images/products/5cd2a44476f64a68990dbb2f96ef4062-480.webp",
+      "768": "images/products/5cd2a44476f64a68990dbb2f96ef4062-768.webp",
+      "1200": "images/products/5cd2a44476f64a68990dbb2f96ef4062-1200.webp"
+    }
   },
   "images/products/cffb63fdbbc14feba684faa2934fadfc.webp": {
     "width": 1376,
@@ -213,7 +228,12 @@
     "webp": "images/products/cffb63fdbbc14feba684faa2934fadfc.webp",
     "mobileWebp": "images/products/cffb63fdbbc14feba684faa2934fadfc-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 502
+    "mobileHeight": 502,
+    "srcset": {
+      "480": "images/products/cffb63fdbbc14feba684faa2934fadfc-480.webp",
+      "768": "images/products/cffb63fdbbc14feba684faa2934fadfc-768.webp",
+      "1200": "images/products/cffb63fdbbc14feba684faa2934fadfc-1200.webp"
+    }
   },
   "images/products/denizalti.webp": {
     "width": 2752,
@@ -221,7 +241,12 @@
     "webp": "images/products/denizalti.webp",
     "mobileWebp": "images/products/denizalti-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 502
+    "mobileHeight": 502,
+    "srcset": {
+      "480": "images/products/denizalti-480.webp",
+      "768": "images/products/denizalti-768.webp",
+      "1200": "images/products/denizalti-1200.webp"
+    }
   },
   "images/products/havacilik-komponent.webp": {
     "width": 1380,
@@ -229,7 +254,12 @@
     "webp": "images/products/havacilik-komponent.webp",
     "mobileWebp": "images/products/havacilik-komponent-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 481
+    "mobileHeight": 481,
+    "srcset": {
+      "480": "images/products/havacilik-komponent-480.webp",
+      "768": "images/products/havacilik-komponent-768.webp",
+      "1200": "images/products/havacilik-komponent-1200.webp"
+    }
   },
   "images/products/tabanca-aksesuar.webp": {
     "width": 1280,
@@ -237,7 +267,12 @@
     "webp": "images/products/tabanca-aksesuar.webp",
     "mobileWebp": "images/products/tabanca-aksesuar-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 562
+    "mobileHeight": 562,
+    "srcset": {
+      "480": "images/products/tabanca-aksesuar-480.webp",
+      "768": "images/products/tabanca-aksesuar-768.webp",
+      "1200": "images/products/tabanca-aksesuar-1200.webp"
+    }
   },
   "images/programs/autocad.webp": {
     "width": 1080,
@@ -262,12 +297,20 @@
   "images/references/31.tcdd-buyuk-1024x937-1.webp": {
     "width": 1200,
     "height": 1100,
-    "webp": "images/references/31.tcdd-buyuk-1024x937-1.webp"
+    "webp": "images/references/31.tcdd-buyuk-1024x937-1.webp",
+    "srcset": {
+      "480": "images/references/31.tcdd-buyuk-1024x937-1-480.webp",
+      "768": "images/references/31.tcdd-buyuk-1024x937-1-768.webp"
+    }
   },
   "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png.webp": {
     "width": 781,
     "height": 237,
-    "webp": "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png.webp"
+    "webp": "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png.webp",
+    "srcset": {
+      "480": "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png-480.webp",
+      "768": "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png-768.webp"
+    }
   },
   "images/references/armsan.webp": {
     "width": 1080,
@@ -275,7 +318,11 @@
     "webp": "images/references/armsan.webp",
     "mobileWebp": "images/references/armsan-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 472
+    "mobileHeight": 472,
+    "srcset": {
+      "480": "images/references/armsan-480.webp",
+      "768": "images/references/armsan-768.webp"
+    }
   },
   "images/references/FAG.webp": {
     "width": 1800,
@@ -283,7 +330,12 @@
     "webp": "images/references/FAG.webp",
     "mobileWebp": "images/references/FAG-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 408
+    "mobileHeight": 408,
+    "srcset": {
+      "480": "images/references/FAG-480.webp",
+      "768": "images/references/FAG-768.webp",
+      "1200": "images/references/FAG-1200.webp"
+    }
   },
   "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv.webp": {
     "width": 1080,
@@ -291,12 +343,21 @@
     "webp": "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv.webp",
     "mobileWebp": "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 900
+    "mobileHeight": 900,
+    "srcset": {
+      "480": "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-480.webp",
+      "768": "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-768.webp"
+    }
   },
   "images/references/goodyear-7-logo-png-transparent.webp": {
     "width": 2400,
     "height": 2400,
-    "webp": "images/references/goodyear-7-logo-png-transparent.webp"
+    "webp": "images/references/goodyear-7-logo-png-transparent.webp",
+    "srcset": {
+      "480": "images/references/goodyear-7-logo-png-transparent-480.webp",
+      "768": "images/references/goodyear-7-logo-png-transparent-768.webp",
+      "1200": "images/references/goodyear-7-logo-png-transparent-1200.webp"
+    }
   },
   "images/references/hidromek-logo.webp": {
     "width": 400,
@@ -311,12 +372,20 @@
   "images/references/mutlu-aku-1.webp": {
     "width": 496,
     "height": 217,
-    "webp": "images/references/mutlu-aku-1.webp"
+    "webp": "images/references/mutlu-aku-1.webp",
+    "srcset": {
+      "480": "images/references/mutlu-aku-1-480.webp"
+    }
   },
   "images/references/P&G_logo.webp": {
     "width": 1280,
     "height": 557,
-    "webp": "images/references/P&G_logo.webp"
+    "webp": "images/references/P&G_logo.webp",
+    "srcset": {
+      "480": "images/references/P&G_logo-480.webp",
+      "768": "images/references/P&G_logo-768.webp",
+      "1200": "images/references/P&G_logo-1200.webp"
+    }
   },
   "images/references/soyvalve-logo.webp": {
     "width": 5319,
@@ -324,17 +393,30 @@
     "webp": "images/references/soyvalve-logo.webp",
     "mobileWebp": "images/references/soyvalve-logo-mobile.webp",
     "mobileWidth": 900,
-    "mobileHeight": 587
+    "mobileHeight": 587,
+    "srcset": {
+      "480": "images/references/soyvalve-logo-480.webp",
+      "768": "images/references/soyvalve-logo-768.webp",
+      "1200": "images/references/soyvalve-logo-1200.webp"
+    }
   },
   "images/references/STM.webp": {
     "width": 2362,
     "height": 1772,
-    "webp": "images/references/STM.webp"
+    "webp": "images/references/STM.webp",
+    "srcset": {
+      "480": "images/references/STM-480.webp",
+      "768": "images/references/STM-768.webp",
+      "1200": "images/references/STM-1200.webp"
+    }
   },
   "images/references/thyt.webp": {
     "width": 600,
     "height": 196,
-    "webp": "images/references/thyt.webp"
+    "webp": "images/references/thyt.webp",
+    "srcset": {
+      "480": "images/references/thyt-480.webp"
+    }
   },
   "images/references/vitra-logo-png_seeklogo-273245.webp": {
     "width": 320,
@@ -344,6 +426,20 @@
   "images/references/\u015ei\u015fecam.webp": {
     "width": 2000,
     "height": 1502,
-    "webp": "images/references/\u015ei\u015fecam.webp"
+    "webp": "images/references/\u015ei\u015fecam.webp",
+    "srcset": {
+      "480": "images/references/\u015ei\u015fecam-480.webp",
+      "768": "images/references/\u015ei\u015fecam-768.webp",
+      "1200": "images/references/\u015ei\u015fecam-1200.webp"
+    }
+  },
+  "images/logo/logo-header.webp": {
+    "width": 1040,
+    "height": 316,
+    "webp": "images/logo/logo-header.webp",
+    "srcset": {
+      "480": "images/logo/logo-header-480.webp",
+      "768": "images/logo/logo-header-768.webp"
+    }
   }
 }

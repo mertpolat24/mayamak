@@ -22,14 +22,13 @@
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" href="favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preload" as="image" href="images/products/denizalti.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="images/products/denizalti-480.webp" fetchpriority="high" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="images/products/denizalti-1200.webp" fetchpriority="high" media="(min-width: 769px)">
   <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/critical.css">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="css/style.css"></noscript>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="home" data-page-title="meta.title.home" data-page-description="meta.description.home">
 
@@ -83,9 +82,27 @@
   <section class="product-hero-single" id="product-hero-single">
     <h1 class="sr-only" data-i18n="hero.title">Ciddiyetle Üretir.</h1>
     <div class="product-hero-visual" id="product-hero-visual">
-      <div class="product-hero-slides" id="product-hero-slides"></div>
+      <div class="product-hero-slides" id="product-hero-slides">
+        <article class="product-hero-item active" data-index="0" data-hero-static>
+          <img
+            src="images/products/denizalti-768.webp"
+            srcset="images/products/denizalti-480.webp 480w, images/products/denizalti-768.webp 768w, images/products/denizalti-1200.webp 1200w, images/products/denizalti.webp 2752w"
+            sizes="(max-width: 768px) 100vw, 100vw"
+            width="1200"
+            height="670"
+            alt="STM Denizaltı Parçası"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async">
+          <div class="product-hero-shade"></div>
+          <div class="product-hero-caption">
+            <h2>STM Denizaltı</h2>
+            <p>STM 500 mini denizaltı platformu için hassas talaşlı imalat parçaları.</p>
+          </div>
+        </article>
+      </div>
       <div class="product-hero-brand">
-        <img src="images/logo/logo2.webp" alt="Mayamak" width="2400" height="830" fetchpriority="high" loading="eager" decoding="async">
+        <img src="images/logo/logo2.webp" alt="Mayamak" width="2400" height="830" loading="lazy" decoding="async">
       </div>
       <nav class="product-hero-nav-names" id="product-hero-nav-names" aria-label="Ürünler"></nav>
     </div>

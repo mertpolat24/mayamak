@@ -116,7 +116,7 @@ window.MayamakOccupancy = (function () {
       card.style.animationDelay = (idx * 0.06) + "s";
       card.innerHTML =
         '<div class="occ-card-img">' +
-          MayamakImages.buildImg(m.image, name) +
+          MayamakImages.buildImg(m.image, name, { sizes: "machine" }) +
           '<div class="occ-card-overlay"></div>' +
         '</div>' +
         '<div class="occ-card-body">' +
