@@ -1,23 +1,24 @@
 ﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
+  <base href="/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <title>Sertifikalar | Mayamak Kalite ve ISO Belgeleri</title>
-  <meta name="description" content="Mayamak ISO 9001, ISO 14001 ve ISO 45001 kalite ve iş güvenliği sertifikaları.">
-  <link rel="canonical" href="https://www.mayamak.com/sertifikalar">
+  <title>İletişim | Mayamak Dilovası Üretim Tesisi</title>
+  <meta name="description" content="Mayamak iletişim: Dilovası/Kocaeli talaşlı imalat ve CNC üretim tesisi adres ve iletişim bilgileri.">
+  <link rel="canonical" href="https://www.mayamak.com/iletisim">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mayamak">
-  <meta property="og:title" content="Sertifikalar | Mayamak Kalite ve ISO Belgeleri">
-  <meta property="og:description" content="Mayamak ISO 9001, ISO 14001 ve ISO 45001 kalite ve iş güvenliği sertifikaları.">
-  <meta property="og:url" content="https://www.mayamak.com/sertifikalar">
+  <meta property="og:title" content="İletişim | Mayamak Dilovası Üretim Tesisi">
+  <meta property="og:description" content="Mayamak iletişim: Dilovası/Kocaeli talaşlı imalat ve CNC üretim tesisi adres ve iletişim bilgileri.">
+  <meta property="og:url" content="https://www.mayamak.com/iletisim">
   <meta property="og:image" content="https://www.mayamak.com/images/logo/logo.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sertifikalar | Mayamak Kalite ve ISO Belgeleri">
-  <meta name="twitter:description" content="Mayamak ISO 9001, ISO 14001 ve ISO 45001 kalite ve iş güvenliği sertifikaları.">
+  <meta name="twitter:title" content="İletişim | Mayamak Dilovası Üretim Tesisi">
+  <meta name="twitter:description" content="Mayamak iletişim: Dilovası/Kocaeli talaşlı imalat ve CNC üretim tesisi adres ve iletişim bilgileri.">
   <meta name="twitter:image" content="https://www.mayamak.com/images/logo/logo.png">
   <link rel="icon" href="favicon-light.ico" sizes="any" media="(prefers-color-scheme: light)">
   <link rel="icon" href="favicon-dark.ico" sizes="any" media="(prefers-color-scheme: dark)">
@@ -32,7 +33,7 @@
   <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 </head>
-<body data-page="certificates" data-page-title="meta.title.certificates" data-page-description="meta.description.certificates">
+<body data-page="contact" data-page-title="meta.title.contact" data-page-description="meta.description.contact">
 
   <div class="top-bar">
     <div class="container top-bar-inner">
@@ -86,16 +87,86 @@
   <main>
   <section class="page-hero">
     <div class="container">
-      <h1 data-i18n="certificates.title">Sertifikalarımız</h1>
-      <p data-i18n="certificates.subtitle">Kalite ve iş güvenliği belgelerimiz.</p>
+      <h1 data-i18n="contact.title">İletişim</h1>
+      <p data-i18n="contact.subtitle">Projeleriniz için bizimle iletişime geçin.</p>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <p class="reveal" data-i18n="certificates.p1">Mayamak olarak üretim süreçlerimizde kalite yönetimi ve iş güvenliği standartlarına tam uyum sağlıyoruz.</p>
-      <p class="reveal" data-i18n="certificates.p2">Aşağıda iş güvenliği ve kalite belgelerimizden örnekleri inceleyebilirsiniz.</p>
-      <div class="cert-grid" id="certificates-grid"></div>
+      <div class="contact-grid">
+        <div class="contact-info-card reveal">
+          <div class="contact-item">
+            <div class="contact-icon"></div>
+            <div>
+              <h3 data-i18n="contact.address">Adres</h3>
+              <p id="contact-address">
+                KOBİ OSB 21 CADDE NO46<br>
+                DİLOVASI / KOCAELİ<br>
+                Türkiye
+              </p>
+              <p style="margin-top:8px"><a href="#" data-contact="map" data-i18n="contact.map">Haritada aç</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon icon-phone"></div>
+            <div>
+              <h3 data-i18n="contact.phone">Telefon / WhatsApp</h3>
+              <p><a href="#" data-contact="whatsapp" data-contact-text>+90 541 939 34 69</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon icon-email"></div>
+            <div>
+              <h3 data-i18n="contact.email">E-posta</h3>
+              <p><a href="#" data-contact="email" data-contact-text>info@mayamak.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon icon-hours"></div>
+            <div>
+              <h3 data-i18n="contact.hours">Çalışma Saatleri</h3>
+              <p data-i18n="contact.hours.value">Pazartesi – Cuma: 08:00 – 18:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-map-wrap reveal">
+          <iframe
+            id="contact-map-frame"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mayamak Konum">
+          </iframe>
+          <a href="#" data-contact="map" class="map-open-hint" data-i18n="contact.mapHint">Konumu Google Maps'te açmak için tıklayın</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-gray">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="faq.title">Sıkça Sorulan Sorular</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q1">Hangi sektörlere hizmet veriyorsunuz?</summary>
+          <p data-i18n="faq.a1">Savunma, otomotiv, enerji ve genel sanayi sektörlerine talaşlı ve talaşsız imalat hizmeti sunuyoruz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q2">Teklif süreci nasıl işliyor?</summary>
+          <p data-i18n="faq.a2">Teknik çizim veya numune ile iletişime geçmeniz yeterlidir. Mühendislik ekibimiz kapasite ve tolerans analizi yaparak size özel teklif hazırlar.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q3">Prototipten seri üretime geçiş yapıyor musunuz?</summary>
+          <p data-i18n="faq.a3">Evet. Prototip üretiminden pilot seriye ve tam seri üretime kadar tüm aşamalarda destek veriyoruz.</p>
+        </details>
+        <details class="faq-item reveal">
+          <summary data-i18n="faq.q4">Teslimat süreleri ne kadar?</summary>
+          <p data-i18n="faq.a4">Teslimat süresi parça karmaşıklığına ve mevcut kapasiteye göre değişir. Güncel doluluk oranlarımızı Makine Doluluk sayfasından takip edebilirsiniz.</p>
+        </details>
+      </div>
     </div>
   </section>
   </main>
@@ -112,7 +183,7 @@
           <ul>
             <li><a href="/hakkimizda" data-i18n="nav.about">Hakkımızda</a></li>
             <li><a href="/makine-parki" data-i18n="nav.machines">Makine Parkı</a></li>
-            <li><a href="/iletisim" data-i18n="nav.contact">İletişim</a></li>
+            <li><a href="/urunler" data-i18n="nav.products">Ürünler</a></li>
           </ul>
         </div>
         <div class="footer-col">

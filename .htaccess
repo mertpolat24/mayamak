@@ -1,0 +1,44 @@
+# Mayamak – clean URLs (mod_alias + physical route folders)
+Options -MultiViews +FollowSymLinks
+DirectoryIndex index.html
+
+# .html → temiz URL
+Redirect 301 /index.html /
+Redirect 301 /catalog.html /katalog/
+Redirect 301 /hakkimizda.html /hakkimizda/
+Redirect 301 /urunler.html /urunler/
+Redirect 301 /makine-parki.html /makine-parki/
+Redirect 301 /makine-doluluk.html /makine-doluluk/
+Redirect 301 /referanslar.html /referanslar/
+Redirect 301 /sertifikalar.html /sertifikalar/
+Redirect 301 /sirketlerimiz.html /sirketlerimiz/
+Redirect 301 /iletisim.html /iletisim/
+
+# kapasite-takip alias
+Redirect 301 /kapasite-takip /makine-doluluk/
+Redirect 301 /kapasite-takip/ /makine-doluluk/
+
+# Sondaki slash olmadan gelen istekler
+RedirectMatch 301 (?i)^/urunler$ /urunler/
+RedirectMatch 301 (?i)^/hakkimizda$ /hakkimizda/
+RedirectMatch 301 (?i)^/makine-parki$ /makine-parki/
+RedirectMatch 301 (?i)^/makine-doluluk$ /makine-doluluk/
+RedirectMatch 301 (?i)^/referanslar$ /referanslar/
+RedirectMatch 301 (?i)^/sertifikalar$ /sertifikalar/
+RedirectMatch 301 (?i)^/sirketlerimiz$ /sirketlerimiz/
+RedirectMatch 301 (?i)^/iletisim$ /iletisim/
+RedirectMatch 301 (?i)^/katalog$ /katalog/
+
+# mod_rewrite varsa ek kurallar
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^kapasite-takip/?$ makine-doluluk/ [R=301,L,NC]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+<IfModule mod_mime.c>
+AddType image/webp .webp
+AddType font/woff2 .woff2
+</IfModule>

@@ -5,6 +5,7 @@ window.MayamakImages = (function () {
 
   var SIZES = {
     hero: "(max-width: 768px) 100vw, 100vw",
+    showcase: "(max-width: 992px) 78vw, 50vw",
     product: "(max-width: 768px) 92vw, 420px",
     reference: "(max-width: 768px) 33vw, 190px",
     machine: "(max-width: 768px) 92vw, 400px",
@@ -44,7 +45,7 @@ window.MayamakImages = (function () {
     if (options.width && options.height) {
       return { width: options.width, height: options.height };
     }
-    var tw = options.sizes === "hero" ? 1200 : 768;
+    var tw = (options.sizes === "hero" || options.sizes === "showcase") ? 1200 : 768;
     if (!entry || !entry.width || !entry.height) {
       return { width: tw, height: "" };
     }
@@ -69,8 +70,8 @@ window.MayamakImages = (function () {
 
   function defaultSrc(entry, options) {
     if (!entry || !entry.srcset) return entry ? entry.webp : toWebp("");
-    if (options.sizes === "hero") {
-      return entry.srcset["768"] || entry.srcset["480"] || entry.webp;
+    if (options.sizes === "hero" || options.sizes === "showcase") {
+      return entry.srcset["1200"] || entry.webp || entry.srcset["768"] || entry.srcset["480"];
     }
     return entry.srcset["768"] || entry.srcset["480"] || entry.webp;
   }
@@ -90,7 +91,10 @@ window.MayamakImages = (function () {
     if (width) attrs += ' width="' + width + '"';
     if (height) attrs += ' height="' + height + '"';
     if (options.priority) {
-      attrs += ' fetchpriority="high" loading="eager"';
+      attrs += ' fetchpriority="high"';
+    }
+    if (options.priority || options.eager) {
+      attrs += ' loading="eager"';
     } else {
       attrs += ' loading="lazy"';
     }

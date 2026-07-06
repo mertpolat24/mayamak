@@ -501,6 +501,7 @@ window.MayamakApp = (function () {
   }
 
   function initDeferred() {
+    if (window.MayamakArticles) MayamakArticles.init();
     if (window.MayamakSEO) MayamakSEO.init();
     initScrollReveal();
     initCounters();

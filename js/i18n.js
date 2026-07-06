@@ -2,7 +2,7 @@
 window.MAYAMAK_I18N = {
   tr: {
     "meta.title.home": "Mayamak | CNC Talaşlı İmalat ve Endüstriyel Üretim",
-    "meta.title.about": "Hakkımızda | Mayamak CNC Talaşlı İmalat",
+    "meta.title.about": "Hakkımızda | Dilovası Talaşlı İmalat ve CNC İmalat – Mayamak",
     "meta.title.products": "Ürünler | Mayamak CNC ve Endüstriyel Parça İmalatı",
     "meta.title.machines": "Makine Parkı | Mayamak CNC Tezgah ve Üretim Ekipmanları",
     "meta.title.occupancy": "Kapasite Takip | Mayamak CNC Doluluk Oranları",
@@ -11,7 +11,7 @@ window.MAYAMAK_I18N = {
     "meta.title.certificates": "Sertifikalar | Mayamak Kalite ve ISO Belgeleri",
     "meta.title.contact": "İletişim | Mayamak Dilovası Üretim Tesisi",
     "meta.description.home": "Mayamak; CNC torna, CNC freze, lazer kesim, abkant büküm ve hassas parça imalatı alanlarında Kocaeli Dilovası merkezli üretim çözümleri sunar.",
-    "meta.description.about": "Mayamak hakkında: CNC talaşlı imalat, talaşsız imalat ve mühendislik çözümleri. Dilovası/Kocaeli merkezli üretim tesisi.",
+    "meta.description.about": "Mayamak: Dilovası talaşlı imalat, CNC torna, CNC freze, pres, kaynak ve kalite kontrol. Kocaeli merkezli hassas parça üretimi ve teknik rehberler.",
     "meta.description.products": "Mayamak ürün ve üretim kabiliyetleri: CNC işleme, talaşlı imalat, talaşsız imalat, kaynak, montaj ve özel parça üretimi.",
     "meta.description.machines": "Mayamak makine parkı: CNC torna, CNC freze, pres, kaynak, ölçüm ve yardımcı üretim ekipmanları.",
     "meta.description.occupancy": "Mayamak kapasite takip: CNC tezgahların güncel doluluk oranları ve üretim yoğunluğu.",
@@ -22,6 +22,9 @@ window.MAYAMAK_I18N = {
 
     "nav.home": "Anasayfa",
     "nav.corporate": "Kurumsal ▾",
+    "nav.solutions": "Çözümler ▾",
+    "nav.productionSolutions": "Üretim Çözümleri",
+    "nav.catalog": "Kurumsal Katalog",
     "nav.about": "Hakkımızda",
     "nav.machines": "Makine Parkuru",
     "nav.companies": "Şirketlerimiz",
@@ -38,7 +41,6 @@ window.MAYAMAK_I18N = {
     "hero.cta2": "Ürünlerimiz",
 
     "stats.machines": "Makine",
-    "stats.experience": "Yıllık Tecrübe",
     "stats.projects": "Tamamlanan Proje",
     "stats.quality": "Kalite Odaklı",
 
@@ -80,6 +82,8 @@ window.MAYAMAK_I18N = {
     "about.values.innovation.desc": "Sürekli yatırım ve teknoloji takibi.",
     "about.values.trust": "Güven",
     "about.values.trust.desc": "Şeffaf iletişim ve uzun vadeli iş ortaklıkları.",
+    "about.articles.title": "Üretim ve İmalat Makaleleri",
+    "about.articles.desc": "Dilovası talaşlı imalat, CNC torna, freze ve entegre üretim süreçleri hakkında teknik rehberler.",
 
     "machines.title": "Makine Parkuru",
     "machines.subtitle": "Modern tezgah filomuzla geniş üretim kapasitesi.",
@@ -143,7 +147,7 @@ window.MAYAMAK_I18N = {
 
   en: {
     "meta.title.home": "Mayamak | CNC Precision Machining & Industrial Manufacturing",
-    "meta.title.about": "About Us | Mayamak CNC Machining",
+    "meta.title.about": "About Us | Dilovası Machining & CNC Manufacturing – Mayamak",
     "meta.title.products": "Products | Mayamak CNC & Industrial Parts Manufacturing",
     "meta.title.machines": "Machine Park | Mayamak CNC & Production Equipment",
     "meta.title.occupancy": "Capacity Tracking | Mayamak CNC Utilization",
@@ -152,7 +156,7 @@ window.MAYAMAK_I18N = {
     "meta.title.certificates": "Certificates | Mayamak Quality & ISO Standards",
     "meta.title.contact": "Contact | Mayamak Dilovasi Production Facility",
     "meta.description.home": "Mayamak delivers CNC turning, milling, laser cutting, press brake bending and precision parts manufacturing from Dilovasi, Kocaeli, Turkey.",
-    "meta.description.about": "About Mayamak: CNC machining, non-machining production and engineering solutions from our Dilovasi/Kocaeli facility.",
+    "meta.description.about": "Mayamak: Dilovası machining, CNC turning, milling, press, welding and quality control. Kocaeli-based precision parts and technical guides.",
     "meta.description.products": "Mayamak products and capabilities: CNC machining, precision parts, welding, assembly and custom manufacturing.",
     "meta.description.machines": "Mayamak machine park: CNC lathes, mills, presses, welding, measurement and auxiliary production equipment.",
     "meta.description.occupancy": "Mayamak capacity tracking: current CNC machine utilization and production load.",
@@ -163,6 +167,9 @@ window.MAYAMAK_I18N = {
 
     "nav.home": "Home",
     "nav.corporate": "Corporate ▾",
+    "nav.solutions": "Solutions ▾",
+    "nav.productionSolutions": "Production Solutions",
+    "nav.catalog": "Corporate Catalog",
     "nav.about": "About Us",
     "nav.machines": "Machine Park",
     "nav.companies": "Our Companies",
@@ -179,7 +186,6 @@ window.MAYAMAK_I18N = {
     "hero.cta2": "Our Products",
 
     "stats.machines": "Machines",
-    "stats.experience": "Years Experience",
     "stats.projects": "Completed Projects",
     "stats.quality": "Quality Focused",
 
@@ -221,6 +227,8 @@ window.MAYAMAK_I18N = {
     "about.values.innovation.desc": "Continuous investment and technology tracking.",
     "about.values.trust": "Trust",
     "about.values.trust.desc": "Transparent communication and long-term partnerships.",
+    "about.articles.title": "Manufacturing Articles",
+    "about.articles.desc": "Technical guides on Dilovası machining, CNC turning, milling and integrated production.",
 
     "machines.title": "Machine Park",
     "machines.subtitle": "Extensive production capacity with our modern machine fleet.",

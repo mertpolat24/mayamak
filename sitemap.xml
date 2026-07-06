@@ -6,46 +6,46 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/hakkimizda.html</loc>
+    <loc>https://www.mayamak.com/hakkimizda/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/urunler.html</loc>
+    <loc>https://www.mayamak.com/urunler/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/makine-parki.html</loc>
+    <loc>https://www.mayamak.com/makine-parki/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/makine-doluluk.html</loc>
+    <loc>https://www.mayamak.com/makine-doluluk/</loc>
     <changefreq>daily</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/referanslar.html</loc>
+    <loc>https://www.mayamak.com/referanslar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/sertifikalar.html</loc>
+    <loc>https://www.mayamak.com/sertifikalar/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/sirketlerimiz.html</loc>
+    <loc>https://www.mayamak.com/sirketlerimiz/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/iletisim.html</loc>
+    <loc>https://www.mayamak.com/iletisim/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.mayamak.com/catalog.html</loc>
+    <loc>https://www.mayamak.com/katalog/</loc>
   </url>
 </urlset>

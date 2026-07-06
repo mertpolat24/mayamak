@@ -1,23 +1,24 @@
 ﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
+  <base href="/">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
-  <title>Sertifikalar | Mayamak Kalite ve ISO Belgeleri</title>
-  <meta name="description" content="Mayamak ISO 9001, ISO 14001 ve ISO 45001 kalite ve iş güvenliği sertifikaları.">
-  <link rel="canonical" href="https://www.mayamak.com/sertifikalar">
+  <title>Ürünler | Mayamak CNC ve Endüstriyel Parça İmalatı</title>
+  <meta name="description" content="Mayamak ürün ve üretim kabiliyetleri: CNC işleme, talaşlı imalat, talaşsız imalat, kaynak, montaj ve özel parça üretimi.">
+  <link rel="canonical" href="https://www.mayamak.com/urunler">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mayamak">
-  <meta property="og:title" content="Sertifikalar | Mayamak Kalite ve ISO Belgeleri">
-  <meta property="og:description" content="Mayamak ISO 9001, ISO 14001 ve ISO 45001 kalite ve iş güvenliği sertifikaları.">
-  <meta property="og:url" content="https://www.mayamak.com/sertifikalar">
+  <meta property="og:title" content="Ürünler | Mayamak CNC ve Endüstriyel Parça İmalatı">
+  <meta property="og:description" content="Mayamak ürün ve üretim kabiliyetleri: CNC işleme, talaşlı imalat, talaşsız imalat, kaynak, montaj ve özel parça üretimi.">
+  <meta property="og:url" content="https://www.mayamak.com/urunler">
   <meta property="og:image" content="https://www.mayamak.com/images/logo/logo.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sertifikalar | Mayamak Kalite ve ISO Belgeleri">
-  <meta name="twitter:description" content="Mayamak ISO 9001, ISO 14001 ve ISO 45001 kalite ve iş güvenliği sertifikaları.">
+  <meta name="twitter:title" content="Ürünler | Mayamak CNC ve Endüstriyel Parça İmalatı">
+  <meta name="twitter:description" content="Mayamak ürün ve üretim kabiliyetleri: CNC işleme, talaşlı imalat, talaşsız imalat, kaynak, montaj ve özel parça üretimi.">
   <meta name="twitter:image" content="https://www.mayamak.com/images/logo/logo.png">
   <link rel="icon" href="favicon-light.ico" sizes="any" media="(prefers-color-scheme: light)">
   <link rel="icon" href="favicon-dark.ico" sizes="any" media="(prefers-color-scheme: dark)">
@@ -32,7 +33,7 @@
   <link rel="stylesheet" href="css/style.css" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="css/style.css"></noscript>
 </head>
-<body data-page="certificates" data-page-title="meta.title.certificates" data-page-description="meta.description.certificates">
+<body data-page="products" data-page-title="meta.title.products" data-page-description="meta.description.products">
 
   <div class="top-bar">
     <div class="container top-bar-inner">
@@ -84,19 +85,9 @@
   </header>
 
   <main>
-  <section class="page-hero">
-    <div class="container">
-      <h1 data-i18n="certificates.title">Sertifikalarımız</h1>
-      <p data-i18n="certificates.subtitle">Kalite ve iş güvenliği belgelerimiz.</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <p class="reveal" data-i18n="certificates.p1">Mayamak olarak üretim süreçlerimizde kalite yönetimi ve iş güvenliği standartlarına tam uyum sağlıyoruz.</p>
-      <p class="reveal" data-i18n="certificates.p2">Aşağıda iş güvenliği ve kalite belgelerimizden örnekleri inceleyebilirsiniz.</p>
-      <div class="cert-grid" id="certificates-grid"></div>
-    </div>
+  <h1 class="sr-only" data-i18n="nav.products">Ürünler</h1>
+  <section class="product-showcase" id="product-showcase">
+    <div class="product-showcase-grid" id="product-showcase-grid"></div>
   </section>
   </main>
 
@@ -110,8 +101,8 @@
         <div class="footer-col">
           <h4 data-i18n="footer.quick">Hızlı Bağlantılar</h4>
           <ul>
-            <li><a href="/hakkimizda" data-i18n="nav.about">Hakkımızda</a></li>
             <li><a href="/makine-parki" data-i18n="nav.machines">Makine Parkı</a></li>
+            <li><a href="/referanslar" data-i18n="nav.references">Referanslar</a></li>
             <li><a href="/iletisim" data-i18n="nav.contact">İletişim</a></li>
           </ul>
         </div>
@@ -135,6 +126,7 @@
   <script src="js/i18n.js" defer></script>
   <script src="js/routes.js" defer></script>
   <script src="js/seo.js" defer></script>
+  <script src="js/showcase.js" defer></script>
   <script src="js/main.js" defer></script>
 </body>
 </html>

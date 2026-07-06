@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -6,12 +6,12 @@
   <meta name="robots" content="index, follow">
   <title>Ürünler | Mayamak CNC ve Endüstriyel Parça İmalatı</title>
   <meta name="description" content="Mayamak ürün ve üretim kabiliyetleri: CNC işleme, talaşlı imalat, talaşsız imalat, kaynak, montaj ve özel parça üretimi.">
-  <link rel="canonical" href="https://www.mayamak.com/urunler.html">
+  <link rel="canonical" href="https://www.mayamak.com/urunler">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mayamak">
   <meta property="og:title" content="Ürünler | Mayamak CNC ve Endüstriyel Parça İmalatı">
   <meta property="og:description" content="Mayamak ürün ve üretim kabiliyetleri: CNC işleme, talaşlı imalat, talaşsız imalat, kaynak, montaj ve özel parça üretimi.">
-  <meta property="og:url" content="https://www.mayamak.com/urunler.html">
+  <meta property="og:url" content="https://www.mayamak.com/urunler">
   <meta property="og:image" content="https://www.mayamak.com/images/logo/logo.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
@@ -19,8 +19,10 @@
   <meta name="twitter:title" content="Ürünler | Mayamak CNC ve Endüstriyel Parça İmalatı">
   <meta name="twitter:description" content="Mayamak ürün ve üretim kabiliyetleri: CNC işleme, talaşlı imalat, talaşsız imalat, kaynak, montaj ve özel parça üretimi.">
   <meta name="twitter:image" content="https://www.mayamak.com/images/logo/logo.png">
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="icon" href="favicon-light.ico" sizes="any" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="favicon-dark.ico" sizes="any" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
+  <script src="js/favicon.js" defer></script>
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
@@ -60,22 +62,22 @@
         <li class="nav-dropdown">
           <button class="nav-dropdown-trigger" data-i18n="nav.corporate">Kurumsal ▾</button>
           <ul class="nav-dropdown-menu">
-            <li><a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a></li>
-            <li><a href="makine-parki.html" data-nav="machines" data-i18n="nav.machines">Makine Parkuru</a></li>
-            <li><a href="sertifikalar.html" data-nav="certificates" data-i18n="nav.certificates">Sertifikalar</a></li>
-            <li><a href="sirketlerimiz.html" data-nav="companies" data-i18n="nav.companies">Şirketlerimiz</a></li>
+            <li><a href="/hakkimizda" data-i18n="nav.about">Hakkımızda</a></li>
+            <li><a href="/makine-parki" data-nav="machines" data-i18n="nav.machines">Makine Parkuru</a></li>
+            <li><a href="/sertifikalar" data-nav="certificates" data-i18n="nav.certificates">Sertifikalar</a></li>
+            <li><a href="/sirketlerimiz" data-nav="companies" data-i18n="nav.companies">Şirketlerimiz</a></li>
           </ul>
         </li>
         <li class="nav-dropdown">
-          <button class="nav-dropdown-trigger">Çözümler ▾</button>
+          <button class="nav-dropdown-trigger" data-i18n="nav.solutions">Çözümler ▾</button>
           <ul class="nav-dropdown-menu">
-            <li><a href="urunler.html" data-nav="products">Üretim Çözümleri</a></li>
-            <li><a href="catalog.html" data-nav="catalog" target="_blank" rel="noopener">Kurumsal Katalog</a></li>
+            <li><a href="/urunler" data-nav="products" data-i18n="nav.productionSolutions">Üretim Çözümleri</a></li>
+            <li><a href="/katalog" data-nav="catalog" target="_blank" rel="noopener" data-i18n="nav.catalog">Kurumsal Katalog</a></li>
           </ul>
         </li>
-        <li><a href="referanslar.html" data-nav="references" data-i18n="nav.references">Referanslar</a></li>
-        <li><a href="iletisim.html" data-nav="contact" data-i18n="nav.contact">İletişim</a></li>
-        <li class="nav-cta-item"><a href="makine-doluluk.html" class="nav-cta" data-nav="occupancy" data-i18n="nav.occupancy">KAPASİTE TAKİP</a></li>
+        <li><a href="/referanslar" data-nav="references" data-i18n="nav.references">Referanslar</a></li>
+        <li><a href="/iletisim" data-nav="contact" data-i18n="nav.contact">İletişim</a></li>
+        <li class="nav-cta-item"><a href="/makine-doluluk" class="nav-cta" data-nav="occupancy" data-i18n="nav.occupancy">KAPASİTE TAKİP</a></li>
       </ul>
       </nav>
     </div>
@@ -98,9 +100,9 @@
         <div class="footer-col">
           <h4 data-i18n="footer.quick">Hızlı Bağlantılar</h4>
           <ul>
-            <li><a href="makine-parki.html" data-i18n="nav.machines">Makine Parkı</a></li>
-            <li><a href="referanslar.html" data-i18n="nav.references">Referanslar</a></li>
-            <li><a href="iletisim.html" data-i18n="nav.contact">İletişim</a></li>
+            <li><a href="/makine-parki" data-i18n="nav.machines">Makine Parkı</a></li>
+            <li><a href="/referanslar" data-i18n="nav.references">Referanslar</a></li>
+            <li><a href="/iletisim" data-i18n="nav.contact">İletişim</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -121,6 +123,7 @@
   <script src="js/images.js" defer></script>
   <script src="js/data.js" defer></script>
   <script src="js/i18n.js" defer></script>
+  <script src="js/routes.js" defer></script>
   <script src="js/seo.js" defer></script>
   <script src="js/showcase.js" defer></script>
   <script src="js/main.js" defer></script>
