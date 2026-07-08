@@ -7,12 +7,12 @@
   <meta name="robots" content="index, follow">
   <title>İletişim | Mayamak Dilovası Üretim Tesisi</title>
   <meta name="description" content="Mayamak iletişim: Dilovası/Kocaeli talaşlı imalat ve CNC üretim tesisi adres ve iletişim bilgileri.">
-  <link rel="canonical" href="https://www.mayamak.com/iletisim">
+  <link rel="canonical" href="https://www.mayamak.com/iletisim/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Mayamak">
   <meta property="og:title" content="İletişim | Mayamak Dilovası Üretim Tesisi">
   <meta property="og:description" content="Mayamak iletişim: Dilovası/Kocaeli talaşlı imalat ve CNC üretim tesisi adres ve iletişim bilgileri.">
-  <meta property="og:url" content="https://www.mayamak.com/iletisim">
+  <meta property="og:url" content="https://www.mayamak.com/iletisim/">
   <meta property="og:image" content="https://www.mayamak.com/images/logo/logo.png">
   <meta property="og:locale" content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
@@ -63,22 +63,22 @@
         <li class="nav-dropdown">
           <button class="nav-dropdown-trigger" data-i18n="nav.corporate">Kurumsal ▾</button>
           <ul class="nav-dropdown-menu">
-            <li><a href="/hakkimizda" data-i18n="nav.about">Hakkımızda</a></li>
-            <li><a href="/makine-parki" data-nav="machines" data-i18n="nav.machines">Makine Parkuru</a></li>
-            <li><a href="/sertifikalar" data-nav="certificates" data-i18n="nav.certificates">Sertifikalar</a></li>
-            <li><a href="/sirketlerimiz" data-nav="companies" data-i18n="nav.companies">Şirketlerimiz</a></li>
+            <li><a href="/hakkimizda/" data-i18n="nav.about">Hakkımızda</a></li>
+            <li><a href="/makine-parki/" data-nav="machines" data-i18n="nav.machines">Makine Parkuru</a></li>
+            <li><a href="/sertifikalar/" data-nav="certificates" data-i18n="nav.certificates">Sertifikalar</a></li>
+            <li><a href="/sirketlerimiz/" data-nav="companies" data-i18n="nav.companies">Şirketlerimiz</a></li>
           </ul>
         </li>
         <li class="nav-dropdown">
           <button class="nav-dropdown-trigger" data-i18n="nav.solutions">Çözümler ▾</button>
           <ul class="nav-dropdown-menu">
-            <li><a href="/urunler" data-nav="products" data-i18n="nav.productionSolutions">Üretim Çözümleri</a></li>
-            <li><a href="/katalog" data-nav="catalog" target="_blank" rel="noopener" data-i18n="nav.catalog">Kurumsal Katalog</a></li>
+            <li><a href="/urunler/" data-nav="products" data-i18n="nav.productionSolutions">Üretim Çözümleri</a></li>
+            <li><a href="/katalog/" data-nav="catalog" target="_blank" rel="noopener" data-i18n="nav.catalog">Kurumsal Katalog</a></li>
           </ul>
         </li>
-        <li><a href="/referanslar" data-nav="references" data-i18n="nav.references">Referanslar</a></li>
-        <li><a href="/iletisim" data-nav="contact" data-i18n="nav.contact">İletişim</a></li>
-        <li class="nav-cta-item"><a href="/makine-doluluk" class="nav-cta" data-nav="occupancy" data-i18n="nav.occupancy">KAPASİTE TAKİP</a></li>
+        <li><a href="/referanslar/" data-nav="references" data-i18n="nav.references">Referanslar</a></li>
+        <li><a href="/iletisim/" data-nav="contact" data-i18n="nav.contact">İletişim</a></li>
+        <li class="nav-cta-item"><a href="/makine-doluluk/" class="nav-cta" data-nav="occupancy" data-i18n="nav.occupancy">KAPASİTE TAKİP</a></li>
       </ul>
       </nav>
     </div>
@@ -144,7 +144,62 @@
     </div>
   </section>
 
-  <section class="section section-gray">
+  <section class="section section-gray" id="teklif-formu">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 data-i18n="contact.form.title">Teklif Talebi</h2>
+        <p data-i18n="contact.form.subtitle">Teknik çizim veya proje detaylarınızı iletin; size özel teklif hazırlayalım.</p>
+      </div>
+      <form id="contact-form" class="contact-form reveal" novalidate>
+        <input type="text" name="website" autocomplete="off" tabindex="-1" style="display:none" class="contact-honeypot" aria-hidden="true">
+        <div class="contact-form-grid">
+          <div class="form-group">
+            <label for="contact-firstname"><span data-i18n="contact.form.firstName">Ad</span> <span class="required">*</span></label>
+            <input type="text" id="contact-firstname" name="first_name" required maxlength="50" autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="contact-lastname"><span data-i18n="contact.form.lastName">Soyad</span> <span class="required">*</span></label>
+            <input type="text" id="contact-lastname" name="last_name" required maxlength="50" autocomplete="family-name">
+          </div>
+          <div class="form-group">
+            <label for="contact-email"><span data-i18n="contact.form.email">E-posta</span> <span class="required">*</span></label>
+            <input type="email" id="contact-email" name="email" required maxlength="150" autocomplete="email" inputmode="email" placeholder="example@mail.com">
+          </div>
+          <div class="form-group">
+            <label for="contact-phone"><span data-i18n="contact.form.phone">Telefon</span> <span class="required">*</span></label>
+            <div class="phone-field" id="contact-phone-field">
+              <div class="phone-dial">
+                <button type="button" class="phone-dial__trigger" id="contact-phone-dial-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Ülke kodu">+90</button>
+                <div class="phone-dial__menu" id="contact-phone-dial-menu" role="listbox" hidden></div>
+                <input type="hidden" id="contact-phone-dial" name="phone_country_iso" value="TR">
+              </div>
+              <input type="tel" id="contact-phone" name="phone" class="phone-field__input" required autocomplete="tel" inputmode="tel" spellcheck="false">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="contact-company" data-i18n="contact.form.company">Firma</label>
+            <input type="text" id="contact-company" name="company" maxlength="150" autocomplete="organization">
+          </div>
+          <div class="form-group">
+            <label for="contact-company-country"><span data-i18n="contact.form.country">Firma Ülkesi</span> <span class="required">*</span></label>
+            <select id="contact-company-country" name="company_country_iso" required></select>
+          </div>
+          <div class="form-group form-group--full">
+            <label for="contact-subject" data-i18n="contact.form.subject">Konu</label>
+            <input type="text" id="contact-subject" name="subject" maxlength="150">
+          </div>
+          <div class="form-group form-group--full">
+            <label for="contact-message"><span data-i18n="contact.form.message">Mesaj</span> <span class="required">*</span></label>
+            <textarea id="contact-message" name="message" required maxlength="2000" rows="6"></textarea>
+          </div>
+        </div>
+        <div id="contact-feedback" class="contact-feedback" hidden></div>
+        <button type="submit" class="btn btn-primary" id="contact-submit" data-i18n="contact.form.submit">Teklif Talebi Gönder</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="container">
       <div class="section-header reveal">
         <h2 data-i18n="faq.title">Sıkça Sorulan Sorular</h2>
@@ -181,9 +236,9 @@
         <div class="footer-col">
           <h4 data-i18n="footer.quick">Hızlı Bağlantılar</h4>
           <ul>
-            <li><a href="/hakkimizda" data-i18n="nav.about">Hakkımızda</a></li>
-            <li><a href="/makine-parki" data-i18n="nav.machines">Makine Parkı</a></li>
-            <li><a href="/urunler" data-i18n="nav.products">Ürünler</a></li>
+            <li><a href="/hakkimizda/" data-i18n="nav.about">Hakkımızda</a></li>
+            <li><a href="/makine-parki/" data-i18n="nav.machines">Makine Parkı</a></li>
+            <li><a href="/urunler/" data-i18n="nav.products">Ürünler</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -207,5 +262,7 @@
   <script src="js/routes.js" defer></script>
   <script src="js/seo.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/countries.js" defer></script>
+  <script src="js/contact-form.js" defer></script>
 </body>
 </html>

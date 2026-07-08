@@ -2013,6 +2013,262 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   margin: 0;
 }
 
+/* ─── CONTACT FORM ─── */
+.contact-form {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.contact-honeypot {
+  display: none !important;
+  position: absolute;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.contact-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group--full {
+  grid-column: 1 / -1;
+}
+
+.form-group label {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.form-group .required {
+  color: var(--blue);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  background: var(--navy-card);
+  color: var(--text);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.form-group select {
+  appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--text-muted) 50%), linear-gradient(135deg, var(--text-muted) 50%, transparent 50%);
+  background-position: calc(100% - 18px) 55%, calc(100% - 12px) 55%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+  padding-right: 36px;
+  cursor: pointer;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.form-hint {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.phone-field {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  background: var(--navy-card);
+  overflow: visible;
+  position: relative;
+}
+
+.phone-field:focus-within {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.phone-dial {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.phone-dial__trigger {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 100%;
+  min-width: 72px;
+  padding: 12px 14px;
+  border: 0;
+  border-right: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius) 0 0 var(--radius);
+  background: rgba(255,255,255,0.04);
+  color: var(--text);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.phone-dial__trigger::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid var(--text-muted);
+  margin-left: 2px;
+}
+
+.phone-dial__trigger:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.phone-dial__menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  z-index: 40;
+  width: min(320px, 80vw);
+  max-height: 280px;
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  background: var(--navy-card);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+}
+
+.phone-dial__option {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text);
+  font-family: inherit;
+  font-size: var(--fs-sm);
+  text-align: left;
+  cursor: pointer;
+}
+
+.phone-dial__option:hover,
+.phone-dial__option:focus {
+  background: rgba(59, 130, 246, 0.15);
+  outline: none;
+}
+
+.phone-dial__option-flag {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.phone-dial__option-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.phone-dial__option-code {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.phone-field__input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 14px;
+  border: 0;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: transparent;
+  color: var(--text);
+  font-family: inherit;
+  font-size: var(--fs-base);
+  letter-spacing: 0.02em;
+}
+
+.phone-field__input:focus {
+  outline: none;
+}
+
+.contact-feedback {
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  margin-bottom: 20px;
+  font-size: var(--fs-sm);
+  font-weight: 500;
+}
+
+.contact-feedback--success {
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #86efac;
+}
+
+.contact-feedback--error {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+
+.contact-form .btn-primary {
+  min-width: 200px;
+}
+
+.contact-form .btn-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
 .contact-map {
   border-radius: var(--radius);
   overflow: hidden;
@@ -2465,6 +2721,14 @@ p { font-size: var(--fs-base); margin-bottom: 0.75rem; }
   .filter-btn { flex: 0 0 auto; }
 
   .about-preview, .about-grid, .contact-grid { grid-template-columns: 1fr; }
+  .contact-form-grid { grid-template-columns: 1fr; }
+  .phone-field {
+    grid-template-columns: auto minmax(0, 1fr);
+  }
+  .phone-dial__menu {
+    left: 0;
+    width: min(100vw - 48px, 320px);
+  }
 
   .articles-toc ol { columns: 1; }
   .seo-article { padding: 24px 20px; }

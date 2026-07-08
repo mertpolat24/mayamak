@@ -1,0 +1,10 @@
+# SMTP yapılandırması — sunucuda contact-config.php oluşturun (örnek: config/contact-config.example.php)
+config/contact-config.php
+
+# Çalışma zamanı verileri
+data/*.json
+logs/*.json
+
+# Composer bağımlılıkları (PHPMailer manuel vendor/PHPMailer ile geliyorsa gerekmez)
+vendor/autoload.php
+composer.lock
