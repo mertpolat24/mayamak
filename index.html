@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -19,18 +19,19 @@
   <meta name="twitter:title" content="Mayamak | CNC Talaşlı İmalat ve Endüstriyel Üretim">
   <meta name="twitter:description" content="Mayamak; CNC torna, CNC freze, lazer kesim, abkant büküm ve hassas parça imalatı alanlarında Kocaeli Dilovası merkezli üretim çözümleri sunar.">
   <meta name="twitter:image" content="https://www.mayamak.com/images/logo/logo.png">
-  <link rel="icon" href="favicon-light.ico" sizes="any" media="(prefers-color-scheme: light)">
-  <link rel="icon" href="favicon-dark.ico" sizes="any" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
-  <script src="js/favicon.js" defer></script>
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="/favicon-light.ico" sizes="any" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/favicon-dark.ico" sizes="any" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
+  <script src="/js/favicon.js" defer></script>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preload" as="image" href="images/products/denizalti-480.webp" fetchpriority="high" media="(max-width: 768px)">
   <link rel="preload" as="image" href="images/products/denizalti-1200.webp" fetchpriority="high" media="(min-width: 769px)">
-  <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/critical.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" as="image" href="images/products/denizalti.webp" fetchpriority="high">
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/critical.css">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body data-page="home" data-page-title="meta.title.home" data-page-description="meta.description.home">
 
@@ -42,9 +43,26 @@
       </div>
       <div class="top-bar-right">
         <div class="top-bar-social" id="top-bar-social"></div>
-        <div class="lang-switch">
-          <button class="lang-btn active" data-lang="tr">TR</button>
-          <button class="lang-btn" data-lang="en">EN</button>
+        <div class="lang-combobox" id="lang-combobox">
+          <button type="button" class="lang-combobox-btn" id="lang-combobox-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Dil Seçimi">
+            <span class="lang-current-flag"></span>
+            <span class="lang-current-code">TR</span>
+            <span class="lang-combobox-arrow" aria-hidden="true">▾</span>
+          </button>
+          <ul class="lang-combobox-menu" role="listbox" tabIndex="-1">
+            <li role="option" data-lang="tr" class="lang-combobox-item active" tabIndex="0">
+              <span class="lang-item-flag"></span>
+              <span class="lang-item-name">Türkçe</span>
+            </li>
+            <li role="option" data-lang="en" class="lang-combobox-item" tabIndex="0">
+              <span class="lang-item-flag"></span>
+              <span class="lang-item-name">English</span>
+            </li>
+            <li role="option" data-lang="de" class="lang-combobox-item" tabIndex="0">
+              <span class="lang-item-flag"></span>
+              <span class="lang-item-name">Deutsch</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -53,7 +71,7 @@
   <header class="site-header" id="site-header">
     <div class="container header-inner">
             <a href="/" class="logo">
-        <img src="images/logo/logo-header.png" alt="Mayamak" class="logo-img" width="1040" height="316" decoding="async">
+        <img src="/images/logo/logo-header.png" alt="Mayamak" class="logo-img" width="1040" height="316" decoding="async">
       </a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menü">
         <span></span><span></span><span></span>
@@ -93,8 +111,8 @@
       <div class="product-hero-slides" id="product-hero-slides">
         <article class="product-hero-item active" data-index="0" data-hero-static>
           <img
-            src="images/products/denizalti-768.webp"
-            srcset="images/products/denizalti-480.webp 480w, images/products/denizalti-768.webp 768w, images/products/denizalti-1200.webp 1200w, images/products/denizalti.webp 2752w"
+            src="/images/products/denizalti-768.webp"
+            srcset="/images/products/denizalti-480.webp 480w, /images/products/denizalti-768.webp 768w, /images/products/denizalti-1200.webp 1200w, /images/products/denizalti.webp 2752w"
             sizes="(max-width: 768px) 100vw, 100vw"
             width="1200"
             height="670"
@@ -110,7 +128,7 @@
         </article>
       </div>
       <div class="product-hero-brand">
-        <img src="images/logo/logo2.webp" alt="Mayamak" width="2400" height="830" loading="lazy" decoding="async">
+        <img src="/images/logo/logo2.webp" alt="Mayamak" width="2400" height="830" loading="lazy" decoding="async">
       </div>
       <nav class="product-hero-nav-names" id="product-hero-nav-names" aria-label="Ürünler"></nav>
     </div>
@@ -173,7 +191,7 @@
     <div class="container">
       <div class="about-preview">
         <div class="about-preview-img reveal">
-          <img src="images/logo/logo2.webp" alt="Mayamak" width="2400" height="830" loading="lazy" decoding="async">
+          <img src="/images/logo/logo2.webp" alt="Mayamak" width="2400" height="830" loading="lazy" decoding="async">
         </div>
         <div class="about-preview-text reveal">
           <h2 data-i18n="section.about">Hakkımızda</h2>
@@ -226,7 +244,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <img src="images/logo/logo2.webp" alt="Mayamak" class="footer-logo" width="2400" height="830" loading="lazy" decoding="async">
+          <img src="/images/logo/logo2.webp" alt="Mayamak" class="footer-logo" width="2400" height="830" loading="lazy" decoding="async">
           <p data-i18n="footer.tagline">Ciddiyetle Üretir.</p>
           <p>KOBİ OSB 21 CADDE NO46<br>DİLOVASI / KOCAELİ</p>
         </div>
@@ -255,13 +273,13 @@
     </div>
   </footer>
 
-  <script src="js/image-manifest.js" defer></script>
-  <script src="js/images.js" defer></script>
-  <script src="js/data.js" defer></script>
-  <script src="js/i18n.js" defer></script>
-  <script src="js/routes.js" defer></script>
-  <script src="js/seo.js" defer></script>
-  <script src="js/hero.js" defer></script>
-  <script src="js/main.js" defer></script>
+  <script src="/js/image-manifest.js" defer></script>
+  <script src="/js/images.js" defer></script>
+  <script src="/js/data.js" defer></script>
+  <script src="/js/i18n.js" defer></script>
+  <script src="/js/routes.js" defer></script>
+  <script src="/js/seo.js" defer></script>
+  <script src="/js/hero.js" defer></script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>

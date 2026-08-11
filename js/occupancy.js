@@ -1,5 +1,15 @@
 /* Daily machine occupancy – 60-80%, regenerated at 09:00 */
 window.MayamakOccupancy = (function () {
+  function getLangProp(obj, prop) {
+    if (!obj) return "";
+    var lang = window.MayamakI18n ? window.MayamakI18n.getLang() : "tr";
+    if (lang === "de" && obj[prop + "De"]) return obj[prop + "De"];
+    if (lang === "en" && obj[prop + "En"]) return obj[prop + "En"];
+    if (obj[prop + "Tr"]) return obj[prop + "Tr"];
+    if (obj[prop]) return obj[prop];
+    return obj.de || obj.en || obj.tr || "";
+  }
+
   var STORAGE_PREFIX = "mayamak_occ_";
 
   function pad(n) {
@@ -110,7 +120,7 @@ window.MayamakOccupancy = (function () {
 
     machines.forEach(function (m, idx) {
       var rate = data.rates[m.id] || 70;
-      var name = lang === "en" ? m.nameEn : m.nameTr;
+      var name = getLangProp(m, "name");
       var card = document.createElement("article");
       card.className = "occ-card";
       card.style.animationDelay = (idx * 0.06) + "s";

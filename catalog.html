@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
@@ -18,16 +18,16 @@
   <meta name="twitter:title" content="Kurumsal Katalog | Mayamak CNC Talaşlı İmalat ve Üretim Kabiliyetleri">
   <meta name="twitter:description" content="Mayamak kurumsal katalog: makine parkı, üretim kabiliyetleri, ürünler, referanslar, sertifikalar ve iletişim. PDF olarak indirilebilir dijital katalog.">
   <meta name="twitter:image" content="https://www.mayamak.com/images/logo/logo.png">
-  <link rel="icon" href="favicon-light.ico" sizes="any" media="(prefers-color-scheme: light)">
-  <link rel="icon" href="favicon-dark.ico" sizes="any" media="(prefers-color-scheme: dark)">
-  <link rel="icon" href="favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
-  <script src="js/favicon.js" defer></script>
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/critical.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon-light.ico" sizes="any" media="(prefers-color-scheme: light)">
+  <link rel="icon" href="/favicon-dark.ico" sizes="any" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="/favicon-light.png" type="image/png" media="(prefers-color-scheme: light)">
+  <script src="/js/favicon.js" defer></script>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/fonts.css">
+  <link rel="stylesheet" href="/css/critical.css">
+  <link rel="stylesheet" href="/css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -51,7 +51,7 @@
     .page-title-line { width: 48px; height: 3px; background: var(--catalog-blue); margin: 0 0 14px; }
     .page-footer { position: absolute; left: 15mm; right: 15mm; bottom: 9mm; display: flex; justify-content: space-between; align-items: center; color: #8491a3; font-size: 10px; border-top: 1px solid var(--catalog-line); padding-top: 7px; }
     .cover { background: var(--catalog-navy); color: #fff; }
-    .cover::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,22,40,0.96) 0%, rgba(10,22,40,0.68) 48%, rgba(10,22,40,0.28) 100%), url('images/machines/cnc/boafeng-v13-isleme.webp') center/cover no-repeat; }
+    .cover::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,22,40,0.96) 0%, rgba(10,22,40,0.68) 48%, rgba(10,22,40,0.28) 100%), url('/images/machines/cnc/boafeng-v13-isleme.webp') center/cover no-repeat; }
     .cover .page-inner { display: flex; flex-direction: column; justify-content: space-between; color: #fff; }
     .cover-logo { width: 190px; height: auto; filter: drop-shadow(0 6px 20px rgba(0,0,0,0.45)); }
     .cover h1 { color: #fff; font-size: 52px; max-width: 460px; letter-spacing: -0.03em; }
@@ -70,13 +70,13 @@
     .capability-card { min-height: 92px; background: var(--catalog-soft); border: 1px solid var(--catalog-line); border-left: 4px solid var(--catalog-blue); padding: 14px; border-radius: 5px; }
     .machine-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
     .machine-card-catalog, .product-card-catalog { border: 1px solid var(--catalog-line); border-radius: 4px; overflow: hidden; background: #fff; break-inside: avoid; }
-    .machine-card-catalog img { width: 100%; height: 112px; object-fit: contain; background: #f6f8fb; padding: 6px; }
+    .machine-card-catalog img { width: 100%; height: 112px; object-fit: contain; background: #fff; padding: 6px; }
     .machine-card-catalog div { padding: 6px; }
     .machine-card-catalog h3 { font-size: 9.6px; line-height: 1.18; margin-bottom: 3px; }
     .machine-card-catalog p { font-size: 7.5px; line-height: 1.24; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .product-grid { display: grid; grid-template-columns: 1fr; gap: 9px; margin-top: 12px; }
     .product-card-catalog { display: grid; grid-template-columns: 190px 1fr; min-height: 82px; }
-    .product-card-catalog img { width: 190px; height: 100%; min-height: 82px; object-fit: cover; background: #eef2f6; }
+    .product-card-catalog img { width: 190px; height: 100%; min-height: 82px; object-fit: cover; background: #fff; }
     .product-card-catalog div { padding: 10px 12px; }
     .product-card-catalog h3 { font-size: 12px; line-height: 1.22; margin-bottom: 5px; }
     .product-card-catalog p { font-size: 10px; line-height: 1.34; margin: 0; }
@@ -179,114 +179,135 @@
 <body class="catalog-body" data-page="catalog">
   <h1 class="sr-only">Kurumsal Katalog | Mayamak</h1>
   <div class="catalog-toolbar">
-    <button onclick="downloadCatalog()">Kataloğu PDF Olarak İndir</button>
-    <a href="/">Siteye Dön</a>
+    <button onclick="downloadCatalog()" data-i18n="catalog.downloadPdf">Kataloğu PDF Olarak İndir</button>
+    <a href="/" data-i18n="catalog.backHome">Siteye Dön</a>
+    <div class="lang-combobox" id="lang-combobox">
+      <button type="button" class="lang-combobox-btn" id="lang-combobox-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="Dil Seçimi">
+        <span class="lang-current-flag"></span>
+        <span class="lang-current-code">TR</span>
+        <span class="lang-combobox-arrow" aria-hidden="true">▾</span>
+      </button>
+      <ul class="lang-combobox-menu" role="listbox" tabIndex="-1">
+        <li role="option" data-lang="tr" class="lang-combobox-item active" tabIndex="0">
+          <span class="lang-item-flag"></span>
+          <span class="lang-item-name">Türkçe</span>
+        </li>
+        <li role="option" data-lang="en" class="lang-combobox-item" tabIndex="0">
+          <span class="lang-item-flag"></span>
+          <span class="lang-item-name">English</span>
+        </li>
+        <li role="option" data-lang="de" class="lang-combobox-item" tabIndex="0">
+          <span class="lang-item-flag"></span>
+          <span class="lang-item-name">Deutsch</span>
+        </li>
+      </ul>
+    </div>
   </div>
 
   <main class="catalog-shell" id="catalog">
     <section class="page cover">
       <div class="page-inner">
-        <div><img src="images/logo/logo2.webp" alt="Mayamak" class="cover-logo"></div>
+        <div><img src="/images/logo/logo2.webp" alt="Mayamak" class="cover-logo"></div>
         <div>
-          <div class="page-kicker">Kurumsal Üretim Kataloğu</div>
-          <h1>Ciddiyetle Üretir.</h1>
-          <p>Talaşlı ve talaşsız imalat yöntemleriyle savunma, otomotiv, enerji ve genel sanayi sektörleri için hassas üretim çözümleri.</p>
+          <div class="page-kicker" data-i18n="catalog.kicker.cover">Kurumsal Üretim Kataloğu</div>
+          <h1 data-i18n="hero.title">Ciddiyetle Üretir.</h1>
+          <p data-i18n="hero.subtitle">Talaşlı ve talaşsız imalat yöntemleriyle savunma, otomotiv, enerji ve genel sanayi sektörleri için hassas üretim çözümleri.</p>
         </div>
-        <div class="cover-meta"><span>CNC Talaşlı İmalat</span><span>Kaynak ve Montaj</span><span>Kalite Güvencesi</span></div>
+        <div class="cover-meta"><span data-i18n="catalog.cover.meta1">CNC Talaşlı İmalat</span><span data-i18n="catalog.cover.meta2">Kaynak ve Montaj</span><span data-i18n="catalog.cover.meta3">Kalite Güvencesi</span></div>
       </div>
     </section>
 
     <section class="page">
       <div class="page-inner">
-        <img src="images/logo/logo-header.png" alt="Mayamak" class="catalog-logo-small">
-        <div class="page-kicker">Mayamak Hakkında</div><h2>Hakkımızda</h2><div class="page-title-line"></div>
+        <img src="/images/logo/logo-header.png" alt="Mayamak" class="catalog-logo-small">
+        <div class="page-kicker" data-i18n="catalog.kicker.about">Mayamak Hakkında</div><h2 data-i18n="section.about">Hakkımızda</h2><div class="page-title-line"></div>
         <div class="intro-grid">
           <div>
-            <p>Mayamak, talaşlı ve talaşsız imalat alanlarında faaliyet gösteren, yüksek kaliteli üretim anlayışıyla sanayinin ihtiyaçlarına çözüm sunan bir mühendislik ve üretim firmasıdır.</p>
-            <p>Modern CNC torna, CNC freze, lazer kesim, abkant büküm, otomat makineleri ve üretim destek ekipmanlarıyla prototipten seri üretime kadar geniş bir hizmet alanı sunar.</p>
-            <p>Metal ve plastik parça imalatında hassasiyet, hız ve tekrarlanabilirliği temel alır; müşterilerine proje ihtiyaçlarına göre şekillenen güvenilir üretim çözümleri üretir.</p>
-            <p>Dilovası/Kocaeli'deki tesisinde savunma, otomotiv, enerji ve genel sanayi sektörleri için planlı, disiplinli ve izlenebilir üretim yaklaşımıyla çalışır.</p>
+            <p data-i18n="about.p1">Mayamak, talaşlı ve talaşsız imalat alanlarında faaliyet gösteren, yüksek kaliteli üretim anlayışıyla sanayinin ihtiyaçlarına çözüm sunan bir mühendislik ve üretim firmasıdır.</p>
+            <p data-i18n="about.p2">Modern CNC torna, CNC freze, lazer kesim, abkant büküm, otomat makineleri ve üretim destek ekipmanlarıyla prototipten seri üretime kadar geniş bir hizmet alanı sunar.</p>
+            <p data-i18n="about.p3">Metal ve plastik parça imalatında hassasiyet, hız ve tekrarlanabilirliği temel alır; müşterilerine proje ihtiyaçlarına göre şekillenen güvenilir üretim çözümleri üretir.</p>
+            <p data-i18n="about.p4">Dilovası/Kocaeli'deki tesisinde savunma, otomotiv, enerji ve genel sanayi sektörleri için planlı, disiplinli ve izlenebilir üretim yaklaşımıyla çalışır.</p>
           </div>
-          <div class="blue-panel"><h3>Üretim Yaklaşımı</h3><p>Her adımda planlı, disiplinli ve sonuç odaklı çalışma; üretimde hassasiyet, iletişimde şeffaflık ve teslimatta dakiklik Mayamak standardıdır.</p></div>
+          <div class="blue-panel"><h3 data-i18n="catalog.about.approachTitle">Üretim Yaklaşımı</h3><p data-i18n="catalog.about.approachDesc">Her adımda planlı, disiplinli ve sonuç odaklı çalışma; üretimde hassasiyet, iletişimde şeffaflık ve teslimatta dakiklik Mayamak standardıdır.</p></div>
         </div>
-        <div class="stat-row"><div class="stat-box"><strong>23</strong><span>Makine</span></div><div class="stat-box"><strong>200+</strong><span>Proje</span></div><div class="stat-box"><strong>%100</strong><span>Kalite Odağı</span></div></div>
-        <div class="page-footer"><span>Mayamak Kurumsal Katalog</span><span>02</span></div>
+        <div class="stat-row"><div class="stat-box"><strong>23</strong><span data-i18n="catalog.stat.machine">Makine</span></div><div class="stat-box"><strong>200+</strong><span data-i18n="catalog.stat.project">Proje</span></div><div class="stat-box"><strong>%100</strong><span data-i18n="catalog.stat.quality">Kalite Odağı</span></div></div>
+        <div class="page-footer"><span data-i18n="catalog.footer.cover">Mayamak Kurumsal Katalog</span><span>02</span></div>
       </div>
     </section>
 
     <section class="page">
       <div class="page-inner">
-        <div class="page-kicker">Mühendislik ve İmalat</div><h2>Üretim Kabiliyetleri</h2><div class="page-title-line"></div>
-        <p>Mayamak, prototipten seri üretime kadar uçtan uca mühendislik çözümleri sunar. Üretim altyapısı; hassas işleme, şekillendirme, kaynak, montaj ve kalite kontrol süreçlerini birlikte yönetebilecek şekilde kurgulanmıştır.</p>
+        <div class="page-kicker" data-i18n="catalog.kicker.capabilities">Mühendislik ve İmalat</div><h2 data-i18n="catalog.capabilities.title">Üretim Kabiliyetleri</h2><div class="page-title-line"></div>
+        <p data-i18n="catalog.capabilities.desc">Mayamak, prototipten seri üretime kadar uçtan uca mühendislik çözümleri sunar. Üretim altyapısı; hassas işleme, şekillendirme, kaynak, montaj ve kalite kontrol süreçlerini birlikte yönetebilecek şekilde kurgulanmıştır.</p>
         <div class="capability-grid">
-          <div class="capability-card"><h3>CNC Torna</h3><p>Silindirik ve tolerans kritik parçalar için yüksek hassasiyetli, tekrarlanabilir talaşlı imalat.</p></div>
-          <div class="capability-card"><h3>CNC Freze</h3><p>Karmaşık geometrili parçaların işlenmesi, 4 eksenli işleme ve komponent üretimi.</p></div>
-          <div class="capability-card"><h3>Lazer Kesim</h3><p>Sac ve profil malzemelerde hızlı, temiz ve izlenebilir kesim operasyonları.</p></div>
-          <div class="capability-card"><h3>Abkant Büküm</h3><p>Endüstriyel sac parçalar için kontrollü şekillendirme ve seri üretim desteği.</p></div>
-          <div class="capability-card"><h3>Kaynak</h3><p>TIG, MIG/MAG ve plazma kaynak süreçleriyle çelik, alüminyum ve paslanmaz uygulamalar.</p></div>
-          <div class="capability-card"><h3>Montaj</h3><p>Üretilen parçaların alt montaj ve hat entegrasyonuna hazır teslim süreçleri.</p></div>
+          <div class="capability-card"><h3 data-i18n="catalog.cap.cncTornaTitle">CNC Torna</h3><p data-i18n="catalog.cap.cncTornaDesc">Silindirik ve tolerans kritik parçalar için yüksek hassasiyetli, tekrarlanabilir talaşlı imalat.</p></div>
+          <div class="capability-card"><h3 data-i18n="catalog.cap.cncFrezeTitle">CNC Freze</h3><p data-i18n="catalog.cap.cncFrezeDesc">Karmaşık geometrili parçaların işlenmesi, 4 eksenli işleme ve komponent üretimi.</p></div>
+          <div class="capability-card"><h3 data-i18n="catalog.cap.laserTitle">Lazer Kesim</h3><p data-i18n="catalog.cap.laserDesc">Sac ve profil malzemelerde hızlı, temiz ve izlenebilir kesim operasyonları.</p></div>
+          <div class="capability-card"><h3 data-i18n="catalog.cap.bendingTitle">Abkant Büküm</h3><p data-i18n="catalog.cap.bendingDesc">Endüstriyel sac parçalar için kontrollü şekillendirme ve seri üretim desteği.</p></div>
+          <div class="capability-card"><h3 data-i18n="catalog.cap.weldingTitle">Kaynak</h3><p data-i18n="catalog.cap.weldingDesc">TIG, MIG/MAG ve plazma kaynak süreçleriyle çelik, alüminyum ve paslanmaz uygulamalar.</p></div>
+          <div class="capability-card"><h3 data-i18n="catalog.cap.assemblyTitle">Montaj</h3><p data-i18n="catalog.cap.assemblyDesc">Üretilen parçaların alt montaj ve hat entegrasyonuna hazır teslim süreçleri.</p></div>
         </div>
-        <div class="intro-panel" style="margin-top:18px"><h3>Kalite Kontrol</h3><p>Ölçüm ve test süreçleriyle her parçada izlenebilir kalite güvencesi sağlanır. Hexagon CMM gibi ölçüm ekipmanları, hassas parçaların doğrulanmasında aktif olarak kullanılır.</p></div>
-        <div class="page-footer"><span>Üretim Kabiliyetleri</span><span>03</span></div>
+        <div class="intro-panel" style="margin-top:18px"><h3 data-i18n="catalog.cap.qualityTitle">Kalite Kontrol</h3><p data-i18n="catalog.cap.qualityDesc">Ölçüm ve test süreçleriyle her parçada izlenebilir kalite güvencesi sağlanır. Hexagon CMM gibi ölçüm ekipmanları, hassas parçaların doğrulanmasında aktif olarak kullanılır.</p></div>
+        <div class="page-footer"><span data-i18n="catalog.capabilities.title">Üretim Kabiliyetleri</span><span>03</span></div>
       </div>
     </section>
 
     <section class="page">
       <div class="page-inner">
-        <div class="page-kicker">Tezgah Filosu</div><h2>Makine Parkuru</h2><div class="page-title-line"></div>
+        <div class="page-kicker" data-i18n="catalog.kicker.machines">Tezgah Filosu</div><h2 data-i18n="machines.title">Makine Parkuru</h2><div class="page-title-line"></div>
         <div class="machine-grid" id="catalog-machines"></div>
-        <div class="page-footer"><span>Makine Parkuru</span><span>04</span></div>
+        <div class="page-footer"><span data-i18n="machines.title">Makine Parkuru</span><span>04</span></div>
       </div>
     </section>
 
     <section class="page">
       <div class="page-inner">
-        <div class="page-kicker">Tezgah Filosu</div><h2>Makine Parkuru</h2><div class="page-title-line"></div>
+        <div class="page-kicker" data-i18n="catalog.kicker.machines">Tezgah Filosu</div><h2 data-i18n="machines.title">Makine Parkuru</h2><div class="page-title-line"></div>
         <div class="machine-grid" id="catalog-machines-extra"></div>
-        <div class="page-footer"><span>Makine Parkuru</span><span>05</span></div>
+        <div class="page-footer"><span data-i18n="machines.title">Makine Parkuru</span><span>05</span></div>
       </div>
     </section>
 
     <section class="page">
       <div class="page-inner">
-        <div class="page-kicker">Savunma ve Sanayi</div><h2>Ürünler ve Üretim Çözümleri</h2><div class="page-title-line"></div>
-        <p>Mayamak, savunma ve endüstriyel projelerde tolerans kritik mekanik bileşenler, platform parçaları ve özel komponent üretimleriyle çözüm ortağı olarak konumlanır.</p>
+        <div class="page-kicker" data-i18n="catalog.kicker.products">Savunma ve Sanayi</div><h2 data-i18n="products.title">Ürünler ve Üretim Çözümleri</h2><div class="page-title-line"></div>
+        <p data-i18n="catalog.products.desc">Mayamak, savunma ve endüstriyel projelerde tolerans kritik mekanik bileşenler, platform parçaları ve özel komponent üretimleriyle çözüm ortağı olarak konumlanır.</p>
         <div class="product-grid" id="catalog-products"></div>
-        <div class="page-footer"><span>Ürünler ve Üretim Çözümleri</span><span>06</span></div>
+        <div class="page-footer"><span data-i18n="products.title">Ürünler ve Üretim Çözümleri</span><span>06</span></div>
       </div>
     </section>
 
     <section class="page">
       <div class="page-inner">
-        <div class="page-kicker">İş Ortakları</div><h2>Referanslar</h2><div class="page-title-line"></div>
-        <p>Türkiye'nin önde gelen kurumlarıyla kurulan güvene dayalı iş birlikleri, Mayamak'ın disiplinli üretim yaklaşımını ve sektörler arası deneyimini destekler.</p>
+        <div class="page-kicker" data-i18n="catalog.kicker.references">İş Ortakları</div><h2 data-i18n="references.title">Referanslar</h2><div class="page-title-line"></div>
+        <p data-i18n="catalog.references.desc">Türkiye'nin önde gelen kurumlarıyla kurulan güvene dayalı iş birlikleri, Mayamak'ın disiplinli üretim yaklaşımını ve sektörler arası deneyimini destekler.</p>
         <div class="reference-grid" id="catalog-references"></div>
-        <div class="page-footer"><span>Referanslar</span><span>07</span></div>
+        <div class="page-footer"><span data-i18n="references.title">Referanslar</span><span>07</span></div>
       </div>
     </section>
 
     <section class="page">
       <div class="page-inner">
-        <div class="page-kicker">Belgeli Süreçler</div><h2>Kalite ve Güven</h2><div class="page-title-line"></div>
-        <p>Mayamak üretim süreçlerinde kalite yönetimi, çevre yönetimi ve iş sağlığı güvenliği standartlarına uyumu esas alır. Operasyonlar belgelenmiş prosedürler ve düzenli denetimlerle yürütülür.</p>
+        <div class="page-kicker" data-i18n="catalog.kicker.certificates">Belgeli Süreçler</div><h2 data-i18n="catalog.quality.title">Kalite ve Güven</h2><div class="page-title-line"></div>
+        <p data-i18n="catalog.certs.desc">Mayamak üretim süreçlerinde kalite yönetimi, çevre yönetimi ve iş sağlığı güvenliği standartlarına uyumu esas alır. Operasyonlar belgelenmiş prosedürler ve düzenli denetimlerle yürütülür.</p>
         <div class="cert-grid-catalog" id="catalog-certificates"></div>
-        <div class="intro-panel" style="margin-top:18px"><h3>Güven Vurgusu</h3><p>Hassasiyet, disiplin, yenilik ve güven değerleri; tekliften teslimata kadar tüm üretim akışında ortak çalışma zemini oluşturur.</p></div>
-        <div class="page-footer"><span>Kalite ve Güven</span><span>08</span></div>
+        <div class="intro-panel" style="margin-top:18px"><h3 data-i18n="catalog.trust.title">Güven Vurgusu</h3><p data-i18n="catalog.trust.desc">Hassasiyet, disiplin, yenilik ve güven değerleri; tekliften teslimata kadar tüm üretim akışında ortak çalışma zemini oluşturur.</p></div>
+        <div class="page-footer"><span data-i18n="catalog.quality.title">Kalite ve Güven</span><span>08</span></div>
       </div>
     </section>
 
     <section class="page">
       <div class="page-inner">
-        <img src="images/logo/logo-header.png" alt="Mayamak" class="catalog-logo-small">
-        <div class="page-kicker">Projeleriniz İçin</div><h2>İletişim</h2><div class="page-title-line"></div>
-        <p>Teknik çizim, numune veya proje ihtiyaçlarınız için Mayamak mühendislik ekibiyle iletişime geçebilirsiniz.</p>
+        <img src="/images/logo/logo-header.png" alt="Mayamak" class="catalog-logo-small">
+        <div class="page-kicker" data-i18n="catalog.kicker.contact">Projeleriniz İçin</div><h2 data-i18n="contact.title">İletişim</h2><div class="page-title-line"></div>
+        <p data-i18n="catalog.contact.desc">Teknik çizim, numune veya proje ihtiyaçlarınız için Mayamak mühendislik ekibiyle iletişime geçebilirsiniz.</p>
         <div class="contact-grid-catalog">
           <div class="contact-list">
-            <div class="contact-box"><span>Telefon</span><strong>+90 541 939 34 69</strong></div>
-            <div class="contact-box"><span>E-posta</span><strong>info@mayamak.com</strong></div>
-            <div class="contact-box"><span>Adres</span><strong>KOBİ OSB 21 CADDE NO46<br>DİLOVASI / KOCAELİ / Türkiye</strong></div>
-            <div class="contact-box"><span>Web Sitesi</span><strong>www.mayamak.com</strong></div>
-            <div class="contact-box"><span>Çalışma Saatleri</span><strong>Pazartesi - Cuma: 08:00 - 18:00</strong></div>
+            <div class="contact-box"><span data-i18n="catalog.contact.phone">Telefon</span><strong>+90 541 939 34 69</strong></div>
+            <div class="contact-box"><span data-i18n="catalog.contact.email">E-posta</span><strong>info@mayamak.com</strong></div>
+            <div class="contact-box"><span data-i18n="catalog.contact.address">Adres</span><strong>KOBİ OSB 21 CADDE NO46<br>DİLOVASI / KOCAELİ / Türkiye</strong></div>
+            <div class="contact-box"><span data-i18n="catalog.contact.website">Web Sitesi</span><strong>www.mayamak.com</strong></div>
+            <div class="contact-box"><span data-i18n="catalog.contact.hours">Çalışma Saatleri</span><strong data-i18n="catalog.contact.hoursVal">Pazartesi - Cuma: 08:00 - 18:00</strong></div>
           </div>
           <div class="qr-box">
             <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Fwww.mayamak.com" alt="Mayamak web sitesi QR kodu" crossorigin="anonymous">
@@ -298,14 +319,30 @@
     </section>
   </main>
 
-  <script src="js/image-manifest.js" defer></script>
-  <script src="js/images.js" defer></script>
-  <script src="js/data.js"></script>
+  <script src="/js/i18n.js"></script>
+  <script src="/js/image-manifest.js" defer></script>
+  <script src="/js/images.js" defer></script>
+  <script src="/js/data.js"></script>
   <script>
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, function (char) {
         return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" }[char];
       });
+    }
+
+    function normUrl(url) {
+      if (!url) return url;
+      return url.indexOf('/') === 0 ? url : '/' + url;
+    }
+
+    function getLangProp(obj, prop) {
+      if (!obj) return "";
+      var lang = window.MayamakI18n ? window.MayamakI18n.getLang() : "tr";
+      if (lang === "de" && obj[prop + "De"]) return obj[prop + "De"];
+      if (lang === "en" && obj[prop + "En"]) return obj[prop + "En"];
+      if (obj[prop + "Tr"]) return obj[prop + "Tr"];
+      if (obj[prop]) return obj[prop];
+      return obj.de || obj.en || obj.tr || "";
     }
 
     function renderCatalogData() {
@@ -315,18 +352,28 @@
       var references = data.references || [];
       var certificates = data.certificates || [];
       var machineCard = function (item) {
-        return '<article class="machine-card-catalog"><img src="' + item.image + '" alt="' + escapeHtml(item.nameTr) + '"><div><h3>' + escapeHtml(item.nameTr) + '</h3><p>' + escapeHtml(item.descTr) + '</p></div></article>';
+        var name = getLangProp(item, "name");
+        var desc = getLangProp(item, "desc");
+        return '<article class="machine-card-catalog"><img src="' + normUrl(item.image) + '" alt="' + escapeHtml(name) + '"><div><h3>' + escapeHtml(name) + '</h3><p>' + escapeHtml(desc) + '</p></div></article>';
       };
-      document.getElementById("catalog-machines").innerHTML = machines.slice(0, 12).map(machineCard).join("");
-      document.getElementById("catalog-machines-extra").innerHTML = machines.slice(12).map(machineCard).join("");
-      document.getElementById("catalog-products").innerHTML = products.map(function (item) {
-        return '<article class="product-card-catalog"><img src="' + item.image + '" alt="' + escapeHtml(item.nameTr) + '"><div><h3>' + escapeHtml(item.nameTr) + '</h3><p>' + escapeHtml(item.descTr) + '</p></div></article>';
+      var m1 = document.getElementById("catalog-machines");
+      var m2 = document.getElementById("catalog-machines-extra");
+      if (m1) m1.innerHTML = machines.slice(0, 12).map(machineCard).join("");
+      if (m2) m2.innerHTML = machines.slice(12).map(machineCard).join("");
+      var pEl = document.getElementById("catalog-products");
+      if (pEl) pEl.innerHTML = products.map(function (item) {
+        var name = getLangProp(item, "name");
+        var desc = getLangProp(item, "desc");
+        return '<article class="product-card-catalog"><img src="' + normUrl(item.image) + '" alt="' + escapeHtml(name) + '"><div><h3>' + escapeHtml(name) + '</h3><p>' + escapeHtml(desc) + '</p></div></article>';
       }).join("");
-      document.getElementById("catalog-references").innerHTML = references.map(function (item) {
-        return '<div class="reference-card"><img src="' + item.image + '" alt="' + escapeHtml(item.name) + '"></div>';
+      var rEl = document.getElementById("catalog-references");
+      if (rEl) rEl.innerHTML = references.map(function (item) {
+        return '<div class="reference-card"><img src="' + normUrl(item.image) + '" alt="' + escapeHtml(item.name) + '"></div>';
       }).join("");
-      document.getElementById("catalog-certificates").innerHTML = certificates.map(function (item) {
-        return '<article class="cert-card-catalog"><img src="' + item.image + '" alt="' + escapeHtml(item.nameTr) + '"><h3>' + escapeHtml(item.nameTr) + '</h3></article>';
+      var cEl = document.getElementById("catalog-certificates");
+      if (cEl) cEl.innerHTML = certificates.map(function (item) {
+        var name = getLangProp(item, "name");
+        return '<article class="cert-card-catalog"><img src="' + normUrl(item.image) + '" alt="' + escapeHtml(name) + '"><h3>' + escapeHtml(name) + '</h3></article>';
       }).join("");
     }
 
@@ -388,7 +435,11 @@
       }
     }
 
+    if (window.MayamakI18n) { MayamakI18n.init(); }
     renderCatalogData();
+    document.addEventListener("mayamak:langchange", function () { renderCatalogData(); });
+    document.addEventListener("DOMContentLoaded", renderCatalogData);
+    window.addEventListener("load", renderCatalogData);
   </script>
 </body>
 </html>

@@ -1,5 +1,15 @@
 /* Mayamak main interactions */
 window.MayamakApp = (function () {
+  function getLangProp(obj, prop) {
+    if (!obj) return "";
+    var lang = MayamakI18n.getLang();
+    if (lang === "de" && obj[prop + "De"]) return obj[prop + "De"];
+    if (lang === "en" && obj[prop + "En"]) return obj[prop + "En"];
+    if (obj[prop + "Tr"]) return obj[prop + "Tr"];
+    if (obj[prop]) return obj[prop];
+    return obj.de || obj.en || obj.tr || "";
+  }
+
   function initHeader() {
     var header = document.getElementById("site-header");
     if (!header) return;
@@ -296,8 +306,8 @@ window.MayamakApp = (function () {
     if (limit) products = products.slice(0, limit);
 
     container.innerHTML = products.map(function (p, i) {
-      var name = lang === "en" ? p.nameEn : p.nameTr;
-      var desc = lang === "en" ? p.descEn : p.descTr;
+      var name = getLangProp(p, "name");
+      var desc = getLangProp(p, "desc");
       return (
         '<article class="product-page-card reveal">' +
           MayamakImages.buildImg(p.image, name, { sizes: "product" }) +
@@ -381,7 +391,7 @@ window.MayamakApp = (function () {
     var lang = MayamakI18n.getLang();
     var certs = window.MAYAMAK_DATA.certificates;
     container.innerHTML = certs.map(function (c) {
-      var name = lang === "en" ? c.nameEn : c.nameTr;
+      var name = getLangProp(c, "name");
       return (
         '<div class="cert-item reveal">' +
           MayamakImages.buildImg(c.image, name, { sizes: "cert" }) +
@@ -397,8 +407,8 @@ window.MayamakApp = (function () {
     var lang = MayamakI18n.getLang();
     var companies = window.MAYAMAK_DATA.companies;
     container.innerHTML = companies.map(function (c, i) {
-      var name = lang === "en" ? c.nameEn : c.nameTr;
-      var desc = lang === "en" ? c.descEn : c.descTr;
+      var name = getLangProp(c, "name");
+      var desc = getLangProp(c, "desc");
       var hasLink = c.url && c.url.length > 0;
       var isExternal = hasLink && c.url.indexOf("http") === 0;
       var target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : "";
@@ -430,10 +440,10 @@ window.MayamakApp = (function () {
     }
 
     container.innerHTML = machines.map(function (m, i) {
-      var name = lang === "en" ? m.nameEn : m.nameTr;
-      var desc = lang === "en" ? m.descEn : m.descTr;
+      var name = getLangProp(m, "name");
+      var desc = getLangProp(m, "desc");
       var catLabel = window.MAYAMAK_DATA.categoryLabels[m.category];
-      var cat = lang === "en" ? catLabel.en : catLabel.tr;
+      var cat = getLangProp(catLabel, "");
 
       return (
         '<article class="machine-card reveal" data-category="' + m.category + '" style="animation-delay:' + (i * 0.05) + 's">' +
@@ -557,6 +567,13 @@ window.MayamakApp = (function () {
     if (companiesGrid) renderCompanies(companiesGrid);
     var occGrid = document.getElementById("occupancy-grid");
     if (occGrid) MayamakOccupancy.renderOccupancyGrid(occGrid);
+
+    document.querySelectorAll(".reveal").forEach(function (el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight + 200) {
+        el.classList.add("visible");
+      }
+    });
   });
 
   return { init: init, renderProducts: renderProducts, renderMachines: renderMachines };

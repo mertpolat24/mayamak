@@ -344,12 +344,256 @@ window.MAYAMAK_I18N = {
     "btn.more": "Learn More",
     "btn.contact": "Contact Us",
     "btn.viewAll": "View All"
+  },
+
+  de: {
+    "meta.title.home": "Mayamak | CNC-Zerspanung & Industrielle Fertigung",
+    "meta.title.about": "Über uns | Dilovası Zerspanung & CNC-Fertigung – Mayamak",
+    "meta.title.products": "Produkte | Mayamak CNC- & Industrieteilefertigung",
+    "meta.title.machines": "Maschinenpark | Mayamak CNC-Maschinen & Fertigungsanlagen",
+    "meta.title.occupancy": "Kapazitätsverfolgung | Mayamak CNC-Auslastung",
+    "meta.title.companies": "Unsere Unternehmen | Mayamak Gruppe",
+    "meta.title.references": "Referenzen | Mayamak Geschäftspartner",
+    "meta.title.certificates": "Zertifikate | Mayamak Qualität & ISO-Standards",
+    "meta.title.contact": "Kontakt | Mayamak Produktionsstätte Dilovası",
+
+    "meta.description.home": "Mayamak bietet CNC-Drehen, CNC-Fräsen, Laserschneiden, Abkanten und Präzisionsteilefertigung aus Dilovası/Kocaeli, Türkei.",
+    "meta.description.about": "Mayamak: Dilovası Zerspanung, CNC-Drehen, Fräsen, Pressen, Schweißen und Qualitätskontrolle. Präzisionsteile aus Kocaeli.",
+    "meta.description.products": "Mayamak Produkte & Fähigkeiten: CNC-Bearbeitung, Zerspanung, umformende Fertigung, Schweißen, Montage und Sonderfertigung.",
+    "meta.description.machines": "Mayamak Maschinenpark: CNC-Drehmaschinen, Fräsen, Pressen, Schweißgeräte, Messmittel und Zusatzgeräte.",
+    "meta.description.occupancy": "Mayamak Kapazitätsverfolgung: Aktuelle Auslastung der CNC-Maschinen und Produktionskapazität.",
+    "meta.description.companies": "Mayamak Gruppenunternehmen: Mayamak Engineering, AS Arbeitsschutz und AS Güverte.",
+    "meta.description.references": "Mayamak Referenzen: Partner aus Wehrtechnik, Automobilindustrie und Industrie.",
+    "meta.description.certificates": "Mayamak ISO 9001, ISO 14001 und ISO 45001 Zertifikate für Qualität und Arbeitssicherheit.",
+    "meta.description.contact": "Kontakt zu Mayamak: Adresse und Kontaktdaten unseres Werks für Präzisionszerspanung in Dilovası/Kocaeli.",
+
+    "nav.home": "Startseite",
+    "nav.corporate": "Unternehmen ▾",
+    "nav.solutions": "Lösungen ▾",
+    "nav.productionSolutions": "Fertigungslösungen",
+    "nav.catalog": "Unternehmenskatalog",
+    "nav.about": "Über uns",
+    "nav.machines": "Maschinenpark",
+    "nav.companies": "Unsere Unternehmen",
+    "nav.occupancy": "KAPAZITÄTSAUSLASTUNG",
+    "nav.products": "Produkte",
+    "nav.references": "Referenzen",
+    "nav.certificates": "Zertifikate",
+    "nav.contact": "Kontakt",
+
+    "hero.badge": "Engineering & Fertigung",
+    "hero.title": "Fertigung mit Präzision.",
+    "hero.subtitle": "Mit spangebenden und spanlosen Fertigungsverfahren erwecken wir hochpräzise Bauteile für die Industrie zum Leben.",
+    "hero.cta": "Maschinenpark",
+    "hero.cta2": "Unsere Produkte",
+
+    "stats.machines": "Maschinen",
+    "stats.projects": "Abgeschlossene Projekte",
+    "stats.quality": "Fokus auf Qualität",
+
+    "section.products": "Unsere Produkte",
+    "section.products.desc": "Ausgewählte Präzisionsteile für Rüstungs- und Industrieprojekte.",
+    "section.services": "Unsere Fähigkeiten",
+    "section.services.desc": "Durchgängige Engineering-Lösungen vom Prototyp bis zur Serienfertigung.",
+    "section.about": "Über uns",
+    "section.about.desc": "Mayamak ist ein Engineering- und Fertigungsunternehmen für Zerspanung und spanlose Fertigung.",
+    "section.references": "Unsere Referenzen",
+    "section.references.desc": "Vertrauensvolle Partnerschaften mit führenden Institutionen in der Türkei.",
+    "section.programs": "CAD/CAM Software",
+    "section.cta.title": "Fertigung angetrieben durch Präzision",
+    "section.cta.desc": "Wir arbeiten geplant, diszipliniert und ergebnisorientiert. Präzision in der Fertigung, Transparenz in der Kommunikation und Termintreue in der Lieferung sind unsere Standards.",
+
+    "service.machining": "Zerspanung",
+    "service.machining.desc": "Mikrometergenaue Bauteilefertigung mit CNC-Dreh-, Fräs- und Drehautomaten.",
+    "service.forming": "Spanlose Fertigung",
+    "service.forming.desc": "Serienfertigungskapazität durch Pressen, Gewinderollen und Umformen.",
+    "service.welding": "Schweißen & Montage",
+    "service.welding.desc": "WIG-, MIG- und Plasmaschweißen mit Montagerapazitäten.",
+    "service.quality": "Qualitätskontrolle",
+    "service.quality.desc": "Lückenlose Qualitätssicherung durch modernste Mess- und Prüfverfahren.",
+
+    "about.p1": "Mayamak ist ein Engineering- und Fertigungsunternehmen in den Bereichen spangebende und spanlose Fertigung, das mit hohem Qualitätsanspruch Lösungen für industrielle Anforderungen bietet.",
+    "about.p2": "Mit hochmodernen CNC-Drehmaschinen, CNC-Fräsen, Laserschneidanlagen, Abkantpressen und Drehautomaten decken wir das gesamte Spektrum vom Prototyp bis zur Serie ab.",
+    "about.p3": "In der Metall- und Kunststoffverarbeitung fertigen wir maßgeschneiderte Kundenlösungen nach den Prinzipien von Präzision, Schnelligkeit und Wiederholgenauigkeit.",
+    "about.p4": "In unserem modernen Werk in KOBİ OSB 21 CADDE NO46, Dilovası/Kocaeli bedienen wir die Branchen Wehrtechnik, Automobilbau, Energie und allgemeinen Maschinenbau.",
+    "about.vision.title": "Unsere Vision",
+    "about.vision.desc": "Das bevorzugte Engineering-Unternehmen der Türkei zu sein, das Technologie und Qualität in der Präzisionsfertigung vereint.",
+    "about.mission.title": "Unsere Mission",
+    "about.mission.desc": "Ein zuverlässiger Lösungspartner zu sein, der es unseren Kunden ermöglicht, ihre Fertigungsziele in kürzester Zeit mit höchster Qualität zu erreichen.",
+    "about.values.title": "Unsere Werte",
+    "about.values.precision": "Präzision",
+    "about.values.precision.desc": "Mikrometergenaue Toleranzdisziplin bei jedem Bauteil.",
+    "about.values.discipline": "Disziplin",
+    "about.values.discipline.desc": "Geplante Produktion und Verpflichtung zu pünktlicher Lieferung.",
+    "about.values.innovation": "Innovation",
+    "about.values.innovation.desc": "Kontinuierliche Investitionen und Verfolgung neuester Technologien.",
+    "about.values.trust": "Vertrauen",
+    "about.values.trust.desc": "Transparente Kommunikation und langfristige Partnerschaften.",
+    "about.articles.title": "Fertigungsartikel & Leitfäden",
+    "about.articles.desc": "Technische Leitfäden zu Zerspanung, CNC-Drehen, Fräsen und integrierten Fertigungsprozessen.",
+
+    "machines.title": "Maschinenpark",
+    "machines.subtitle": "Umfangreiche Fertigungskapazität mit unserer modernen Maschinenflotte.",
+    "machines.filter.kalite": "Qualitätskontrolle",
+    "machines.filter.all": "Alle",
+    "machines.detail": "Details",
+
+    "occupancy.title": "Kapazitätsverfolgung",
+    "occupancy.subtitle": "Aktuelle Auslastung unserer CNC-Maschinen – täglich um 09:00 Uhr aktualisiert.",
+    "occupancy.updated": "Letzte Aktualisierung",
+    "occupancy.capacity": "Auslastung",
+    "occupancy.available": "Freie Kapazität",
+    "occupancy.legend.high": "Hoch (75%+)",
+    "occupancy.legend.medium": "Mittel (65-74%)",
+    "occupancy.legend.low": "Niedrig (60-64%)",
+
+    "products.title": "Unsere Produkte",
+    "products.subtitle": "Fertigungsbeispiele aus unseren Rüstungs- und Industrieprojekten.",
+
+    "references.title": "Unsere Referenzen",
+    "references.subtitle": "Unsere geschätzten Geschäftspartner und abgeschlossene Projekte.",
+
+    "certificates.title": "Zertifikate",
+    "certificates.subtitle": "Unsere Qualitäts- und Arbeitssicherheitszertifikate.",
+    "certificates.p1": "Bei Mayamak halten wir die Standards für Qualitätsmanagement und Arbeitssicherheit lückenlos ein. Alle Betriebsabläufe werden nach dokumentierten Verfahren durchgeführt.",
+    "certificates.p2": "Nachfolgend finden Sie Beispiele unserer Zertifikate. Für weitere Informationen stehen wir Ihnen gerne zur Verfügung.",
+
+    "faq.title": "Häufig gestellte Fragen",
+    "faq.q1": "Welche Branchen bedienen Sie?",
+    "faq.a1": "Wir bieten Fertigungsleistungen für Wehrtechnik, Automobilbau, Energiewirtschaft und allgemeinen Maschinenbau an.",
+    "faq.q2": "Wie läuft der Angebotsprozess ab?",
+    "faq.a2": "Senden Sie uns einfach Ihre Zeichnungen oder Muster. Unser Ingenieurteam erstellt nach Kapazitäts- und Toleranzanalyse ein maßgeschneidertes Angebot.",
+    "faq.q3": "Unterstützen Sie den Übergang vom Prototyp zur Serie?",
+    "faq.a3": "Ja. Wir begleiten alle Phasen vom Prototypenbau über die Vorserie bis hin zur vollautomatisierten Serienfertigung.",
+    "faq.q4": "Wie lang sind die Lieferzeiten?",
+    "faq.a4": "Die Lieferzeit hängt von der Bauteilkomplexität und der aktuellen Auslastung ab. Die aktuelle Auslastung können Sie auf der Kapazitätsseite einsehen.",
+
+    "companies.title": "Unsere Unternehmen",
+    "companies.subtitle": "Mayamak Gruppenunternehmen und unsere Geschäftsbereiche.",
+    "companies.visit": "Website besuchen",
+
+    "contact.title": "Kontakt",
+    "contact.subtitle": "Nehmen Sie Kontakt mit uns für Ihre Projekte auf.",
+    "contact.address": "Adresse",
+    "contact.phone": "Telefon",
+    "contact.email": "E-Mail",
+    "contact.hours": "Arbeitszeiten",
+    "contact.hours.value": "Montag – Freitag: 08:00 – 18:00 Uhr",
+    "contact.map": "Auf Karte öffnen",
+    "contact.mapHint": "Klicken Sie, um den Standort auf Google Maps zu öffnen",
+    "contact.form.title": "Angebotsanfrage",
+    "contact.form.subtitle": "Senden Sie uns Ihre Zeichnungen oder Projektdetails für ein individuelles Angebot.",
+    "contact.form.name": "Vollständiger Name",
+    "contact.form.firstName": "Vorname",
+    "contact.form.lastName": "Nachname",
+    "contact.form.email": "E-Mail-Adresse",
+    "contact.form.phone": "Telefonnummer",
+    "contact.form.phoneCountry": "Ländercode",
+    "contact.form.phoneHint": "Wählen Sie den Ländercode links; geben Sie die Nummer ohne führende 0 ein.",
+    "contact.form.phoneHintDynamic": "Geben Sie die Nummer ohne führende 0 ein. Sie muss {n} Stellen lang sein.",
+    "contact.form.phonePlaceholder": "Nummer (ohne führende 0)",
+    "contact.form.company": "Firma",
+    "contact.form.country": "Land der Firma",
+    "contact.form.countryPlaceholder": "Land auswählen",
+    "contact.form.subject": "Betreff",
+    "contact.form.message": "Nachricht",
+    "contact.form.submit": "Angebotsanfrage senden",
+    "contact.form.sending": "Wird gesendet...",
+    "contact.form.errorGeneric": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "contact.form.errorNetwork": "Verbindungsfehler. Bitte versuchen Sie es erneut.",
+    "contact.form.errName": "Der Name muss mindestens 2 Zeichen lang sein.",
+    "contact.form.errFirstName": "Der Vorname muss mindestens 2 Zeichen lang sein.",
+    "contact.form.errLastName": "Der Nachname muss mindestens 2 Zeichen lang sein.",
+    "contact.form.errEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
+    "contact.form.errPhone": "Bitte geben Sie eine gültige Telefonnummer ein (ohne 0).",
+    "contact.form.errPhoneLen": "Die Telefonnummer muss {n} Stellen haben.",
+    "contact.form.errCountry": "Bitte wählen Sie das Land Ihrer Firma aus.",
+    "contact.form.errMessage": "Die Nachricht muss mindestens 10 Zeichen lang sein.",
+
+    "footer.tagline": "Fertigung mit Präzision.",
+    "footer.quick": "Quicklinks",
+    "footer.contact": "Kontaktieren Sie uns",
+    "footer.rights": "Alle Rechte vorbehalten.",
+
+    "btn.more": "Mehr erfahren",
+    "btn.contact": "Kontakt aufnehmen",
+    "btn.viewAll": "Alle anzeigen",
+
+        "catalog.cover.meta1": "CNC-Zerspanung",
+    "catalog.cover.meta2": "Schweißen & Montage",
+    "catalog.cover.meta3": "Qualitätssicherung",
+    "catalog.about.approachTitle": "Fertigungsansatz",
+    "catalog.about.approachDesc": "Geplantes, diszipliniertes und ergebnisorientiertes Arbeiten in jedem Schritt; Präzision in der Fertigung, Transparenz in der Kommunikation und Pünktlichkeit bei der Lieferung sind der Mayamak-Standard.",
+    "catalog.stat.machine": "Maschinen",
+    "catalog.stat.project": "Projekte",
+    "catalog.stat.quality": "Fokus Qualität",
+    "catalog.cap.cncTornaTitle": "CNC-Drehen",
+    "catalog.cap.cncTornaDesc": "Hochpräzise, wiederholgenaue Zerspanung für zylindrische und toleranzkritische Bauteile.",
+    "catalog.cap.cncFrezeTitle": "CNC-Fräsen",
+    "catalog.cap.cncFrezeDesc": "Bearbeitung komplexer Geometrien, 4-Achsen-Bearbeitung und Komponentenfertigung.",
+    "catalog.cap.laserTitle": "Laserschneiden",
+    "catalog.cap.laserDesc": "Schnelle, saubere und rückverfolgbare Schneidoperationen bei Blech und Profilen.",
+    "catalog.cap.bendingTitle": "Abkanten",
+    "catalog.cap.bendingDesc": "Kontrollierte Umformung und Serienfertigungssupport für industrielle Blechteile.",
+    "catalog.cap.weldingTitle": "Schweißen",
+    "catalog.cap.weldingDesc": "Stahl-, Aluminium- und Edelstahlanwendungen mit WIG-, MIG/MAG- und Plasmaschweißen.",
+    "catalog.cap.assemblyTitle": "Montage",
+    "catalog.cap.assemblyDesc": "Submontage- und linienintegrationsbereite Lieferprozesse für gefertigte Komponenten.",
+    "catalog.cap.qualityTitle": "Qualitätskontrolle",
+    "catalog.cap.qualityDesc": "Rückverfolgbare Qualitätssicherung bei jedem Bauteil durch Messung und Prüfung. KMG-Geräte wie Hexagon werden aktiv zur Verifikation von Präzisionsteilen eingesetzt.",
+    "catalog.products.desc": "Mayamak positioniert sich als Lösungspartner in Rüstungs- und Industrieprojekten mit toleranzkritischen mechanischen Komponenten, Plattformteilen und Sonderbauteilen.",
+    "catalog.references.desc": "Vertrauensvolle Partnerschaften mit führenden Institutionen der Türkei unterstützen Mayamaks disziplinierten Fertigungsansatz und branchenübergreifende Erfahrung.",
+    "catalog.certs.desc": "Mayamak basiert bei allen Fertigungsprozessen auf der Einhaltung von Qualitäts-, Umwelt- und Arbeitsschutzstandards. Alle Abläufe werden nach dokumentierten Verfahren und regelmäßigen Audits durchgeführt.",
+    "catalog.trust.title": "Fokus auf Vertrauen",
+    "catalog.trust.desc": "Werte wie Präzision, Disziplin, Innovation und Vertrauen bilden eine gemeinsame Grundlage für alle Fertigungsabläufe vom Angebot bis zur Lieferung.",
+    "catalog.contact.desc": "Kontaktieren Sie das Ingenieurteam von Mayamak für Ihre technischen Zeichnungen, Muster oder Projektanforderungen.",
+    "catalog.contact.phone": "Telefon",
+    "catalog.contact.email": "E-Mail",
+    "catalog.contact.address": "Adresse",
+    "catalog.contact.website": "Website",
+    "catalog.contact.hours": "Arbeitszeiten",
+    "catalog.contact.hoursVal": "Montag – Freitag: 08:00 – 18:00 Uhr",
+    "catalog.footer.cover": "Mayamak Unternehmenskatalog",
+    "catalog.title": "Unternehmenskatalog | Mayamak CNC-Zerspanung & Fertigungskapazitäten",
+    "catalog.downloadPdf": "Katalog als PDF herunterladen",
+    "catalog.backHome": "Zurück zur Website",
+    "catalog.kicker.cover": "Unternehmens-Fertigungskatalog",
+    "catalog.kicker.about": "Über Mayamak",
+    "catalog.kicker.capabilities": "Engineering & Fertigung",
+    "catalog.kicker.machines": "Maschinenpark",
+    "catalog.kicker.products": "Wehrtechnik & Industrie",
+    "catalog.kicker.references": "Geschäftspartner",
+    "catalog.kicker.certificates": "Zertifizierte Prozesse",
+    "catalog.kicker.contact": "Für Ihre Projekte",
+    "catalog.capabilities.title": "Fertigungskapazitäten",
+    "catalog.capabilities.desc": "Mayamak bietet durchgängige Engineering-Lösungen vom Prototyp bis zur Serie. Die Fertigungsinfrastruktur vereint Zerspanung, Umformung, Schweißen, Montage und Qualitätskontrolle.",
+    "catalog.quality.title": "Qualität und Vertrauen",
+    "catalog.quality.desc": "In unseren Fertigungsprozessen legen wir größten Wert auf Qualitäts-, Umwelt- und Arbeitsschutzstandards. Alle Abläufe werden nach dokumentierten Verfahren durchgeführt.",
+    "catalog.pdfPreparing": "PDF wird vorbereitet..."
   }
 };
 
 window.MayamakI18n = (function () {
   var STORAGE_KEY = "mayamak_lang";
   var currentLang = localStorage.getItem(STORAGE_KEY) || "tr";
+
+  var FLAG_SVGS = {
+    tr: '<svg class="lang-flag-icon" viewBox="0 0 36 24" width="20" height="14" aria-hidden="true"><rect width="36" height="24" rx="2" fill="#E30A17"/><circle cx="14" cy="12" r="6.5" fill="#fff"/><circle cx="16" cy="12" r="5.2" fill="#E30A17"/><polygon fill="#fff" points="19.5,12 24.5,10.4 21.4,14.6 21.4,9.4 24.5,13.6"/></svg>',
+    en: '<svg class="lang-flag-icon" viewBox="0 0 36 24" width="20" height="14" aria-hidden="true"><rect width="36" height="24" rx="2" fill="#00247D"/><path d="M0,0 L36,24 M36,0 L0,24" stroke="#fff" stroke-width="4"/><path d="M0,0 L36,24 M36,0 L0,24" stroke="#CF142B" stroke-width="2.4"/><path d="M18,0 V24 M0,12 H36" stroke="#fff" stroke-width="6.4"/><path d="M18,0 V24 M0,12 H36" stroke="#CF142B" stroke-width="4"/></svg>',
+    de: '<svg class="lang-flag-icon" viewBox="0 0 36 24" width="20" height="14" aria-hidden="true"><rect width="36" height="24" rx="2" fill="#FFCE00"/><rect width="36" height="16" rx="2" fill="#DD0000"/><rect width="36" height="8" rx="2" fill="#000000"/></svg>'
+  };
+
+  var LANG_NAMES = {
+    tr: "Türkçe",
+    en: "English",
+    de: "Deutsch"
+  };
+
+  var LANG_CODES = {
+    tr: "TR",
+    en: "EN",
+    de: "DE"
+  };
 
   function t(key) {
     var dict = window.MAYAMAK_I18N[currentLang] || window.MAYAMAK_I18N.tr;
@@ -365,8 +609,103 @@ window.MayamakI18n = (function () {
     currentLang = lang;
     localStorage.setItem(STORAGE_KEY, lang);
     document.documentElement.lang = lang;
+    updateComboboxUI();
     applyTranslations();
     document.dispatchEvent(new CustomEvent("mayamak:langchange", { detail: { lang: lang } }));
+  }
+
+  function updateComboboxUI() {
+    document.querySelectorAll(".lang-combobox").forEach(function (box) {
+      var flagEl = box.querySelector(".lang-current-flag");
+      var codeEl = box.querySelector(".lang-current-code");
+      if (flagEl) flagEl.innerHTML = FLAG_SVGS[currentLang] || "";
+      if (codeEl) codeEl.textContent = LANG_CODES[currentLang] || currentLang.toUpperCase();
+
+      box.querySelectorAll(".lang-combobox-item").forEach(function (item) {
+        var itemLang = item.getAttribute("data-lang");
+        var isSel = itemLang === currentLang;
+        item.classList.toggle("active", isSel);
+        item.setAttribute("aria-selected", isSel ? "true" : "false");
+        var flagSpan = item.querySelector(".lang-item-flag");
+        if (flagSpan && (!flagSpan.innerHTML.trim() || flagSpan.childElementCount === 0) && FLAG_SVGS[itemLang]) {
+          flagSpan.innerHTML = FLAG_SVGS[itemLang];
+        }
+      });
+    });
+
+    document.querySelectorAll(".lang-btn").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-lang") === currentLang);
+    });
+  }
+
+  function initCombobox() {
+    document.querySelectorAll(".lang-combobox").forEach(function (box) {
+      var btn = box.querySelector(".lang-combobox-btn");
+      var menu = box.querySelector(".lang-combobox-menu");
+      if (!btn) return;
+
+      function closeMenu() {
+        box.classList.remove("open");
+        btn.setAttribute("aria-expanded", "false");
+      }
+
+      function openMenu() {
+        document.querySelectorAll(".lang-combobox.open").forEach(function (other) {
+          if (other !== box) {
+            other.classList.remove("open");
+            var ob = other.querySelector(".lang-combobox-btn");
+            if (ob) ob.setAttribute("aria-expanded", "false");
+          }
+        });
+        box.classList.add("open");
+        btn.setAttribute("aria-expanded", "true");
+      }
+
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        if (box.classList.contains("open")) {
+          closeMenu();
+        } else {
+          openMenu();
+        }
+      });
+
+      box.querySelectorAll(".lang-combobox-item").forEach(function (item) {
+        var itemLang = item.getAttribute("data-lang");
+        var flagSpan = item.querySelector(".lang-item-flag");
+        if (flagSpan && FLAG_SVGS[itemLang]) {
+          flagSpan.innerHTML = FLAG_SVGS[itemLang];
+        }
+
+        item.addEventListener("click", function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          setLang(itemLang);
+          closeMenu();
+        });
+      });
+    });
+
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest(".lang-combobox")) {
+        document.querySelectorAll(".lang-combobox.open").forEach(function (box) {
+          box.classList.remove("open");
+          var btn = box.querySelector(".lang-combobox-btn");
+          if (btn) btn.setAttribute("aria-expanded", "false");
+        });
+      }
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        document.querySelectorAll(".lang-combobox.open").forEach(function (box) {
+          box.classList.remove("open");
+          var btn = box.querySelector(".lang-combobox-btn");
+          if (btn) btn.setAttribute("aria-expanded", "false");
+        });
+      }
+    });
   }
 
   function applyTranslations() {
@@ -405,14 +744,13 @@ window.MayamakI18n = (function () {
       if (twDesc) twDesc.setAttribute("content", desc);
     }
     var ogLocale = document.querySelector('meta[property="og:locale"]');
-    if (ogLocale) ogLocale.setAttribute("content", currentLang === "tr" ? "tr_TR" : "en_US");
-    document.querySelectorAll(".lang-btn").forEach(function (btn) {
-      btn.classList.toggle("active", btn.getAttribute("data-lang") === currentLang);
-    });
+    if (ogLocale) ogLocale.setAttribute("content", currentLang === "tr" ? "tr_TR" : (currentLang === "de" ? "de_DE" : "en_US"));
   }
 
   function init() {
     document.documentElement.lang = currentLang;
+    initCombobox();
+    updateComboboxUI();
     applyTranslations();
     document.querySelectorAll(".lang-btn").forEach(function (btn) {
       btn.addEventListener("click", function () {
@@ -421,5 +759,5 @@ window.MayamakI18n = (function () {
     });
   }
 
-  return { t: t, getLang: getLang, setLang: setLang, init: init, apply: applyTranslations };
+  return { t: t, getLang: getLang, setLang: setLang, init: init, apply: applyTranslations, FLAG_SVGS: FLAG_SVGS, LANG_NAMES: LANG_NAMES, LANG_CODES: LANG_CODES };
 })();

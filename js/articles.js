@@ -5,10 +5,13 @@ window.MAYAMAK_ARTICLES = [
     date: "2026-07-06",
     titleTr: "Dilovası Talaşlı İmalat: Kocaeli'nin Üretim Koridorunda Hassas Parça Üretimi",
     titleEn: "Dilovası Machining: Precision Parts in Kocaeli's Manufacturing Corridor",
+    titleDe: "Zerspanung in Dilovası: Präzisionsteile im Fertigungskorridor von Kocaeli",
     summaryTr: "Dilovası ve Kocaeli OSB bölgesinde talaşlı imalat, CNC torna ve freze kapasitesiyle savunma, otomotiv ve sanayi projelerine nasıl hizmet verilir?",
     summaryEn: "How precision machining, CNC turning and milling in Dilovası serves defense, automotive and industrial projects.",
+    summaryDe: "Wie Präzisionszerspanung, CNC-Drehen und Fräsen in Dilovası Projekte der Wehrtechnik, Automobilindustrie und Industrie bedient.",
     keywordsTr: ["Dilovası talaşlı imalat", "Kocaeli CNC imalat", "Dilovası CNC torna", "OSB talaşlı imalat"],
     keywordsEn: ["Dilovası machining", "Kocaeli CNC manufacturing", "Dilovası CNC lathe"],
+    keywordsDe: ["Zerspanung Dilovası", "CNC Fertigung Kocaeli", "CNC Drehmaschine Dilovası"],
     sectionsTr: [
       {
         h: "Dilovası Neden Talaşlı İmalat İçin Stratejik?",
@@ -29,6 +32,29 @@ window.MAYAMAK_ARTICLES = [
         p: [
           "Makine parkının çeşitliliği (CNC torna, işleme merkezi, ölçüm ekipmanı), tekrarlanabilirlik, izlenebilir kalite kayıtları ve teslimat disiplini; uzun vadeli tedarik ilişkisinin temel kriterleridir. Mayamak'ta makine doluluk oranlarını şeffaf biçimde paylaşıyor, kapasite planlamasını müşteri projelerine göre önceliklendiriyoruz.",
           "Projeniz için Dilovası merkezli bir talaşlı imalat çözümü arıyorsanız teknik çiziminizi veya numunenizi iletmeniz yeterlidir. Mühendislik ekibimiz üretilebilirlik analizi yaparak size özel teklif hazırlar."
+        ]
+      }
+    ],
+        sectionsDe: [
+      {
+        h: "Warum ist Dilovası strategisch für die Zerspanung?",
+        p: [
+          "Dilovası liegt in einem der dichtesten Fertigungskorridore der Türkei, in der Nähe der Industriegebiete von Istanbul und Kocaeli, mit Hafenzugang und organisierter Industrieinfrastruktur. Automobilzulieferer, Rüstungslieferketten, Energiegerätehersteller und die Schwerindustrie nutzen lokale Zerspanungsbetriebe und CNC-Anlagen für Prototypen, Vorserien und Serienteile.",
+          "In unserem Werk in der KOBİ OSB 21. Straße bietet Mayamak CNC-Drehen, Fräsen, Schweißen und Montage mit einem geplanten Fertigungsablauf von der Zeichnung bis zum Versand. Die geografische Nähe verkürzt die Lieferzeiten für Musterprüfungen, Revisionen und Eilfertigungen in Dilovası und den umliegenden Provinzen."
+        ]
+      },
+      {
+        h: "Welche Branchen bedienen wir?",
+        p: [
+          "Wir fertigen toleranzkritische Verbindungselemente, Gehäuseteile und mechanische Baugruppen für Wehrtechnik und Luftfahrt; Vorrichtungskomponenten, Kundenverbindungen und Prototypenteile für die Automobilindustrie; Ventilgehäuse, Flansche, Zahnwellen und Sonderprofilteile für Energie und allgemeinen Maschinenbau.",
+          "Jeder Sektor erwartet unterschiedliche Werkstoffe, Oberflächenqualitäten und Dokumentationen. Wir klären Kapazitätsanalysen, Toleranzprüfungen und Materialzertifizierungen bereits in der Angebotsphase."
+        ]
+      },
+      {
+        h: "Auswahl eines Zerspanungspartners in Dilovası",
+        p: [
+          "Vielfalt des Maschinenparks (CNC-Drehmaschinen, Bearbeitungszentren, Messmittel), Wiederholgenauigkeit, rückverfolgbare Qualitätsnachweise und Lieferdisziplin sind wesentliche Kriterien für langfristige Lieferbeziehungen. Bei Mayamak teilen wir die Maschinenauslastung transparent und priorisieren die Kapazitätsplanung projektspezifisch.",
+          "Wenn Sie eine Zerspanungslösung mit Sitz in Dilovası suchen, senden Sie uns Ihre technische Zeichnung oder Ihr Muster. Unser Ingenieurteam führt eine Machbarkeitsanalyse durch und erstellt ein maßgeschneidertes Angebot."
         ]
       }
     ],
@@ -65,10 +91,13 @@ window.MAYAMAK_ARTICLES = [
     date: "2026-07-06",
     titleTr: "Talaşlı İmalat Nedir? Süreçler, Malzemeler ve Endüstriyel Uygulamalar",
     titleEn: "What Is Machining? Processes, Materials and Industrial Applications",
+    titleDe: "Was ist Zerspanung? Prozesse, Werkstoffe und industrielle Anwendungen",
     summaryTr: "Talaşlı imalatın temel süreçleri, CNC teknolojisiyle üretim avantajları ve savunmadan otomotive sektörel kullanım alanları.",
     summaryEn: "Core machining processes, CNC production advantages and sector applications from defense to automotive.",
+    summaryDe: "Grundlegende Zerspanungsprozesse, Vorteile der CNC-Fertigung und Branchenanwendungen von der Wehrtechnik bis zur Automobilindustrie.",
     keywordsTr: ["talaşlı imalat", "CNC talaşlı imalat", "hassas talaşlı imalat", "metal işleme"],
     keywordsEn: ["machining", "CNC machining", "precision machining", "metalworking"],
+    keywordsDe: ["Zerspanung", "CNC Bearbeitung", "Präzisionszerspanung", "Metallbearbeitung"],
     sectionsTr: [
       {
         h: "Talaşlı İmalatın Tanımı ve Temel Süreçleri",
@@ -125,10 +154,13 @@ window.MAYAMAK_ARTICLES = [
     date: "2026-07-06",
     titleTr: "CNC Torna ile Hassas İşleme: Tolerans, Takım Stratejisi ve Üretim Planlaması",
     titleEn: "Precision CNC Turning: Tolerances, Tooling Strategy and Production Planning",
+    titleDe: "Präzisions-CNC-Drehen: Toleranzen, Werkzeugstrategie und Fertigungsplanung",
     summaryTr: "CNC torna tezgahlarında silindirik parça üretimi, C eksen uygulamaları ve mikron toleranslı imalat süreçleri.",
     summaryEn: "Cylindrical part production on CNC lathes, C-axis applications and micron-tolerance manufacturing.",
+    summaryDe: "Zylindrische Teilefertigung auf CNC-Drehmaschinen, C-Achsen-Anwendungen und Fertigung im Mikrometerbereich.",
     keywordsTr: ["CNC torna", "CNC torna imalat", "torna işleme", "Dilovası CNC torna"],
     keywordsEn: ["CNC lathe", "CNC turning", "lathe machining", "precision turning"],
+    keywordsDe: ["CNC Drehmaschine", "CNC Drehen", "Drehbearbeitung", "Präzisionsdrehen"],
     sectionsTr: [
       {
         h: "CNC Torna Hangi Parçalar İçin Kullanılır?",
@@ -185,10 +217,13 @@ window.MAYAMAK_ARTICLES = [
     date: "2026-07-06",
     titleTr: "CNC Freze ve İşleme Merkezi: Karmaşık Geometrilerde Hassas Üretim",
     titleEn: "CNC Milling and Machining Centers: Precision for Complex Geometries",
+    titleDe: "CNC-Fräsen und Bearbeitungszentren: Präzision für mechatronische Geometrien",
     summaryTr: "3 ve 4 eksen CNC freze uygulamaları, cep delikleri, pocket işleme ve prismatic parça üretimi.",
     summaryEn: "3 and 4-axis CNC milling, pocket machining and prismatic part production.",
+    summaryDe: "3- und 4-Achsen CNC-Fräsen, Taschenbearbeitung und prismatische Teilefertigung.",
     keywordsTr: ["CNC freze", "CNC işleme merkezi", "freze imalat", "4 eksen işleme"],
     keywordsEn: ["CNC milling", "machining center", "4-axis machining"],
+    keywordsDe: ["CNC Fräsen", "Bearbeitungszentrum", "4-Achsen Bearbeitung"],
     sectionsTr: [
       {
         h: "CNC Frezenin Üretimdeki Rolü",
@@ -245,10 +280,13 @@ window.MAYAMAK_ARTICLES = [
     date: "2026-07-06",
     titleTr: "Talaşsız İmalat, Pres, Kaynak ve Montaj: Entegre Üretim Hattı",
     titleEn: "Non-Machining, Press, Welding and Assembly: Integrated Production",
+    titleDe: "Spanlose Fertigung, Pressen, Schweißen und Montage: Integrierte Fertigungslinie",
     summaryTr: "Pres ve şekillendirme, TIG/MIG kaynak ve montaj operasyonlarıyla talaşlı imalatı tamamlayan uçtan uca üretim.",
     summaryEn: "End-to-end production combining press forming, TIG/MIG welding and assembly with machining.",
+    summaryDe: "Durchgängige Fertigung aus Pressumformung, WIG/MIG-Schweißen und Montage in Kombination mit Zerspanung.",
     keywordsTr: ["talaşsız imalat", "pres işleme", "kaynak montaj", "abkant büküm", "lazer kesim"],
     keywordsEn: ["non-machining", "press forming", "welding assembly", "press brake", "laser cutting"],
+    keywordsDe: ["spanlose Fertigung", "Pressumformung", "Schweißmontage", "Abkanten", "Laserschneiden"],
     sectionsTr: [
       {
         h: "Talaşsız İmalat Süreçleri",
@@ -305,10 +343,13 @@ window.MAYAMAK_ARTICLES = [
     date: "2026-07-06",
     titleTr: "Kalite Kontrol ve Ölçüm: Talaşlı İmalatta İzlenebilir Hassasiyet",
     titleEn: "Quality Control and Measurement: Traceable Precision in Machining",
+    titleDe: "Qualitätskontrolle und Messung: Rückverfolgbare Präzision in der Zerspanung",
     summaryTr: "CMM ölçüm, süreç kontrolü ve ISO standartlarıyla talaşlı imalatta kalite güvencesi.",
     summaryEn: "Quality assurance in machining through CMM measurement, process control and ISO standards.",
+    summaryDe: "Qualitätssicherung in der Zerspanung durch KMG-Messung, Prozesskontrolle und ISO-Standards.",
     keywordsTr: ["kalite kontrol", "CMM ölçüm", "talaşlı imalat kalite", "ISO 9001 imalat"],
     keywordsEn: ["quality control", "CMM measurement", "machining quality", "ISO 9001 manufacturing"],
+    keywordsDe: ["Qualitätskontrolle", "KMG Messung", "Zerspanungsqualität", "ISO 9001 Fertigung"],
     sectionsTr: [
       {
         h: "Ölçüm ve Doğrulama Altyapısı",
@@ -368,7 +409,10 @@ window.MayamakArticles = (function () {
   }
 
   function pick(article, field) {
-    return lang() === "en" ? article[field + "En"] : article[field + "Tr"];
+    var l = lang();
+    if (l === "de" && article[field + "De"]) return article[field + "De"];
+    if (l === "en" && article[field + "En"]) return article[field + "En"];
+    return article[field + "Tr"];
   }
 
   function escapeHtml(str) {
@@ -397,8 +441,9 @@ window.MayamakArticles = (function () {
 
   function renderArticles(container) {
     var html = window.MAYAMAK_ARTICLES.map(function (article) {
-      var sections = lang() === "en" ? article.sectionsEn : article.sectionsTr;
-      var keywords = lang() === "en" ? article.keywordsEn : article.keywordsTr;
+      var l = lang();
+      var sections = (l === "de" && article.sectionsDe) ? article.sectionsDe : ((l === "en" && article.sectionsEn) ? article.sectionsEn : article.sectionsTr);
+      var keywords = (l === "de" && article.keywordsDe) ? article.keywordsDe : ((l === "en" && article.keywordsEn) ? article.keywordsEn : article.keywordsTr);
       var body = sections
         .map(function (sec) {
           return (
@@ -447,6 +492,9 @@ window.MayamakArticles = (function () {
     if (!toc || !list) return;
     renderToc(toc);
     renderArticles(list);
+    document.querySelectorAll(".articles-section .reveal, #makaleler .reveal, #articles-toc .reveal, #articles-list .reveal").forEach(function (el) {
+      el.classList.add("visible");
+    });
     if (window.MayamakSEO && window.MayamakSEO.renderArticles) {
       window.MayamakSEO.renderArticles();
     }

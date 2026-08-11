@@ -1,5 +1,15 @@
 /* Products page – 4 expanding full-photo cards */
 window.MayamakProductShowcase = (function () {
+  function getLangProp(obj, prop) {
+    if (!obj) return "";
+    var lang = window.MayamakI18n ? window.MayamakI18n.getLang() : "tr";
+    if (lang === "de" && obj[prop + "De"]) return obj[prop + "De"];
+    if (lang === "en" && obj[prop + "En"]) return obj[prop + "En"];
+    if (obj[prop + "Tr"]) return obj[prop + "Tr"];
+    if (obj[prop]) return obj[prop];
+    return obj.de || obj.en || obj.tr || "";
+  }
+
   var current = 0;
   var timer = null;
   var INTERVAL = 8000;
@@ -9,11 +19,11 @@ window.MayamakProductShowcase = (function () {
   }
 
   function productName(p) {
-    return MayamakI18n.getLang() === "en" ? p.nameEn : p.nameTr;
+    return getLangProp(p, "name");
   }
 
   function productDesc(p) {
-    return MayamakI18n.getLang() === "en" ? p.descEn : p.descTr;
+    return getLangProp(p, "desc");
   }
 
   function renderGrid(container) {
