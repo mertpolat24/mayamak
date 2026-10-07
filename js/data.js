@@ -6,11 +6,11 @@ window.MAYAMAK_DATA = {
     whatsapp: "https://wa.me/905419393469",
     email: "info@mayamak.com",
     addressLines: [
-      "KOBİ OSB 21 CADDE NO46",
-      "DİLOVASI / KOCAELİ / Türkiye"
+      "İstanbul Deri Organize Yan Sanayi Bölgesi Aydınlı Yolu,",
+      "Tabakhane Caddesi, Kropon Sk., 34956 Tuzla / İstanbul"
     ],
-    mapUrl: "https://maps.google.com/?q=KOB%C4%B0+OSB+21+CADDE+NO46+D%C4%B0LOVASI+KOCAEL%C4%B0",
-    mapEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.0!2d29.54!3d40.78!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ2JzE4LjAiTiAyOcKwMzInMjQuMCJF!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str",
+    mapUrl: "https://maps.app.goo.gl/q6ScSdkTghRx356v8",
+    mapEmbed: "https://maps.google.com/maps?q=40.868212,29.343046&hl=tr&z=16&output=embed",
     social: {
       facebook: "",
       instagram: "",

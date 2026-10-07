@@ -17,7 +17,7 @@ window.MAYAMAK_ARTICLES = [
         h: "Dilovası Neden Talaşlı İmalat İçin Stratejik?",
         p: [
           "Dilovası, İstanbul ve Kocaeli sanayi bölgelerine yakın konumu, liman erişimi ve organize sanayi altyapısıyla Türkiye'nin en yoğun üretim koridorlarından birinde yer alır. Otomotiv yan sanayi, savunma tedarik zinciri, enerji ekipmanları ve ağır sanayi firmaları; hızlı prototip, pilot seri ve seri parça ihtiyaçlarını bölgedeki talaşlı imalat atölyeleri ve CNC tesisleri üzerinden karşılar.",
-          "Mayamak olarak KOBİ OSB 21 Caddesi'ndeki tesisimizde; teknik çizimden sevkiyata kadar planlı üretim akışıyla Dilovası ve çevre illerdeki müşterilerimize CNC torna, CNC freze, kaynak ve montaj hizmeti sunuyoruz. Coğrafi yakınlık; numune onayı, revizyon ve acil parça üretimlerinde teslim süresini kısaltan kritik bir avantaj sağlar."
+          "Mayamak olarak İstanbul Deri Organize Yan Sanayi Bölgesi'ndeki tesisimizde; teknik çizimden sevkiyata kadar planlı üretim akışıyla İstanbul, Kocaeli ve çevre illerdeki müşterilerimize CNC torna, CNC freze, kaynak ve montaj hizmeti sunuyoruz. Coğrafi yakınlık; numune onayı, revizyon ve acil parça üretimlerinde teslim süresini kısaltan kritik bir avantaj sağlar."
         ]
       },
       {
@@ -40,7 +40,7 @@ window.MAYAMAK_ARTICLES = [
         h: "Warum ist Dilovası strategisch für die Zerspanung?",
         p: [
           "Dilovası liegt in einem der dichtesten Fertigungskorridore der Türkei, in der Nähe der Industriegebiete von Istanbul und Kocaeli, mit Hafenzugang und organisierter Industrieinfrastruktur. Automobilzulieferer, Rüstungslieferketten, Energiegerätehersteller und die Schwerindustrie nutzen lokale Zerspanungsbetriebe und CNC-Anlagen für Prototypen, Vorserien und Serienteile.",
-          "In unserem Werk in der KOBİ OSB 21. Straße bietet Mayamak CNC-Drehen, Fräsen, Schweißen und Montage mit einem geplanten Fertigungsablauf von der Zeichnung bis zum Versand. Die geografische Nähe verkürzt die Lieferzeiten für Musterprüfungen, Revisionen und Eilfertigungen in Dilovası und den umliegenden Provinzen."
+          "In unserem Werk in der Istanbul Leder-Organisierte Industriezone (Tuzla) bietet Mayamak CNC-Drehen, Fräsen, Schweißen und Montage mit einem geplanten Fertigungsablauf von der Zeichnung bis zum Versand. Die geografische Nähe verkürzt die Lieferzeiten für Musterprüfungen, Revisionen und Eilfertigungen in Istanbul, Kocaeli und den umliegenden Provinzen."
         ]
       },
       {
@@ -63,7 +63,7 @@ window.MAYAMAK_ARTICLES = [
         h: "Why Is Dilovası Strategic for Machining?",
         p: [
           "Dilovası sits in one of Turkey's densest manufacturing corridors, close to Istanbul and Kocaeli industrial zones, with port access and established organized industrial infrastructure. Automotive suppliers, defense supply chains, energy equipment makers and heavy industry rely on local machining shops and CNC facilities for prototypes, pilot runs and serial parts.",
-          "At our facility on KOBİ OSB 21 Street, Mayamak delivers CNC turning, milling, welding and assembly with a planned production flow from drawing to shipment. Geographic proximity shortens lead times for sample approval, revisions and urgent part manufacturing across Dilovası and neighboring provinces."
+          "At our facility in Istanbul Leather Organized Sub-Industrial Zone (Tuzla), Mayamak delivers CNC turning, milling, welding and assembly with a planned production flow from drawing to shipment. Geographic proximity shortens lead times for sample approval, revisions and urgent part manufacturing across Istanbul, Kocaeli and neighboring provinces."
         ]
       },
       {

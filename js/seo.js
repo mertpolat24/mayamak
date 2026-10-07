@@ -55,10 +55,10 @@ window.MayamakSEO = (function () {
       email: c.email,
       address: {
         "@type": "PostalAddress",
-        streetAddress: "KOBİ OSB 21 CADDE NO46",
-        addressLocality: "Dilovası",
-        addressRegion: "Kocaeli",
-        postalCode: "41455",
+        streetAddress: "İstanbul Deri Organize Yan Sanayi Bölgesi Aydınlı Yolu, Tabakhane Caddesi, Kropon Sk.",
+        addressLocality: "Tuzla",
+        addressRegion: "İstanbul",
+        postalCode: "34956",
         addressCountry: "TR"
       },
       sameAs: [c.social.facebook, c.social.instagram, c.social.linkedin].filter(Boolean),
