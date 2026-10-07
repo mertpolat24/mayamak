@@ -8,18 +8,27 @@ IMAGES = os.path.join(ROOT, "images")
 OUT_JSON = os.path.join(ROOT, "js", "image-manifest.json")
 OUT_JS = os.path.join(ROOT, "js", "image-manifest.js")
 
-manifest = {}
+if os.path.isfile(OUT_JSON):
+    with open(OUT_JSON, encoding="utf-8") as f:
+        manifest = json.load(f)
+else:
+    manifest = {}
 
 for dirpath, _, filenames in os.walk(IMAGES):
     for name in filenames:
         if not name.endswith(".webp") or name.endswith("-mobile.webp"):
+            continue
+        if any(name.endswith("-%d.webp" % w) for w in (220, 480, 768, 1200)):
             continue
         abs_path = os.path.join(dirpath, name)
         rel = os.path.relpath(abs_path, ROOT).replace("\\", "/")
         mobile_abs = abs_path.replace(".webp", "-mobile.webp")
         with Image.open(abs_path) as img:
             w, h = img.size
-        entry = {"width": w, "height": h, "webp": rel}
+        entry = manifest.get(rel, {})
+        entry["width"] = w
+        entry["height"] = h
+        entry["webp"] = rel
         if os.path.isfile(mobile_abs):
             with Image.open(mobile_abs) as mimg:
                 mw, mh = mimg.size

@@ -41,10 +41,49 @@
     "height": 213,
     "webp": "images/companies/mayamak.webp"
   },
+  "images/logo/logo-header-220.webp": {
+    "width": 220,
+    "height": 66,
+    "webp": "images/logo/logo-header-220.webp"
+  },
+  "images/logo/logo-header-480.webp": {
+    "width": 480,
+    "height": 145,
+    "webp": "images/logo/logo-header-480.webp"
+  },
+  "images/logo/logo-header-768.webp": {
+    "width": 768,
+    "height": 233,
+    "webp": "images/logo/logo-header-768.webp"
+  },
+  "images/logo/logo-header.webp": {
+    "width": 1040,
+    "height": 316,
+    "webp": "images/logo/logo-header.webp",
+    "srcset": {
+      "480": "images/logo/logo-header-480.webp",
+      "768": "images/logo/logo-header-768.webp"
+    }
+  },
   "images/logo/logo.webp": {
     "width": 1024,
     "height": 1024,
     "webp": "images/logo/logo.webp"
+  },
+  "images/logo/logo2-1200.webp": {
+    "width": 1200,
+    "height": 415,
+    "webp": "images/logo/logo2-1200.webp"
+  },
+  "images/logo/logo2-480.webp": {
+    "width": 480,
+    "height": 166,
+    "webp": "images/logo/logo2-480.webp"
+  },
+  "images/logo/logo2-768.webp": {
+    "width": 768,
+    "height": 265,
+    "webp": "images/logo/logo2-768.webp"
   },
   "images/logo/logo2.webp": {
     "width": 2400,
@@ -69,6 +108,11 @@
     "height": 942,
     "webp": "images/machines/cnc/boafeng-v13-isleme.webp"
   },
+  "images/machines/cnc/hwacheon-d2-5ax.webp": {
+    "width": 1280,
+    "height": 800,
+    "webp": "images/machines/cnc/hwacheon-d2-5ax.webp"
+  },
   "images/machines/cnc/mazak-c-eksen-torna.webp": {
     "width": 360,
     "height": 249,
@@ -83,6 +127,11 @@
     "width": 399,
     "height": 300,
     "webp": "images/machines/cnc/topper-120al-torna.webp"
+  },
+  "images/machines/kalite/coord3-ares.webp": {
+    "width": 1280,
+    "height": 800,
+    "webp": "images/machines/kalite/coord3-ares.webp"
   },
   "images/machines/kalite/hexagon-cmm.webp": {
     "width": 592,
@@ -196,6 +245,21 @@
     "height": 458,
     "webp": "images/machines/universal/vibrasyon-2.webp"
   },
+  "images/products/0796a901da53452ab255f69e262ac609-1200.webp": {
+    "width": 1200,
+    "height": 509,
+    "webp": "images/products/0796a901da53452ab255f69e262ac609-1200.webp"
+  },
+  "images/products/0796a901da53452ab255f69e262ac609-480.webp": {
+    "width": 480,
+    "height": 203,
+    "webp": "images/products/0796a901da53452ab255f69e262ac609-480.webp"
+  },
+  "images/products/0796a901da53452ab255f69e262ac609-768.webp": {
+    "width": 768,
+    "height": 325,
+    "webp": "images/products/0796a901da53452ab255f69e262ac609-768.webp"
+  },
   "images/products/0796a901da53452ab255f69e262ac609.webp": {
     "width": 3168,
     "height": 1344,
@@ -208,6 +272,21 @@
       "768": "images/products/0796a901da53452ab255f69e262ac609-768.webp",
       "1200": "images/products/0796a901da53452ab255f69e262ac609-1200.webp"
     }
+  },
+  "images/products/5cd2a44476f64a68990dbb2f96ef4062-1200.webp": {
+    "width": 1200,
+    "height": 669,
+    "webp": "images/products/5cd2a44476f64a68990dbb2f96ef4062-1200.webp"
+  },
+  "images/products/5cd2a44476f64a68990dbb2f96ef4062-480.webp": {
+    "width": 480,
+    "height": 267,
+    "webp": "images/products/5cd2a44476f64a68990dbb2f96ef4062-480.webp"
+  },
+  "images/products/5cd2a44476f64a68990dbb2f96ef4062-768.webp": {
+    "width": 768,
+    "height": 428,
+    "webp": "images/products/5cd2a44476f64a68990dbb2f96ef4062-768.webp"
   },
   "images/products/5cd2a44476f64a68990dbb2f96ef4062.webp": {
     "width": 1376,
@@ -222,6 +301,21 @@
       "1200": "images/products/5cd2a44476f64a68990dbb2f96ef4062-1200.webp"
     }
   },
+  "images/products/cffb63fdbbc14feba684faa2934fadfc-1200.webp": {
+    "width": 1200,
+    "height": 669,
+    "webp": "images/products/cffb63fdbbc14feba684faa2934fadfc-1200.webp"
+  },
+  "images/products/cffb63fdbbc14feba684faa2934fadfc-480.webp": {
+    "width": 480,
+    "height": 267,
+    "webp": "images/products/cffb63fdbbc14feba684faa2934fadfc-480.webp"
+  },
+  "images/products/cffb63fdbbc14feba684faa2934fadfc-768.webp": {
+    "width": 768,
+    "height": 428,
+    "webp": "images/products/cffb63fdbbc14feba684faa2934fadfc-768.webp"
+  },
   "images/products/cffb63fdbbc14feba684faa2934fadfc.webp": {
     "width": 1376,
     "height": 768,
@@ -234,6 +328,21 @@
       "768": "images/products/cffb63fdbbc14feba684faa2934fadfc-768.webp",
       "1200": "images/products/cffb63fdbbc14feba684faa2934fadfc-1200.webp"
     }
+  },
+  "images/products/denizalti-1200.webp": {
+    "width": 1200,
+    "height": 669,
+    "webp": "images/products/denizalti-1200.webp"
+  },
+  "images/products/denizalti-480.webp": {
+    "width": 480,
+    "height": 267,
+    "webp": "images/products/denizalti-480.webp"
+  },
+  "images/products/denizalti-768.webp": {
+    "width": 768,
+    "height": 428,
+    "webp": "images/products/denizalti-768.webp"
   },
   "images/products/denizalti.webp": {
     "width": 2752,
@@ -248,6 +357,21 @@
       "1200": "images/products/denizalti-1200.webp"
     }
   },
+  "images/products/havacilik-komponent-1200.webp": {
+    "width": 1200,
+    "height": 641,
+    "webp": "images/products/havacilik-komponent-1200.webp"
+  },
+  "images/products/havacilik-komponent-480.webp": {
+    "width": 480,
+    "height": 256,
+    "webp": "images/products/havacilik-komponent-480.webp"
+  },
+  "images/products/havacilik-komponent-768.webp": {
+    "width": 768,
+    "height": 410,
+    "webp": "images/products/havacilik-komponent-768.webp"
+  },
   "images/products/havacilik-komponent.webp": {
     "width": 1380,
     "height": 738,
@@ -260,6 +384,21 @@
       "768": "images/products/havacilik-komponent-768.webp",
       "1200": "images/products/havacilik-komponent-1200.webp"
     }
+  },
+  "images/products/tabanca-aksesuar-1200.webp": {
+    "width": 1200,
+    "height": 750,
+    "webp": "images/products/tabanca-aksesuar-1200.webp"
+  },
+  "images/products/tabanca-aksesuar-480.webp": {
+    "width": 480,
+    "height": 300,
+    "webp": "images/products/tabanca-aksesuar-480.webp"
+  },
+  "images/products/tabanca-aksesuar-768.webp": {
+    "width": 768,
+    "height": 480,
+    "webp": "images/products/tabanca-aksesuar-768.webp"
   },
   "images/products/tabanca-aksesuar.webp": {
     "width": 1280,
@@ -294,6 +433,16 @@
     "height": 1080,
     "webp": "images/programs/solidworks.webp"
   },
+  "images/references/31.tcdd-buyuk-1024x937-1-480.webp": {
+    "width": 480,
+    "height": 440,
+    "webp": "images/references/31.tcdd-buyuk-1024x937-1-480.webp"
+  },
+  "images/references/31.tcdd-buyuk-1024x937-1-768.webp": {
+    "width": 768,
+    "height": 704,
+    "webp": "images/references/31.tcdd-buyuk-1024x937-1-768.webp"
+  },
   "images/references/31.tcdd-buyuk-1024x937-1.webp": {
     "width": 1200,
     "height": 1100,
@@ -303,6 +452,16 @@
       "768": "images/references/31.tcdd-buyuk-1024x937-1-768.webp"
     }
   },
+  "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png-480.webp": {
+    "width": 480,
+    "height": 145,
+    "webp": "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png-480.webp"
+  },
+  "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png-768.webp": {
+    "width": 768,
+    "height": 233,
+    "webp": "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png-768.webp"
+  },
   "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png.webp": {
     "width": 781,
     "height": 237,
@@ -311,6 +470,16 @@
       "480": "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png-480.webp",
       "768": "images/references/321-3210540_ata-arms-produce-ata-arms-logo-png-768.webp"
     }
+  },
+  "images/references/armsan-480.webp": {
+    "width": 480,
+    "height": 252,
+    "webp": "images/references/armsan-480.webp"
+  },
+  "images/references/armsan-768.webp": {
+    "width": 768,
+    "height": 403,
+    "webp": "images/references/armsan-768.webp"
   },
   "images/references/armsan.webp": {
     "width": 1080,
@@ -323,6 +492,21 @@
       "480": "images/references/armsan-480.webp",
       "768": "images/references/armsan-768.webp"
     }
+  },
+  "images/references/FAG-1200.webp": {
+    "width": 1200,
+    "height": 544,
+    "webp": "images/references/FAG-1200.webp"
+  },
+  "images/references/FAG-480.webp": {
+    "width": 480,
+    "height": 217,
+    "webp": "images/references/FAG-480.webp"
+  },
+  "images/references/FAG-768.webp": {
+    "width": 768,
+    "height": 348,
+    "webp": "images/references/FAG-768.webp"
   },
   "images/references/FAG.webp": {
     "width": 1800,
@@ -337,6 +521,16 @@
       "1200": "images/references/FAG-1200.webp"
     }
   },
+  "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-480.webp": {
+    "width": 480,
+    "height": 480,
+    "webp": "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-480.webp"
+  },
+  "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-768.webp": {
+    "width": 768,
+    "height": 768,
+    "webp": "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-768.webp"
+  },
   "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv.webp": {
     "width": 1080,
     "height": 1080,
@@ -348,6 +542,21 @@
       "480": "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-480.webp",
       "768": "images/references/Gemini_Generated_Image_d8fvjsd8fvjsd8fv-768.webp"
     }
+  },
+  "images/references/goodyear-7-logo-png-transparent-1200.webp": {
+    "width": 1200,
+    "height": 1200,
+    "webp": "images/references/goodyear-7-logo-png-transparent-1200.webp"
+  },
+  "images/references/goodyear-7-logo-png-transparent-480.webp": {
+    "width": 480,
+    "height": 480,
+    "webp": "images/references/goodyear-7-logo-png-transparent-480.webp"
+  },
+  "images/references/goodyear-7-logo-png-transparent-768.webp": {
+    "width": 768,
+    "height": 768,
+    "webp": "images/references/goodyear-7-logo-png-transparent-768.webp"
   },
   "images/references/goodyear-7-logo-png-transparent.webp": {
     "width": 2400,
@@ -369,6 +578,11 @@
     "height": 200,
     "webp": "images/references/inci_endustri.webp"
   },
+  "images/references/mutlu-aku-1-480.webp": {
+    "width": 480,
+    "height": 210,
+    "webp": "images/references/mutlu-aku-1-480.webp"
+  },
   "images/references/mutlu-aku-1.webp": {
     "width": 496,
     "height": 217,
@@ -376,6 +590,21 @@
     "srcset": {
       "480": "images/references/mutlu-aku-1-480.webp"
     }
+  },
+  "images/references/P&G_logo-1200.webp": {
+    "width": 1200,
+    "height": 522,
+    "webp": "images/references/P&G_logo-1200.webp"
+  },
+  "images/references/P&G_logo-480.webp": {
+    "width": 480,
+    "height": 208,
+    "webp": "images/references/P&G_logo-480.webp"
+  },
+  "images/references/P&G_logo-768.webp": {
+    "width": 768,
+    "height": 334,
+    "webp": "images/references/P&G_logo-768.webp"
   },
   "images/references/P&G_logo.webp": {
     "width": 1280,
@@ -386,6 +615,21 @@
       "768": "images/references/P&G_logo-768.webp",
       "1200": "images/references/P&G_logo-1200.webp"
     }
+  },
+  "images/references/soyvalve-logo-1200.webp": {
+    "width": 1200,
+    "height": 782,
+    "webp": "images/references/soyvalve-logo-1200.webp"
+  },
+  "images/references/soyvalve-logo-480.webp": {
+    "width": 480,
+    "height": 313,
+    "webp": "images/references/soyvalve-logo-480.webp"
+  },
+  "images/references/soyvalve-logo-768.webp": {
+    "width": 768,
+    "height": 501,
+    "webp": "images/references/soyvalve-logo-768.webp"
   },
   "images/references/soyvalve-logo.webp": {
     "width": 5319,
@@ -400,6 +644,21 @@
       "1200": "images/references/soyvalve-logo-1200.webp"
     }
   },
+  "images/references/STM-1200.webp": {
+    "width": 1200,
+    "height": 900,
+    "webp": "images/references/STM-1200.webp"
+  },
+  "images/references/STM-480.webp": {
+    "width": 480,
+    "height": 360,
+    "webp": "images/references/STM-480.webp"
+  },
+  "images/references/STM-768.webp": {
+    "width": 768,
+    "height": 576,
+    "webp": "images/references/STM-768.webp"
+  },
   "images/references/STM.webp": {
     "width": 2362,
     "height": 1772,
@@ -409,6 +668,11 @@
       "768": "images/references/STM-768.webp",
       "1200": "images/references/STM-1200.webp"
     }
+  },
+  "images/references/thyt-480.webp": {
+    "width": 480,
+    "height": 156,
+    "webp": "images/references/thyt-480.webp"
   },
   "images/references/thyt.webp": {
     "width": 600,
@@ -423,6 +687,21 @@
     "height": 320,
     "webp": "images/references/vitra-logo-png_seeklogo-273245.webp"
   },
+  "images/references/\u015ei\u015fecam-1200.webp": {
+    "width": 1200,
+    "height": 901,
+    "webp": "images/references/\u015ei\u015fecam-1200.webp"
+  },
+  "images/references/\u015ei\u015fecam-480.webp": {
+    "width": 480,
+    "height": 360,
+    "webp": "images/references/\u015ei\u015fecam-480.webp"
+  },
+  "images/references/\u015ei\u015fecam-768.webp": {
+    "width": 768,
+    "height": 576,
+    "webp": "images/references/\u015ei\u015fecam-768.webp"
+  },
   "images/references/\u015ei\u015fecam.webp": {
     "width": 2000,
     "height": 1502,
@@ -431,15 +710,6 @@
       "480": "images/references/\u015ei\u015fecam-480.webp",
       "768": "images/references/\u015ei\u015fecam-768.webp",
       "1200": "images/references/\u015ei\u015fecam-1200.webp"
-    }
-  },
-  "images/logo/logo-header.webp": {
-    "width": 1040,
-    "height": 316,
-    "webp": "images/logo/logo-header.webp",
-    "srcset": {
-      "480": "images/logo/logo-header-480.webp",
-      "768": "images/logo/logo-header-768.webp"
     }
   }
 }

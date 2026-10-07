@@ -3,11 +3,17 @@ window.MayamakOccupancy = (function () {
   function getLangProp(obj, prop) {
     if (!obj) return "";
     var lang = window.MayamakI18n ? window.MayamakI18n.getLang() : "tr";
-    if (lang === "de" && obj[prop + "De"]) return obj[prop + "De"];
-    if (lang === "en" && obj[prop + "En"]) return obj[prop + "En"];
-    if (obj[prop + "Tr"]) return obj[prop + "Tr"];
-    if (obj[prop]) return obj[prop];
-    return obj.de || obj.en || obj.tr || "";
+    if (prop) {
+      if (lang === "de" && obj[prop + "De"]) return obj[prop + "De"];
+      if (lang === "en" && obj[prop + "En"]) return obj[prop + "En"];
+      if (lang === "tr" && obj[prop + "Tr"]) return obj[prop + "Tr"];
+      if (obj[prop + "Tr"]) return obj[prop + "Tr"];
+      if (obj[prop]) return obj[prop];
+    }
+    if (obj[lang]) return obj[lang];
+    var langCap = lang.charAt(0).toUpperCase() + lang.slice(1);
+    if (obj[langCap]) return obj[langCap];
+    return obj.tr || obj.Tr || obj.en || obj.En || obj.de || obj.De || "";
   }
 
   var STORAGE_PREFIX = "mayamak_occ_";

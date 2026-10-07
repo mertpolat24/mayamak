@@ -83,6 +83,28 @@ window.MAYAMAK_DATA = {
 
   machines: [
     {
+      id: "hwacheon-d2-5ax",
+      category: "cnc",
+      image: "images/machines/cnc/hwacheon-d2-5ax.webp",
+      nameTr: "Hwacheon D2-5AX 5 Eksen Dik İşleme Merkezi",
+      nameEn: "Hwacheon D2-5AX 5-Axis Vertical Machining Center",
+      nameDe: "Hwacheon D2-5AX 5-Achsen-Vertikal-Bearbeitungszentrum",
+      descTr: "5 eksenli simultane dik işleme merkezi; havacılık, savunma ve kalıp sanayii için karmaşık geometrili parçalarda mikron hassasiyetinde yüksek verimli talaşlı imalat.",
+      descEn: "5-axis simultaneous vertical machining center delivering micron precision and high productivity for complex aerospace, defense, and mold components.",
+      descDe: "5-Achsen-Simultan-Vertikal-Bearbeitungszentrum für Mikrometer-Präzision und höchste Produktivität bei komplexen Luftfahrt-, Verteidigungs- und Werkzeugbauteilen."
+    },
+    {
+      id: "coord3-ares",
+      category: "kalite",
+      image: "images/machines/kalite/coord3-ares.webp",
+      nameTr: "COORD3 Ares NT 10.7.5 CMM",
+      nameEn: "COORD3 Ares NT 10.7.5 CMM",
+      nameDe: "COORD3 Ares NT 10.7.5 KMG (CMM)",
+      descTr: "Köprü tipi 3D koordinat ölçüm cihazı (CMM); silisyum karbür Z ekseni ve mikron altı hassasiyet ile kritik parça imalatında üstün kalite kontrol ve boyutsal metroloji.",
+      descEn: "Bridge-type 3D coordinate measuring machine (CMM) with silicon carbide Z-axis, delivering sub-micron accuracy for dimensional metrology and quality control.",
+      descDe: "3D-Koordinatenmessgerät (KMG) in Portalbauweise mit Siliziumkarbid-Z-Achse für Submikrometer-Genauigkeit und hochpräzise dimensionelle Qualitätssicherung."
+    },
+    {
       id: "bf46dw-torna",
       category: "cnc",
       image: "images/machines/cnc/boafeng-bf46dw-torna.webp",
@@ -427,11 +449,11 @@ window.MAYAMAK_DATA = {
   ],
 
   categoryLabels: {
-    cnc: { tr: "CNC Tezgahlar", en: "CNC Machines", de: "CNC-Maschinen" },
-    kalite: { tr: "Kalite Kontrol Makineleri", en: "Quality Control Machines", de: "Qualitätskontrollmaschinen" },
-    kaynak: { tr: "Kaynak Makineleri", en: "Welding Equipment", de: "Schweißgeräte" },
-    pres: { tr: "Presler", en: "Presses", de: "Pressen" },
-    surucu: { tr: "Sürücüler", en: "Bar Feeders", de: "Stangenlader" },
-    universal: { tr: "Universal Makineler", en: "Universal Machines", de: "Universalmaschinen" }
+    cnc: { tr: "CNC Tezgahlar", en: "CNC Machines", de: "CNC-Maschinen", Tr: "CNC Tezgahlar", En: "CNC Machines", De: "CNC-Maschinen" },
+    kalite: { tr: "Kalite Kontrol Makineleri", en: "Quality Control Machines", de: "Qualitätskontrollmaschinen", Tr: "Kalite Kontrol Makineleri", En: "Quality Control Machines", De: "Qualitätskontrollmaschinen" },
+    kaynak: { tr: "Kaynak Makineleri", en: "Welding Equipment", de: "Schweißgeräte", Tr: "Kaynak Makineleri", En: "Welding Equipment", De: "Schweißgeräte" },
+    pres: { tr: "Presler", en: "Presses", de: "Pressen", Tr: "Presler", En: "Presses", De: "Pressen" },
+    surucu: { tr: "Sürücüler", en: "Bar Feeders", de: "Stangenlader", Tr: "Sürücüler", En: "Bar Feeders", De: "Stangenlader" },
+    universal: { tr: "Universal Makineler", en: "Universal Machines", de: "Universalmaschinen", Tr: "Universal Makineler", En: "Universal Machines", De: "Universalmaschinen" }
   }
 };

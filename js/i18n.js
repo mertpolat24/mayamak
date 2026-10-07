@@ -87,8 +87,13 @@ window.MAYAMAK_I18N = {
 
     "machines.title": "Makine Parkuru",
     "machines.subtitle": "Modern tezgah filomuzla geniş üretim kapasitesi.",
-    "machines.filter.kalite": "Kalite Kontrol",
     "machines.filter.all": "Tümü",
+    "machines.filter.cnc": "CNC",
+    "machines.filter.kalite": "Kalite Kontrol",
+    "machines.filter.kaynak": "Kaynak",
+    "machines.filter.pres": "Pres",
+    "machines.filter.surucu": "Sürücü",
+    "machines.filter.universal": "Universal",
     "machines.detail": "Detay",
 
     "occupancy.title": "Kapasite Takip",
@@ -260,8 +265,13 @@ window.MAYAMAK_I18N = {
 
     "machines.title": "Machine Park",
     "machines.subtitle": "Extensive production capacity with our modern machine fleet.",
-    "machines.filter.kalite": "Quality Control",
     "machines.filter.all": "All",
+    "machines.filter.cnc": "CNC",
+    "machines.filter.kalite": "Quality Control",
+    "machines.filter.kaynak": "Welding",
+    "machines.filter.pres": "Presses",
+    "machines.filter.surucu": "Bar Feeders",
+    "machines.filter.universal": "Universal",
     "machines.detail": "Details",
 
     "occupancy.title": "Capacity Tracking",
@@ -434,8 +444,13 @@ window.MAYAMAK_I18N = {
 
     "machines.title": "Maschinenpark",
     "machines.subtitle": "Umfangreiche Fertigungskapazität mit unserer modernen Maschinenflotte.",
-    "machines.filter.kalite": "Qualitätskontrolle",
     "machines.filter.all": "Alle",
+    "machines.filter.cnc": "CNC",
+    "machines.filter.kalite": "Qualitätskontrolle",
+    "machines.filter.kaynak": "Schweißen",
+    "machines.filter.pres": "Pressen",
+    "machines.filter.surucu": "Stangenlader",
+    "machines.filter.universal": "Universal",
     "machines.detail": "Details",
 
     "occupancy.title": "Kapazitätsverfolgung",
